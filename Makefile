@@ -14,3 +14,5 @@ LIBS += $(ROOTCFLAGS) $(ROOTGLIBS) -lMinuit -lMinuit2 -lTreePlayer -lGenVector -
 bin/WpWp : src/WpWp.cxx
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(LIBS)
 
+clean :
+	rm -rf bin/WpWp

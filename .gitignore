@@ -27,5 +27,3 @@
 *.out
 *.app
 
-#root data file
-data/*.root

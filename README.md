@@ -10,7 +10,9 @@ cd DiTau
 edit Makefile and env.sh and write the correct path of the TAUOLA package
 
 make
+
 cd bin
+
 ./WpWp
 
 
