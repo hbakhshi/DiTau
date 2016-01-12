@@ -69,4 +69,7 @@ private:
 	double precision;
 	// ClassDef(Davismt2,1)
 };
+
+#include "../src/Davismt2.cc"
+
 #endif

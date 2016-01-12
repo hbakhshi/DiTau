@@ -29,6 +29,7 @@ void LHEF::Loop()
   double sumWeightsSR2 = 0.0; 
   double sumWeightsEleTau = 0.0; 
   double sumWeightsMuTau = 0.0; 
+  Davismt2 *mt2 = new Davismt2(); 
 
   if (fChain == 0) return;
   
@@ -60,62 +61,215 @@ void LHEF::Loop()
   hEffHad_TauPtMin->SetBinContent( 8 , 0.70 );
   hEffHad_TauPtMin->SetBinContent( 9 , 0.71 );
   hEffHad_TauPtMin->SetBinContent( 10 , 0.71 );
-  
 
-  double EffMTBins[] = {0,50,100,125,150,170,190,210,230,250,275,300,5000};
-  TH1F* hEffHad_hEffMT = new TH1F( "hEff_MT" , "hEff_MT" , 12 , EffMTBins );
-  hEffHad_hEffMT->SetBinContent( 1 , 0.35 );
-  hEffHad_hEffMT->SetBinContent( 2 , 0.1 );
-  hEffHad_hEffMT->SetBinContent( 3 , 0.05 );
-  hEffHad_hEffMT->SetBinContent( 4 , 0.07 );
-  hEffHad_hEffMT->SetBinContent( 5 , 0.14 );
-  hEffHad_hEffMT->SetBinContent( 6 , 0.32 );
-  hEffHad_hEffMT->SetBinContent( 7 , 0.55 );
-  hEffHad_hEffMT->SetBinContent( 8 , 0.68 );
-  hEffHad_hEffMT->SetBinContent( 9 , 0.83 );
-  hEffHad_hEffMT->SetBinContent( 10 , 0.91);
-  hEffHad_hEffMT->SetBinContent( 11 , 0.95);
-  hEffHad_hEffMT->SetBinContent( 12 , 0.97);
- 
-  // TH1F* hEff_El = new TH1F( "hEff_El" , "hEff_El" , 10 , EffPtBins );
-  // TH1F* hEff_Mu = new TH1F( "hEff_Mu" , "hEff_Mu" , 10 , EffPtBins );
+
+  
+  TH1F* hEff_El_Pt = new TH1F( "hEff_El" , "hEff_El" , 10 , EffPtBins );
+  hEff_El_Pt->SetBinContent( 1 , 0.15 );
+  hEff_El_Pt->SetBinContent( 2 , 0.14 );
+  hEff_El_Pt->SetBinContent( 3 , 0.27 );
+  hEff_El_Pt->SetBinContent( 4 , 0.68 );
+  hEff_El_Pt->SetBinContent( 5 , 0.75 );
+  hEff_El_Pt->SetBinContent( 6 , 0.80 );
+  hEff_El_Pt->SetBinContent( 7 , 0.83 );
+  hEff_El_Pt->SetBinContent( 8 , 0.85 );
+  hEff_El_Pt->SetBinContent( 9 , 0.87 );
+  hEff_El_Pt->SetBinContent( 10 , 0.89 );
+
+  
+  TH1F* hEff_Mu_Pt = new TH1F( "hEff_Mu" , "hEff_Mu" , 10 , EffPtBins );
+  hEff_Mu_Pt->SetBinContent( 1 , 0.05 );
+  hEff_Mu_Pt->SetBinContent( 2 , 0.72 );
+  hEff_Mu_Pt->SetBinContent( 3 , 0.80 );
+  hEff_Mu_Pt->SetBinContent( 4 , 0.85 );
+  hEff_Mu_Pt->SetBinContent( 5 , 0.87 );
+  hEff_Mu_Pt->SetBinContent( 6 , 0.88 );
+  hEff_Mu_Pt->SetBinContent( 7 , 0.89 );
+  hEff_Mu_Pt->SetBinContent( 8 , 0.90 );
+  hEff_Mu_Pt->SetBinContent( 9 , 0.91 );
+  hEff_Mu_Pt->SetBinContent( 10 , 0.92 );
+
+
+  double EffsigmaMTBins[] = {0,60,60,80,100,120,140,160,180,200,210,220,230,240,250,260,270,280,290,300,320,340,360,380,400,420,440,460,480,500,5000};
+  TH1F* hEffsigmaHad_hEffMT = new TH1F( "hEffhh_sigMT" , "hEffhh_sigMT" , 28 , EffsigmaMTBins );
+  hEffsigmaHad_hEffMT->SetBinContent( 1 , 0.00 );
+  hEffsigmaHad_hEffMT->SetBinContent( 2 , 0.84 );
+  hEffsigmaHad_hEffMT->SetBinContent( 3 , 0.68 );
+  hEffsigmaHad_hEffMT->SetBinContent( 4 , 0.45 );
+  hEffsigmaHad_hEffMT->SetBinContent( 5 , 0.29 );
+  hEffsigmaHad_hEffMT->SetBinContent( 6 , 0.22 );
+  hEffsigmaHad_hEffMT->SetBinContent( 7 , 0.18 );
+  hEffsigmaHad_hEffMT->SetBinContent( 8 , 0.22 );
+  hEffsigmaHad_hEffMT->SetBinContent( 9 , 0.28 );
+  hEffsigmaHad_hEffMT->SetBinContent( 10 , 0.34);
+  hEffsigmaHad_hEffMT->SetBinContent( 11 , 0.41);
+  hEffsigmaHad_hEffMT->SetBinContent( 12 , 0.49);
+  hEffsigmaHad_hEffMT->SetBinContent( 13 , 0.59 );
+  hEffsigmaHad_hEffMT->SetBinContent( 14 , 0.63 );
+  hEffsigmaHad_hEffMT->SetBinContent( 15 , 0.70 );
+  hEffsigmaHad_hEffMT->SetBinContent( 16 , 0.76 );
+  hEffsigmaHad_hEffMT->SetBinContent( 17 , 0.78 );
+  hEffsigmaHad_hEffMT->SetBinContent( 18 , 0.83 );
+  hEffsigmaHad_hEffMT->SetBinContent( 19 , 0.87 );
+  hEffsigmaHad_hEffMT->SetBinContent( 20 , 0.88 );
+  hEffsigmaHad_hEffMT->SetBinContent( 21 , 0.91 );
+  hEffsigmaHad_hEffMT->SetBinContent( 22 , 0.92 );
+  hEffsigmaHad_hEffMT->SetBinContent( 23 , 0.92 );
+  hEffsigmaHad_hEffMT->SetBinContent( 24 , 0.93 );
+  hEffsigmaHad_hEffMT->SetBinContent( 25 , 0.93 );
+  hEffsigmaHad_hEffMT->SetBinContent( 26 , 0.88 );
+  hEffsigmaHad_hEffMT->SetBinContent( 27 , 0.89);
+  hEffsigmaHad_hEffMT->SetBinContent( 28 , 0.93);
+  hEffsigmaHad_hEffMT->SetBinContent( 29 , 0.81);
+
+
+
+  double Effhl_MTBins[] = {0,50,100,125,150,170,190,210,230,250,275,300,5000};
+  TH1F* hEffHad_lEffMT = new TH1F( "hEffhl_MT" , "hEffhl_MT" , 12 , Effhl_MTBins );
+  hEffHad_lEffMT->SetBinContent( 1 , 0.35 );
+  hEffHad_lEffMT->SetBinContent( 2 , 0.1 );
+  hEffHad_lEffMT->SetBinContent( 3 , 0.05 );
+  hEffHad_lEffMT->SetBinContent( 4 , 0.07 );
+  hEffHad_lEffMT->SetBinContent( 5 , 0.14 );
+  hEffHad_lEffMT->SetBinContent( 6 , 0.32 );
+  hEffHad_lEffMT->SetBinContent( 7 , 0.55 );
+  hEffHad_lEffMT->SetBinContent( 8 , 0.68 );
+  hEffHad_lEffMT->SetBinContent( 9 , 0.83 );
+  hEffHad_lEffMT->SetBinContent( 10 , 0.91);
+  hEffHad_lEffMT->SetBinContent( 11 , 0.95);
+  hEffHad_lEffMT->SetBinContent( 12 , 0.97);  
 
   double EffMETBins[] = {0,10,20,30,40,50,60,70,80,90,100,120,140,160,200,5000};
-  TH1F* hEffHad_hEff_MET = new TH1F( "hEff_MET" , "hEff_MET" , 15 , EffMETBins );
-  hEffHad_hEff_MET->SetBinContent( 1 , 0.52 );
-  hEffHad_hEff_MET->SetBinContent( 2 , 0.57 );
-  hEffHad_hEff_MET->SetBinContent( 3 , 0.68 );
-  hEffHad_hEff_MET->SetBinContent( 4 , 0.79 );
-  hEffHad_hEff_MET->SetBinContent( 5 , 0.87 );
-  hEffHad_hEff_MET->SetBinContent( 6 , 0.93 );
-  hEffHad_hEff_MET->SetBinContent( 7 , 0.95 );
-  hEffHad_hEff_MET->SetBinContent( 8 , 0.97 );
-  hEffHad_hEff_MET->SetBinContent( 9 , 0.98 );
-  hEffHad_hEff_MET->SetBinContent( 10 , 0.98 );
-  hEffHad_hEff_MET->SetBinContent( 11 , 0.99 );
-  hEffHad_hEff_MET->SetBinContent( 12 , 0.99 );
-  hEffHad_hEff_MET->SetBinContent( 13 , 0.99 );
-  hEffHad_hEff_MET->SetBinContent( 14 , 1 );
-  hEffHad_hEff_MET->SetBinContent( 15 , 1 );
+  TH1F* hEff_MET = new TH1F( "hEff_MET" , "hEff_MET" , 15 , EffMETBins );
+  hEff_MET->SetBinContent( 1 , 0.52 );
+  hEff_MET->SetBinContent( 2 , 0.57 );
+  hEff_MET->SetBinContent( 3 , 0.68 );
+  hEff_MET->SetBinContent( 4 , 0.79 );
+  hEff_MET->SetBinContent( 5 , 0.87 );
+  hEff_MET->SetBinContent( 6 , 0.93 );
+  hEff_MET->SetBinContent( 7 , 0.95 );
+  hEff_MET->SetBinContent( 8 , 0.97 );
+  hEff_MET->SetBinContent( 9 , 0.98 );
+  hEff_MET->SetBinContent( 10 , 0.98 );
+  hEff_MET->SetBinContent( 11 , 0.99 );
+  hEff_MET->SetBinContent( 12 , 0.99 );
+  hEff_MET->SetBinContent( 13 , 0.99 );
+  hEff_MET->SetBinContent( 14 , 1 );
+  hEff_MET->SetBinContent( 15 , 1 );
+ 
+  //  double EffMBins[] = {0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,5000};
+  //  TH1F* hEffHad_h2Eff_Mt2 = new TH1F( "hEff_hh2_Mt2" , "hEff_hh2_Mt2" , 15 , EffMBins );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 1 , 0.007 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 2 , 0.01 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 3 , 0.26 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 4 , 0.57 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 5 , 0.85 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 6 , 0.93 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 7 , 0.92 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 8 , 0.82 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 9 , 0.56 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 10 , 0.27 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 11 , 0.12 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 12 , 0.06 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 13 , 0.03 );
+  // hEffHad_h2Eff_Mt2->SetBinContent( 14 , 0.02 );
+  //  hEffHad_h2Eff_Mt2->SetBinContent( 15 , 0.01);
+
+  double EffMT2Bins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,200,5000};
+  TH1F* hEffHad_h1Eff_Mt2 = new TH1F( "hEffhh1_Mt2" , "hEffhh1_Mt2" , 16 , EffMT2Bins );
+
+  hEffHad_h1Eff_Mt2->SetBinContent( 1 , 0.00 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 2 , 0.01 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 3 , 0.02 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 4 , 0.04 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 5 , 0.08 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 6 , 0.19 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 7 , 0.45 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 8 , 0.73 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 9 , 0.88 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 10 , 0.94 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 11 , 0.97 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 12 , 0.98 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 13 , 0.99 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 14 , 0.99 );
+  hEffHad_h1Eff_Mt2->SetBinContent( 15 , 1.00);
+  hEffHad_h1Eff_Mt2->SetBinContent( 16 , 1.00);
+
+  // double EffMBins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,200,5000};
+  // TH1F* hEffHad_lEff_Mt2 = new TH1F( "hEff_hl_Mt2" , "hEff_hl_Mt2" , 16 , EffMBins );
+
+  // hEffHad_lEff_Mt2->SetBinContent( 1 , 0.00 );
+  // hEffHad_lEff_Mt2->SetBinContent( 2 , 0.003 );
+  // hEffHad_lEff_Mt2->SetBinContent( 3 , 0.01 );
+  //hEffHad_lEff_Mt2->SetBinContent( 4 , 0.02 );
+  //hEffHad_lEff_Mt2->SetBinContent( 5 , 0.05 );
+  //hEffHad_lEff_Mt2->SetBinContent( 6 , 0.14 );
+  //hEffHad_lEff_Mt2->SetBinContent( 7 , 0.35 );
+  //hEffHad_lEff_Mt2->SetBinContent( 8 , 0.65 );
+  //hEffHad_lEff_Mt2->SetBinContent( 9 , 0.82 );
+  //hEffHad_lEff_Mt2->SetBinContent( 10 , 0.89 );
+  //hEffHad_lEff_Mt2->SetBinContent( 11 , 0.93 );
+  //hEffHad_lEff_Mt2->SetBinContent( 12 , 0.95 );
+  //hEffHad_lEff_Mt2->SetBinContent( 13 , 0.96 );
+  //hEffHad_lEff_Mt2->SetBinContent( 14 , 0.97 );
+  //hEffHad_lEff_Mt2->SetBinContent( 15 , 0.97);
+  //hEffHad_lEff_Mt2->SetBinContent( 16 , 0.97);
+
+  double Effhh_MBins[] = {0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,5000};
+  TH1F* hEffHad_hEff_M = new TH1F( "hEffhh_M" , "hEffhh_M" , 24 , Effhh_MBins );
+  hEffHad_hEff_M->SetBinContent( 1 , 0.00 );
+  hEffHad_hEff_M->SetBinContent( 2 , 0.25 );
+  hEffHad_hEff_M->SetBinContent( 3 , 0.60 );
+  hEffHad_hEff_M->SetBinContent( 4 , 0.90 );
+  hEffHad_hEff_M->SetBinContent( 5 , 0.94 );
+  hEffHad_hEff_M->SetBinContent( 6 , 0.98 );
+  hEffHad_hEff_M->SetBinContent( 7 , 1.00 );
+  hEffHad_hEff_M->SetBinContent( 8 , 1.00 );
+  hEffHad_hEff_M->SetBinContent( 9 , 0.99 );
+  hEffHad_hEff_M->SetBinContent( 10 , 0.95 );
+  hEffHad_hEff_M->SetBinContent( 11 , 0.68 );
+  hEffHad_hEff_M->SetBinContent( 12 , 0.18 );
+  hEffHad_hEff_M->SetBinContent( 13 , 0.06 );
+  hEffHad_hEff_M->SetBinContent( 14 , 0.03 );
+  hEffHad_hEff_M->SetBinContent( 15 , 0.05);
+  hEffHad_hEff_M->SetBinContent( 16 , 0.15 );
+  hEffHad_hEff_M->SetBinContent( 17 , 0.41 );
+  hEffHad_hEff_M->SetBinContent( 18 , 0.79 );
+  hEffHad_hEff_M->SetBinContent( 19 , 0.93 );
+  hEffHad_hEff_M->SetBinContent( 20 , 0.96 );
+  hEffHad_hEff_M->SetBinContent( 21 , 0.98 );
+  hEffHad_hEff_M->SetBinContent( 22 , 0.99 );
+  hEffHad_hEff_M->SetBinContent( 23 , 0.99 );
+  hEffHad_hEff_M->SetBinContent( 24 , 1.00);
   
-  double EffMBins[] = {0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,115,5000};
-   TH1F* hEffHad_hEff_M = new TH1F( "hEff_M" , "hEff_M" , 22 , EffMBins );
-  hEffHad_hEff_M->SetBinContent( 1 , 0.52 );
-  hEffHad_hEff_M->SetBinContent( 2 , 0.57 );
-  hEffHad_hEff_M->SetBinContent( 3 , 0.68 );
-  hEffHad_hEff_M->SetBinContent( 4 , 0.79 );
-  hEffHad_hEff_M->SetBinContent( 5 , 0.87 );
-  hEffHad_hEff_M->SetBinContent( 6 , 0.93 );
-  hEffHad_hEff_M->SetBinContent( 7 , 0.95 );
-  hEffHad_hEff_M->SetBinContent( 8 , 0.97 );
-  hEffHad_hEff_M->SetBinContent( 9 , 0.98 );
-  hEffHad_hEff_M->SetBinContent( 10 , 0.98 );
-  hEffHad_hEff_M->SetBinContent( 11 , 0.99 );
-  hEffHad_hEff_M->SetBinContent( 12 , 0.99 );
-  hEffHad_hEff_M->SetBinContent( 13 , 0.99 );
-  hEffHad_hEff_M->SetBinContent( 14 , 1 );
-  hEffHad_hEff_M->SetBinContent( 15 , 1 );
-  
+  double Effhl_MBins[] = {0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,5000};
+  TH1F* hEffHad_l_M = new TH1F( "hEffhl_M" , "hEffhl_M" , 24 , Effhl_MBins );
+ 
+  hEffHad_l_M->SetBinContent( 1 , 0.00 );
+  hEffHad_l_M->SetBinContent( 2 , 0.26 );
+  hEffHad_l_M->SetBinContent( 3 , 0.65 );
+  hEffHad_l_M->SetBinContent( 4 , 0.96 );
+  hEffHad_l_M->SetBinContent( 5 , 0.99 );
+  hEffHad_l_M->SetBinContent( 6 , 0.99 );
+  hEffHad_l_M->SetBinContent( 7 , 0.99 );
+  hEffHad_l_M->SetBinContent( 8 , 0.98 );
+  hEffHad_l_M->SetBinContent( 9 , 0.83 );
+  hEffHad_l_M->SetBinContent( 10 , 0.15 );
+  hEffHad_l_M->SetBinContent( 11 , 0.03 );
+  hEffHad_l_M->SetBinContent( 12 , 0.02 );
+  hEffHad_l_M->SetBinContent( 13 , 0.02 );
+  hEffHad_l_M->SetBinContent( 14 , 0.04 );
+  hEffHad_l_M->SetBinContent( 15 , 0.22 );
+  hEffHad_l_M->SetBinContent( 16 , 0.78 );
+  hEffHad_l_M->SetBinContent( 17 , 0.92 );
+  hEffHad_l_M->SetBinContent( 18 , 0.95 );
+  hEffHad_l_M->SetBinContent( 19 , 0.97 );
+  hEffHad_l_M->SetBinContent( 20 , 0.99 );
+  hEffHad_l_M->SetBinContent( 21 , 1.00 );
+  hEffHad_l_M->SetBinContent( 22 , 1.00 ); 
+  hEffHad_l_M->SetBinContent( 23 , 1.00 );
+  hEffHad_l_M->SetBinContent( 24 , 1.00 ); 
+
 
   for (Long64_t jentry=0; jentry<nentries;jentry++) {
     Long64_t ientry = LoadTree(jentry);
@@ -124,7 +278,7 @@ void LHEF::Loop()
 
     TauolaHEPEVTEvent * evt = new TauolaHEPEVTEvent();
     //(PDG_id, status, p_x, p_y, p_z, energy, mass, position of first mother, position of second mother,
-  //  position first daugter, last daughter)
+    //  position first daugter, last daughter)
 
     int wp_p_index =  Particle_PID[2] > 0 ? 2 : 3 ;
     int wp_n_index =  Particle_PID[2] > 0 ? 3 : 2 ;
@@ -194,8 +348,6 @@ void LHEF::Loop()
 	  vtau_1.SetXYZT( wpp_d1->getPx() - td->getPx() , wpp_d1->getPy() - td->getPy() , wpp_d1->getPz() - td->getPz() , wpp_d1->getE() - td->getE() );
       }
 
-
-
     for(int tdi = 0 ; tdi < wpn_d1->getDaughters().size() ; tdi++){
       TauolaParticle* td =  wpn_d1->getDaughters()[tdi] ;
       switch( td->getPdgID() ){
@@ -238,18 +390,13 @@ void LHEF::Loop()
     TLorentzVector tauSystem = vtau_1 + vtau_2 ;
     double systemMass = tauSystem.M();
 
-    // if( fabs(vtau_1.Eta()) > 2.1 )
-    //   continue;
-    // if( fabs(vtau_2.Eta()) > 2.1 )
-    //   continue;
-
     if( DecayMode == 1 ){
 
       double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
       double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
       w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
       w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
-      w *= hEffHad_hEff_MET->GetBinContent( hEffHad_hEff_MET->FindBin( met.Pt() ) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
       w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
 
       double tau1m = vtau_1.M();
@@ -259,16 +406,94 @@ void LHEF::Loop()
       double tau1Mt = sqrt( tau1m*tau1m + 2*(tau1et*met.Pt() - vtau_1.Px()*met.Px() - vtau_1.Py()*met.Py() ) );
       double tau2Mt = sqrt( tau2m*tau2m + 2*(tau2et*met.Pt() - vtau_2.Px()*met.Px() - vtau_2.Py()*met.Py() ) );
       double sumMt = tau1Mt + tau2Mt ;
-      w *= hEffHad_hEffMT->GetBinContent( hEffHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
+      w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
+  
       sumWeightsSR2 += w;
-
     }
-  }
-  
-  cout << "SumWeights : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl;
-  
-}
 
+    cout << "SumWeights : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
+ 
+    continue;
+
+    double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
+    double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
+    w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
+    w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+    w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+    w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+
+          
+ 
+    double pa[3];
+    double pb[3];
+    double pmiss[3];
+    pmiss[0] = 0;
+    pmiss[1] = static_cast<double>  (met.Px());
+    pmiss[2] = static_cast<double> (met.Py());
+    pa[0] = static_cast<double> (0);
+    pa[1] = static_cast<double> (vtau_1.Px());
+    pa[2] = static_cast<double> (vtau_1.Py());
+  
+    pb[0] = static_cast<double> (0);
+    pb[1] = static_cast<double> (vtau_2.Px());
+    pb[2] = static_cast<double> (vtau_2.Py());
+  
+
+    mt2->set_momenta(pa, pb, pmiss);
+    mt2->set_mn(0);
+    Float_t MT2=mt2->get_mt2();
+    cout<<" MT2 "<<MT2<<endl;
+    w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
+
+    sumWeightsSR1 += w;
+  
+    cout << "SumWeights : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl;
+
+    if( DecayMode == 2 ){
+
+      TLorentzVector vtau;
+     
+      double had_El_Pt = ( vtau.Pt() );
+
+      w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin(had_El_Pt) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+      w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+      
+      
+      double taum = vtau.M();
+      double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
+      double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
+ 
+      w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));
+
+      sumWeightsEleTau += w;
+    }
+    cout << "SumWeights : " << sumWeightsEleTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsEleTau/nentries << " %)" << endl;
+ 
+    if( DecayMode == 3 ){
+
+      TLorentzVector vtau;
+      double had_Mu_Pt = ( vtau.Pt() );
+
+      w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(had_Mu_Pt) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+      w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+
+      double taum = vtau.M();
+      double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
+      double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
+ 
+     
+      w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
+ 
+
+      sumWeightsMuTau += w;
+ 
+    }
+    cout << "SumWeights : " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
+
+  }
+}
 /** Example of using Tauola to decay taus stored in HEPEVT-like event record */
 int main(){
 
