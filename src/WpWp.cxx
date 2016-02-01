@@ -411,45 +411,46 @@ void LHEF::Loop()
       sumWeightsSR2 += w;
     }
 
-    cout << "SumWeights : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
- 
-    continue;
 
-    double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
-    double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
-    w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
-    w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
-    w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-    w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+ 
+    if(DecayMode == 1 ){
+      w = 1.0;
+      
+      double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
+      double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
+      w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
+      w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+      w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
 
           
  
-    double pa[3];
-    double pb[3];
-    double pmiss[3];
-    pmiss[0] = 0;
-    pmiss[1] = static_cast<double>  (met.Px());
-    pmiss[2] = static_cast<double> (met.Py());
-    pa[0] = static_cast<double> (0);
-    pa[1] = static_cast<double> (vtau_1.Px());
-    pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
   
-    pb[0] = static_cast<double> (0);
-    pb[1] = static_cast<double> (vtau_2.Px());
-    pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
 
-    mt2->set_momenta(pa, pb, pmiss);
-    mt2->set_mn(0);
-    Float_t MT2=mt2->get_mt2();
-    cout<<" MT2 "<<MT2<<endl;
-    w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
+      //cout<<" MT2 "<<MT2<<endl;
+      w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
 
-    sumWeightsSR1 += w;
-  
-    cout << "SumWeights : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl;
+      sumWeightsSR1 += w;
+    }  
 
     if( DecayMode == 2 ){
+      w = 1.0;
 
       TLorentzVector vtau;
      
@@ -468,9 +469,10 @@ void LHEF::Loop()
 
       sumWeightsEleTau += w;
     }
-    cout << "SumWeights : " << sumWeightsEleTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsEleTau/nentries << " %)" << endl;
+
  
     if( DecayMode == 3 ){
+      w = 1.0;
 
       TLorentzVector vtau;
       double had_Mu_Pt = ( vtau.Pt() );
@@ -490,9 +492,13 @@ void LHEF::Loop()
       sumWeightsMuTau += w;
  
     }
-    cout << "SumWeights : " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
+
 
   }
+  cout << "SumWeights : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
+  cout << "SumWeights : " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
+  cout << "SumWeights : " << sumWeightsEleTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsEleTau/nentries << " %)" << endl;
+  cout << "SumWeights : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl;
 }
 /** Example of using Tauola to decay taus stored in HEPEVT-like event record */
 int main(){
