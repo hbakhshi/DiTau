@@ -157,23 +157,23 @@ void LHEF::Loop()
   hEff_MET->SetBinContent( 14 , 1 );
   hEff_MET->SetBinContent( 15 , 1 );
  
-  //  double EffMBins[] = {0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,5000};
-  //  TH1F* hEffHad_h2Eff_Mt2 = new TH1F( "hEff_hh2_Mt2" , "hEff_hh2_Mt2" , 15 , EffMBins );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 1 , 0.007 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 2 , 0.01 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 3 , 0.26 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 4 , 0.57 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 5 , 0.85 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 6 , 0.93 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 7 , 0.92 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 8 , 0.82 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 9 , 0.56 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 10 , 0.27 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 11 , 0.12 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 12 , 0.06 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 13 , 0.03 );
-  // hEffHad_h2Eff_Mt2->SetBinContent( 14 , 0.02 );
-  //  hEffHad_h2Eff_Mt2->SetBinContent( 15 , 0.01);
+    double EffMT2_SR2_Bins[] = {0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,5000};
+    TH1F* hEffHad_h2Eff_Mt2 = new TH1F( "hEff_hh2_Mt2" , "hEff_hh2_Mt2" , 15 , EffMT2_SR2_Bins );
+   hEffHad_h2Eff_Mt2->SetBinContent( 1 , 0.007 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 2 , 0.01 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 3 , 0.26 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 4 , 0.57 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 5 , 0.85 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 6 , 0.93 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 7 , 0.92 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 8 , 0.82 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 9 , 0.56 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 10 , 0.27 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 11 , 0.12 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 12 , 0.06 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 13 , 0.03 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 14 , 0.02 );
+   hEffHad_h2Eff_Mt2->SetBinContent( 15 , 0.01);
 
   double EffMT2Bins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,200,5000};
   TH1F* hEffHad_h1Eff_Mt2 = new TH1F( "hEffhh1_Mt2" , "hEffhh1_Mt2" , 16 , EffMT2Bins );
@@ -195,25 +195,25 @@ void LHEF::Loop()
   hEffHad_h1Eff_Mt2->SetBinContent( 15 , 1.00);
   hEffHad_h1Eff_Mt2->SetBinContent( 16 , 1.00);
 
-  // double EffMBins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,200,5000};
-  // TH1F* hEffHad_lEff_Mt2 = new TH1F( "hEff_hl_Mt2" , "hEff_hl_Mt2" , 16 , EffMBins );
 
-  // hEffHad_lEff_Mt2->SetBinContent( 1 , 0.00 );
-  // hEffHad_lEff_Mt2->SetBinContent( 2 , 0.003 );
-  // hEffHad_lEff_Mt2->SetBinContent( 3 , 0.01 );
-  //hEffHad_lEff_Mt2->SetBinContent( 4 , 0.02 );
-  //hEffHad_lEff_Mt2->SetBinContent( 5 , 0.05 );
-  //hEffHad_lEff_Mt2->SetBinContent( 6 , 0.14 );
-  //hEffHad_lEff_Mt2->SetBinContent( 7 , 0.35 );
-  //hEffHad_lEff_Mt2->SetBinContent( 8 , 0.65 );
-  //hEffHad_lEff_Mt2->SetBinContent( 9 , 0.82 );
-  //hEffHad_lEff_Mt2->SetBinContent( 10 , 0.89 );
-  //hEffHad_lEff_Mt2->SetBinContent( 11 , 0.93 );
-  //hEffHad_lEff_Mt2->SetBinContent( 12 , 0.95 );
-  //hEffHad_lEff_Mt2->SetBinContent( 13 , 0.96 );
-  //hEffHad_lEff_Mt2->SetBinContent( 14 , 0.97 );
-  //hEffHad_lEff_Mt2->SetBinContent( 15 , 0.97);
-  //hEffHad_lEff_Mt2->SetBinContent( 16 , 0.97);
+ TH1F* hEffHad_lEff_Mt2 = new TH1F( "hEff_hl_Mt2" , "hEff_hl_Mt2" , 16 , EffMT2Bins );
+
+   hEffHad_lEff_Mt2->SetBinContent( 1 , 0.00 );
+   hEffHad_lEff_Mt2->SetBinContent( 2 , 0.003 );
+   hEffHad_lEff_Mt2->SetBinContent( 3 , 0.01 );
+   hEffHad_lEff_Mt2->SetBinContent( 4 , 0.02 );
+   hEffHad_lEff_Mt2->SetBinContent( 5 , 0.05 );
+   hEffHad_lEff_Mt2->SetBinContent( 6 , 0.14 );
+  hEffHad_lEff_Mt2->SetBinContent( 7 , 0.35 );
+  hEffHad_lEff_Mt2->SetBinContent( 8 , 0.65 );
+  hEffHad_lEff_Mt2->SetBinContent( 9 , 0.82 );
+  hEffHad_lEff_Mt2->SetBinContent( 10 , 0.89 );
+  hEffHad_lEff_Mt2->SetBinContent( 11 , 0.93 );
+  hEffHad_lEff_Mt2->SetBinContent( 12 , 0.95 );
+  hEffHad_lEff_Mt2->SetBinContent( 13 , 0.96 );
+  hEffHad_lEff_Mt2->SetBinContent( 14 , 0.97 );
+  hEffHad_lEff_Mt2->SetBinContent( 15 , 0.97);
+  hEffHad_lEff_Mt2->SetBinContent( 16 , 0.97);
 
   double Effhh_MBins[] = {0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,5000};
   TH1F* hEffHad_hEff_M = new TH1F( "hEffhh_M" , "hEffhh_M" , 24 , Effhh_MBins );
@@ -408,23 +408,6 @@ void LHEF::Loop()
       double sumMt = tau1Mt + tau2Mt ;
       w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
   
-      sumWeightsSR2 += w;
-    }
-
-
- 
-    if(DecayMode == 1 ){
-      w = 1.0;
-      
-      double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
-      double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
-      w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
-      w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
-      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-      w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
-
-          
- 
       double pa[3];
       double pb[3];
       double pmiss[3];
@@ -444,7 +427,47 @@ void LHEF::Loop()
       mt2->set_mn(0);
       Float_t MT2=mt2->get_mt2();
       //cout<<" MT2 "<<MT2<<endl;
-      w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
+      w *= hEffHad_h2Eff_Mt2->GetBinContent( hEffHad_h2Eff_Mt2->FindBin( (MT2)));
+  
+      
+      sumWeightsSR2 += w;
+    }
+
+
+ 
+    if(DecayMode == 1 ){
+      w = 1.0;
+      
+      double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
+      double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
+      w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
+      w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+        w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+        w *= 0.48;
+        w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+
+          
+ 
+        double pa[3];
+        double pb[3];
+        double pmiss[3];
+        pmiss[0] = 0;
+        pmiss[1] = static_cast<double>  (met.Px());
+        pmiss[2] = static_cast<double> (met.Py());
+        pa[0] = static_cast<double> (0);
+        pa[1] = static_cast<double> (vtau_1.Px());
+        pa[2] = static_cast<double> (vtau_1.Py());
+  
+        pb[0] = static_cast<double> (0);
+        pb[1] = static_cast<double> (vtau_2.Px());
+        pb[2] = static_cast<double> (vtau_2.Py());
+  
+
+        mt2->set_momenta(pa, pb, pmiss);
+        mt2->set_mn(0);
+        Float_t MT2=mt2->get_mt2();
+      //cout<<" MT2 "<<MT2<<endl;
+        w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
 
       sumWeightsSR1 += w;
     }  
@@ -457,6 +480,11 @@ void LHEF::Loop()
       double had_El_Pt = ( vtau.Pt() );
 
       w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin(had_El_Pt) );
+
+       double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
+       double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
+       w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
+       w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
       w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
       
@@ -467,6 +495,27 @@ void LHEF::Loop()
  
       w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));
 
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
+  
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
+  
+
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+       Float_t MT2=mt2->get_mt2();
+      //cout<<" MT2 "<<MT2<<endl;
+      w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin( (MT2)));
+
       sumWeightsEleTau += w;
     }
 
@@ -474,21 +523,49 @@ void LHEF::Loop()
     if( DecayMode == 3 ){
       w = 1.0;
 
-      TLorentzVector vtau;
+       TLorentzVector vtau;
       double had_Mu_Pt = ( vtau.Pt() );
 
       w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(had_Mu_Pt) );
-      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-      w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+      
+       double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
+       double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
+       w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
+       w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+         w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
 
-      double taum = vtau.M();
-      double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
-      double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
+         w *= 0.75; 
+         w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+       
+       double pa[3];
+       double pb[3];
+       double pmiss[3];
+        pmiss[0] = 0;
+        pmiss[1] = static_cast<double>  (met.Px());
+        pmiss[2] = static_cast<double> (met.Py());
+        pa[0] = static_cast<double> (0);
+        pa[1] = static_cast<double> (vtau_1.Px());
+        pa[2] = static_cast<double> (vtau_1.Py());
+  
+        pb[0] = static_cast<double> (0);
+        pb[1] = static_cast<double> (vtau_2.Px());
+        pb[2] = static_cast<double> (vtau_2.Py());
+  
+
+       mt2->set_momenta(pa, pb, pmiss);
+       mt2->set_mn(0);
+       Float_t MT2=mt2->get_mt2();
+      //cout<<" MT2 "<<MT2<<endl;
+       w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
+
+        double taum = vtau.M();
+        double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
+        double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
  
      
-      w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
+        w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
  
-
+      
       sumWeightsMuTau += w;
  
     }
