@@ -27,3 +27,5 @@
 *.out
 *.app
 
+Makefile
+env.sh
