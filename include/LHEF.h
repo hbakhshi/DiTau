@@ -125,7 +125,7 @@ LHEF::LHEF(TTree *tree) : fChain(0)
    if (tree == 0) {
       TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/home/zamiri/mg5/wp1/Events/events.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("../data/events.root");
+         f = new TFile("data/events.root");
       }
       f->GetObject("LHEF",tree);
 

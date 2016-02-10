@@ -1,1 +1,1 @@
-export LD_LIBRARY_PATH=/home/zamiri/TAUOLA/lib/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=../TAUOLA/lib/:$LD_LIBRARY_PATH
