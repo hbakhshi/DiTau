@@ -12,21 +12,45 @@ void Limit(){
       data.SetBinError(2,sqrt(3.0));
 
       //Bin1 muTau bkg from PAS
-      bkg.SetBinContent(1,3.0);
-      bkg.SetBinError(1,1.0);
+      bkg.SetBinContent(1,8.59);
+      bkg.SetBinError(1,sqrt(4.83));
 
       //Bin2 eleTau bkg from PAS
-      bkg.SetBinContent(2,2.0);
-      bkg.SetBinError(2,1.5);
+      bkg.SetBinContent(2,3.52)
+	bkg.SetBinError(2,sqrt(3.39));
 
 
       //Bin1 muTau from WpWp.cxx
-      signal.SetBinContent(1,1.0);
-      signal.SetBinError(1,0.2);
+      signal.SetBinContent(1,75.808);
+      signal.SetBinError(1,sqrt(75.808));
       
       //Bin2 eleTau from WpWp.cxx
-      signal.SetBinContent(2,1.5);
-      signal.SetBinError(2,0.3);
+      signal.SetBinContent(2,53.469);
+      signal.SetBinError(2,sqrt(53.469));
+      
+       //Bin3 SR1
+      data.SetBinContent(3,1.0);
+      data.SetBinError(3,sqrt(1.0));
+
+        //Bin4 SR2
+      data.SetBinContent(4,2.0);
+      data.SetBinError(4,sqrt(2.0));
+
+        //Bin3 SR1 bkg from PAS
+      bkg.SetBinContent(3,1.60);
+      bkg.SetBinError(3,sqrt(0.63));
+
+      //Bin4 SR2 bkg from PAS
+      bkg.SetBinContent(4,5.29);
+      bkg.SetBinError(4,sqrt(1.66));
+
+       //Bin3 SR1 from WpWp.cxx
+      signal.SetBinContent(3,130.89);
+      signal.SetBinError(3,sqrt(130.89);
+      
+      //Bin4  SR2 from WpWp.cxx
+      signal.SetBinContent(4,182.15);
+      signal.SetBinError(4,sqrt(182.15));
 
 	TLimitDataSource* mydatasource = new TLimitDataSource(&signal,&bkg,&data);
 	TConfidenceLevel* myconfidence = TLimit::ComputeLimit(mydatasource,50000);
