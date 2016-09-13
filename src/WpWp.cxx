@@ -115,6 +115,12 @@ void LHEF::Loop()
     if (ientry < 0) break;
     nb = fChain->GetEntry(jentry);   nbytes += nb;
 
+    if ( jentry % 1000 == 0 ){  
+	fprintf(stdout, "\rProcessed events: %6d of %6d ", jentry + 1, nentries);
+	fflush(stdout);
+      }
+ 
+
     TauolaHEPEVTEvent * evt = new TauolaHEPEVTEvent();
     //(PDG_id, status, p_x, p_y, p_z, energy, mass, position of first mother, position of second mother,
     //  position first daugter, last daughter)
@@ -151,8 +157,8 @@ void LHEF::Loop()
     evt->addParticle( wpn_d1 );
     evt->addParticle( wpn_d2 );
 
-    // cout << "event BEFORE decays:"<<endl;
-    // evt->print();
+    //cout << "event BEFORE decays:"<<endl;
+    //evt->print();
 
     evt->decayTaus();
 

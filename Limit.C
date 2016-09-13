@@ -125,21 +125,21 @@ void Limit(int massindex){
 	    << cls->GetBinCenter(last) << " "
 	    << cls->GetBinContent(last) << " " << std::endl;
 
-  Int_t last =Expe0 ->FindLastBinAbove(0.05);
+  last =Expe0 ->FindLastBinAbove(0.05);
   std::cout << last << " "
 	    << Expe0->GetBinLowEdge(last) << " "
 	    << Expe0->GetBinWidth(last) << " "
 	    << Expe0->GetBinCenter(last) << " "
 	    << Expe0->GetBinContent(last) << " " << std::endl;
 
-  Int_t last =Expe_plus1 ->FindLastBinAbove(0.05);
+  last =Expe_plus1 ->FindLastBinAbove(0.05);
   std::cout << last << " "
 	    << Expe_plus1->GetBinLowEdge(last) << " "
 	    << Expe_plus1->GetBinWidth(last) << " "
 	    << Expe_plus1 ->GetBinCenter(last) << " "
 	    << Expe_plus1->GetBinContent(last) << " " << std::endl;
 
-  Int_t last = Expe_minus1->FindLastBinAbove(0.05);
+  last = Expe_minus1->FindLastBinAbove(0.05);
   std::cout << last << " "
 	    <<  Expe_minus1->GetBinLowEdge(last) << " "
 	    <<  Expe_minus1->GetBinWidth(last) << " "
