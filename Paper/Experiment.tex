@@ -1,0 +1,90 @@
+\section{Stransverse mass ($M_{T2}$)}
+
+
+{\bf The text should be updated to address the following items discussed in the meeting.}
+
+
+3 [Bakhshians] Review of experimental results
+
+3.1 4channels
+
+3.1.1 MT2 is used, then explain about MT2
+
+3.2 Efficiencies are reported
+
+3.2.1 how they can be used
+
+
+
+
+
+The first concept we used was $M_{T2}$.The variable $M_{T2}$, sometimes also called "Stransverse mass" is a function of momenta of two visible particles and the missing transverse momentum  in an event. The variable defines as [ref];
+\begin{equation}
+m^2_{T2}(m_{N},\alpha,\beta,\not\!P_{T}) = \displaystyle\min_{p_T+q_T=\not\!P_T} [max[m^2_{T}(\alpha,p),m^2_{T}(\beta,q)]]
+\end{equation}
+
+ 
+where $\alpha$ and $\beta$ are the four momenta of visible particles and  $m_N$ is assumed mass of particle carrying missing transverse momentum (neutrino) that we put it equal to ziro as well as $\not\!P_T$ is missing transverse momenta. where;
+\begin{equation}
+m^2_{T}(\alpha,p) =  m^2_{\alpha}+m^2_N+2(E_T(p)E_T(\alpha)-p_T.\alpha_T)
+\end{equation}
+and transverse energy given by; 
+\begin{equation}
+E_T(p)=\sqrt{p^2_T+m^2_N}
+\end{equation}
+
+In the final state, produced particle of the decay chain corresponds to each branch has three different posibilities: a hadronic tau, an electron or a meun, so the visible part of equation(2) describes as a hadronically decaying channel:$(\tau_{h}  \tau_{h})$ or mixture of a meun or an electron associated with a hadronic tau:$(\ell \tau_{h})$.With this explanation, according to two channels we can rewrite equation(2);
+\begin{equation}
+M_{T2}(m_{\nu})=  \displaystyle\min_{p^{\nu}_T+p^{\bar{\nu}}_T=\not\!P^{miss}_T} [max \{m^1_{T},m^2_{T}\}]
+\end{equation}
+Thus equatin(3) for each branch ($i=1,2$) written as;
+\begin{equation}
+(m^{(i)}_T)^2 = (m^{vis(i)})^2+m^2_{\nu}+2[{E^{vis(i)}_T}{E^{\nu(i)}_{T}}-{p^{vis(i)}_T}.{p^{\nu(i)}_T}]
+\end{equation} 
+ This kinematic mass variable, which is a expandation of the transverse mass variable MT[ref], was characterized to measure the mass of pair-produced particles in situations where both decay to a final state containing the same type of undetected particle(e.g.$\nu_{\tau}$).In other words,$M_{T2}$ introduced to measure the mass of the primary pair-produced, it used to discriminate between w' event and SM bachground events.
+ 
+  \subsection{event selection and efficiencies}
+ 
+ We utilized ExRootAnalysis [ref] for making root files after generation. For calculating efficiency we modelled \cite{CMS:2016saj} for using result of applied cuts and seprating signal region to four sections: SR1 and SR2 which are relate to fully hadronic final state and also e$\tau$ and $\mu\tau$ which are relate to single lepton final state. As much as SM background events that mainly produced by W+jets, intended to have $M_{T2}<90GeV$, the distribution of $M_{T2}$ in first signal region SR1 demands $M_{T2}>90GeV$. however, the second signal region SR2 requires sum of two transverse mass of visible particles to take $\sum{m^{\tau(i)}_T}=(m^{\tau_{1h}}_T + m^{\tau_{2h}}_T>250GeV)$ in addition of lower $M_{T2}$ cut $M_{T2}<90GeV$ to distinguish signal and background process in the case that there is a small mass difference ($\Delta m$) between W' and neutrino.The former cut, moreover, can veto b-tagged jets produced in $t{\bar{t}}$ events in law $M_{T2}$. 
+ for rejecting W+jets and b-tagged backgrounds in $\ell\tau$($\mu\tau  or  e\tau$) channels, $M_{T2}>90GeV$ and $m^{\tau_{h}}_T>200 GeV$ have been applied. Despite fully hadronic channel SR2, the cut $M_{T2}<90GeV$ has not been used, because of higher level of background. The other event selections set to suppress backgrounds such as $t{\bar{t}}$+jets,Drell-yan and QCD mutijets and Z+jets and etc which based on data in[ref] list below. we abbrevited selection requirement in different channels. Items in $\ell\tau$ channels:
+ 
+ \begin{itemize}
+ 	\item[-] $P_T>20GeV , |\eta|<2.3$ for isolated $\tau_{h}$ as well as $|\eta|<2.1$ for isolated $e or \mu$
+ 	\item[-] $P_T>10GeV$ to supress events with additional lepton in Zboson decays
+ 	\item[-] $15<{MT_{\ell{\tau_h}}}<45GeV$ to reject b-tagged jets 
+ \end{itemize}
+ 
+ and items in $\tau_{h}  \tau_{h}$ channels:
+ 
+ \begin{itemize}
+ 	\item[-] $P_T>45GeV , |\eta|<2.1$ and have oposite charge for $\tau$ isolation discrimination
+ 	\item[-] $P_T>10GeV , |\eta|<2.4$ to suppress events with extra $e or \mu$ in diboson decays
+ 	\item[-] $15<{MT_{di-{\tau_h}}}<45GeV$ for Z veto
+ 	\item[-] $P^{miss}_T>30GeV, M_{T2}>40GeV$ for Zveto and rejecting QCD multijets 
+ 	\item[-] $MT_{\tau_h \tau_h}>15GeV$ for discarding Drell-yan productions and QCD mutijets
+ 	\item[-] $\Delta\phi>1$ for excluding QCD mutijets and W+jets
+ \end{itemize}
+ 
+ The calculation of total efficiencies in different signal regions that introduced above has been performed by using effecienies for each variable which measured due to the requirement cuts in various channels from [ref].The results have been displayed in table II.
+ 
+ \begin{table}[htb]
+ 	\centering
+ 	\begin{tabular}{|ccccc|}
+ 		\hline 
+ 		Mass Wprime  & EfficiencySR1  & EfficiencySR2 & Efficiency $\mu$$\tau$ & Efficiency e $\tau$ \\\hline 
+ 		100 & 0.0458899 \% & 0.614535 \% & 0.011183 \% & 0.00395297 \% \\
+ 		130& 0.175685 \%& 0.760096 \%& 0.0442253 \%& 0.0271803 \% \\
+ 		160& 0.410097 \%& 0.846774 \%& 0.135277 \%& 0.0756016 \%\\
+ 		190& 0.715545 \%& 0.909511 \%& 0.228263 \%& 0.189238 \% \\
+ 		220& 1.06748 \%& 0.968385 \%& 0.43919 \%& 0.331424 \% \\
+ 		250& 1.47652 \%& 0.983356 \%& 0.632992 \%& 0.516825 \%\\ 
+ 		280& 1.80193 \%& 1.02289 \%& 0.861038 \%& 0.703542 \% \\
+ 		310& 2.14124 \%& 1.05743 \%& 1.12391 \%& 0.865479 \% \\
+ 		340& 2.45444 \%& 1.03443 \%& 1.46279 \%& 1.18334 \%\\ 
+ 		370& 2.76015 \%& 1.00684 \%& 1.6293 \%& 1.38178 \% \\
+ 		400 &2.99298 \%& 0.97716 \% &1.87191 \%& 1.62458 \% \\
+ 		\hline
+ 	\end{tabular}
+ 	\caption{Cross sections and decay widths corresponding to various W' masses. \label{tab1} }
+ \end{table}
+ 

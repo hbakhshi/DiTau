@@ -1,1 +1,106 @@
-our paper will appear here.
+
+\documentclass[twocolumn,showpacs,preprintnumbers,amsmath,amssymb]{revtex4}
+%\documentclass[preprint,showpacs,preprintnumbers,amsmath,amssymb]{revtex4}
+
+%\documentclass[twocolumn,english,showpacs,preprintnumbers,amsmath,amssymb,floatfix]{revtex4}
+
+% Some other (several out of many) possibilities
+%\documentclass[preprint,aps]{revtex4}
+%\documentclass[preprint,aps,draft]{revtex4}
+%\documentclass[prb]{revtex4}% Physical Review B
+
+%------------------------------------------------------
+\usepackage{graphicx}% Include figure files
+%\usepackage{subfig}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{grffile}
+\usepackage{color}
+\usepackage{colordvi}
+\usepackage{amsmath,amssymb}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{float}
+
+\usepackage{footnote}
+ \makesavenoteenv{environmentname}
+
+
+\usepackage{hyperref}
+
+\usepackage[T1]{fontenc} % if needed
+
+
+
+\begin{document}
+
+\title{studying wprime... }
+
+
+
+
+\author{Hamed Bakhshian$^{a}$}
+\email{}
+
+\author{Saeed Paktinat$^{b}$}
+\email{saeid.paktinat@cern.ch}
+
+\author{Leila Zamiri$^{c}$}
+\email{leila.zamiri@gmail.com}
+
+
+
+
+
+
+\date{\today}
+
+\begin{abstract}We present a comparative analysis of 
+the .....
+
+ \keywords{..., ..., cross section}
+\end{abstract}
+
+
+\pacs{}
+\maketitle
+
+
+
+
+
+\input{Introduction}
+
+\input{Experiment}
+
+\input{Simulation}
+
+\input{Results}
+
+\input{Conclusion}
+
+
+\section{Acknowledgments}
+% The bibliography will probably be heavily edited during typesetting.
+% We'll parse it and, using the arxiv number or the journal data, will
+% query inspire, trying to verify the data (this will probalby spot
+% eventual typos) and retrive the document DOI and eventual errata.
+% We however suggest to always provide author, title and journal data:
+% in short all the informations that clearly identify a document.
+
+
+\bibliography{WPrimePairBib}
+%\begin{thebibliography}{99}
+
+% Please avoid comments such as "For a review'', "For some examples",
+% "and references therein" or move them in the text. In general,
+% please leave only references in the bibliography and move all
+% accessory text in footnotes.
+
+% Also, please have only one work for each \bibitem.
+
+
+%\end{thebibliography}
+\end{document}
