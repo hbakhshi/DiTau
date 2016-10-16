@@ -1,0 +1,34 @@
+\begin{thebibliography}{3}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Sullivan}(2002)}]{Sullivan:2002jt}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Sullivan}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D66}},
+  \bibinfo{pages}{075011} (\bibinfo{year}{2002}), \eprint{hep-ph/0207290}.
+
+\bibitem[{\citenamefont{Collaboration}(2016)}]{CMS:2016saj}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Collaboration}}
+  (\bibinfo{collaboration}{CMS}) (\bibinfo{year}{2016}).
+
+\bibitem[{\citenamefont{Alwall et~al.}(2011)\citenamefont{Alwall, Herquet,
+  Maltoni, Mattelaer, and Stelzer}}]{Alwall:2011uj}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Alwall}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Herquet}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Maltoni}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Mattelaer}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Stelzer}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{06}}, \bibinfo{pages}{128}
+  (\bibinfo{year}{2011}), \eprint{1106.0522}.
+
+\end{thebibliography}
