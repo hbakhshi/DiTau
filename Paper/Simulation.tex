@@ -39,17 +39,17 @@ mass=220GeV)
 
 
 
+{\small MADGRAPH 5} is the new version of {\small MADGRAPH} matrix generator [ref]. We used MadGraph [ref] for simulating signal and backgrands events beacause implementation of accurate simulation for both signals and backgrounds is based on the ability of {\small MADGRAPH}. It is the tool with stronge power of extracting physics from the data and making precise prediction for physics Beyond the Standard Model {\small (BSM)}. Generating tree-level matrix elements and measurement of cross sections for classes of renormalizable models and establishment of {\small FEYNRULES} [ref] to perform new physics models and finaly making links between {\small FEYNRULES} and matrix elements and standardizing them by Universal F{\small EYNRULES} Output format, the {\small (UFO)} [ref], are some of the significant benefits of {\small MADGRAPH 5}.
 
+The model which performed for signal generation was $W'$ Effective model {\small (WEff-UFO)}, that is an extension of Standard Model {\small (SM)}. {\small UFO} is the flexible format of models goes beyond existing formats in order to provide the abstract information about the particles, parameters and vertices of the model that can be translate into {\small PYTHON} [ref] and achieve by matrix-element generators. 
 
+As it is mentioned in last section, the signal of interest is $ pp\rightarrow {\tiny W' W'} $, where in $\%64$ of probability, each $ W'$ decays hadronically to a tau and neutrino ($ W' \rightarrow \tau_{h} \nu $) and in $\%37$ of cases it decays leptonically to a meun or electron and a neutrino ($ W' \rightarrow \ell(e\mu) \nu  $). we calculated cross section of signal by considering different cuts in generation process and determined measure of increasing or suppressing of couplings after applying cuts. The generation implemented with 10000 events and at a center-of-mass energy of $ \sqrt{s}=8 $ TeV in each run. we also considered purely left-handed coupling  for $ g_L $ and $ g_R $ values.  The right-handed (left-handed) $W'$-boson couplings to quarks and leptons are considered to be $g'_R = 0$ and $g'_L = g_{(SM)}$ respectively, in other words decays to quarks and leptons are both included. A variety masses of $W'$ in range of 100 through 400 GeV were used for measuring cross sections.  Decay width or life time which is depends on decay modes or channels has a crucial role in conservation laws for appropriate quantum numbers, coupling strength of the decay process, and kinematic constraints , so decay widths corresponding to each mass of $ W' $ estimated concurrently by {\small MADGRAPH 5} and those calculated with this model compered to [ref] which investigated the LO and NLO partial and total width according to their branching fractions and cross sections for  $ W'_{R,L}\rightarrow t \bar{b},\bar{t}b $  and there was a good agreement among different values.  In table I we list the cross sections and total width for the decay of $ W' $ to both quarks and leptons in different mass. 
 
-As it mentioned in last section, the signal of intrest is $ pp\rightarrow W' $, where in $\%64$ of probability, W' decays hadronically to a tau and neutrino ($ W' \rightarrow \tau_{h} \nu $) and in $\%37$ of cases it decays leptonically to a meun or electron and a neutrino ($ W' \rightarrow \ell(e\mu) \nu  $). We used MadGraph \cite{Alwall:2011uj} for simulating signal and backgrands events. we calculated cross section of signal by considering different cuts in generation process and determined measure of increasing or suppressing of couplings after applying cuts. 
-The cross section of signal calulated in various mass of W' and corresponding to every mass of W', decay widths estimated concurrently. Decay width or life time which is depends on decay modes or channels has a crucial role In table I we list the cross sections and total width for the decay of W' to both quarks and leptons in different mass.
-
- \begin{table}[htb]
+\begin{table}[htb]
 	\centering
 \begin{tabular}{|ccc|}
 \hline 
-Mass wprime  &  Decay Width  &  Cross section\\
+Mass wprime(GeV)  &  Decay Width  &  Cross section(pb)\\
 \hline 
 100 & 2.50885 & 0.9696+-0.003  \\
 130 & 3.26166& 0.3441+-0.0012 \\
@@ -64,8 +64,66 @@ Mass wprime  &  Decay Width  &  Cross section\\
  400 &12.46427 &0.001451+-5.5e-06\\
 \hline
 \end{tabular}
-\caption{Cross sections and decay widths corresponding to various W' masses. \label{tab1} }
+\caption{Cross sections and decay widths corresponding to various $W'$ masses. \label{tab1} }
 \end{table}
 
  
-Befor explanation about details, definition of some variable and concepts which used for collecting our data should be represent. 
+
+ 
+ In order to do a precise evaluation of cross sections sensibility under changes of coupling values, we estimated once half and again doubled left-handed coupling values. As can be seen in table 2 and 3, the amounts of cross section becamed 16 times (one-sixteenth) bigger (smaller) than cross sections in table I respectively.
+  \begin{table}[htb]
+	\centering
+\begin{tabular}{|ccc|}
+\hline 
+Mass wprime(GeV)  &  Decay Width  &  Cross section(pb)\\
+\hline 
+
+ 100& 0.62721& 0.06084+-0.00018\\
+  130& 0.81542& 0.02156+-7e-05\\
+  160& 1.00362& 0.009247+-3.7e-05\\
+  190& 1.20944& 0.004351+-1.8e-05\\
+  220& 1.47035& 0.00208+-8.3e-06\\
+  250& 1.74718 &0.001077+-4.4e-06\\
+  280& 2.02593& 0.0005993+-2.2e-06\\
+  310& 2.30270& 0.000351+-1.3e-06\\
+ 340& 2.57655& 0.0002166+-8.3e-07\\
+ 370& 2.84757& 0.0001383+-5e-07\\
+  400& 3.11605& 9.119e-05+-3.1e-07\\ 
+
+\hline
+\end{tabular}
+\caption{Cross sections and decay widths in the case that $ g_R=0 , g_L=0.3241986  $ (half of the standard model) for various $W'$ masses. \label{tab1} }
+\end{table}
+  
+ \begin{table}[htb]
+	\centering
+\begin{tabular}{|ccc|}
+\hline 
+Mass wprime(GeV)  &  Decay Width  &  Cross section(pb)\\
+\hline 
+100& 1.003553e+01& 15.08+-0.045\\
+130 &1.304687e+01& 5.297+-0.017\\
+160& 1.605799e+01& 2.26+-0.0072 \\
+190&1.93512e+01& 1.064+-0.0025\\
+220& 2.352564e+01& 0.5078+-0.0014\\
+250& 2.795486e+01& 0.2619 ± 0.00072\\
+280& 3.241489e+01& 0.1451 ± 0.00043\\
+310& 3.684301e+01& 0.08521 ± 0.0002\\
+340& 4.122483e+01& 0.05223 ± 0.00013\\
+370& 4.556095e+01&0.03324 +- 9.314e-05\\
+400& 4.985667e+01& 0.02192 ± 5.1e-05\\ 
+
+\hline
+\end{tabular}
+\caption{Cross sections and decay widths in the case that $ g_R=0 , g_L=1.2967944  $ (twice of the standard model) for various $W'$ masses. \label{tab1} }
+\end{table}
+
+to be continued...
+.
+.
+.
+.
+.
+.
+
+
