@@ -1,9 +1,12 @@
 
-\documentclass[twocolumn,showpacs,preprintnumbers,amsmath,amssymb]{revtex4}
-%\documentclass[preprint,showpacs,preprintnumbers,amsmath,amssymb]{revtex4}
-
+%\documentclass[twocolumn,showpacs,preprintnumbers,amsmath,amssymb]{revtex4}
+%
 %\documentclass[twocolumn,english,showpacs,preprintnumbers,amsmath,amssymb,floatfix]{revtex4}
-
+%\documentclass[preprint,showpacs,preprintnumbers]{revtex4}
+\RequirePackage{lineno}
+%\usepackage{lineno}
+\documentclass[preprint,showpacs,preprintnumbers]{revtex4}
+\usepackage{blindtext}
 % Some other (several out of many) possibilities
 %\documentclass[preprint,aps]{revtex4}
 %\documentclass[preprint,aps,draft]{revtex4}
@@ -24,6 +27,7 @@
 \usepackage{lscape}
 \usepackage{float}
 
+
 \usepackage{footnote}
  \makesavenoteenv{environmentname}
 
@@ -35,7 +39,11 @@
 
 
 \begin{document}
+%\pagewiselinenumbers	
 
+\linenumbers
+%\leftlinenumbers
+%\makeLineNumbersLeft
 \title{studying wprime... }
 
 
@@ -67,9 +75,6 @@ the .....
 
 \pacs{}
 \maketitle
-
-
-
 
 
 \input{Introduction}
@@ -104,4 +109,5 @@ the .....
 
 
 %\end{thebibliography}
+\blindtext
 \end{document}
