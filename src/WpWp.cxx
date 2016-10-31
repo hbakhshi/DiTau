@@ -6,6 +6,7 @@
 #include "Tauola/TauolaHEPEVTParticle.h"
 #include "Tauola/TauolaHEPEVTEvent.h"
 
+//#include "tauola_print_parameters.h"
 using namespace std;
 using namespace Tauolapp;
 
@@ -16,9 +17,6 @@ using namespace Tauolapp;
 #include <TStyle.h>
 #include <TCanvas.h>
 #include <TLorentzVector.h>
-
-
-
 
 inline TH1F*  CreateHistogram( TString name , TString title , int nPoints, double* xBins, double* yValues ){
   TH1F* h = new TH1F( name , title , nPoints , xBins );
@@ -45,70 +43,70 @@ void LHEF::Loop()
 
 
   //=========================================table 8============================================
-  double EffPtBins[] = {20,30,40,60,80,120,160,200,5000}; // table 8, 1st column
-  double EffHad_TauPtMax[] = { 0.0,0.0,0.03,0.10,0.18,0.22,0.24,0.26 }; // table 8, 4th column
-  TH1F* hEffHad_TauPtMax = CreateHistogram( "hEffHad_TauPtMax" , "hEffHad_TauPtMax" , 8 , EffPtBins , EffHad_TauPtMax );
+  double EffPtBins[] = {0,10,20,30,40,60,80,120,160,200,5000}; // table 8, 1st column
+  double EffHad_TauPtMax[] = { 0.0,0.0,0.0,0.0,0.02,0.08,0.12,0.15,0.16,0.17 }; // table 8, 4th column
+  TH1F* hEffHad_TauPtMax = CreateHistogram( "hEffHad_TauPtMax" , "hEffHad_TauPtMax" , 10 , EffPtBins , EffHad_TauPtMax );
 
-  double EffHad_TauPtMin[] = { 0.00,0.00,0.61,0.69,0.70,0.70,0.71,0.71 }; //table 8, 5th column
-  TH1F* hEffHad_TauPtMin = CreateHistogram( "hEffHad_TauPtMin" , "hEffHad_TauPtMin" , 8 , EffPtBins , EffHad_TauPtMin );
+  double EffHad_TauPtMin[] = { 0.52,0.54,0.56,0.55,0.61,0.69,0.70,0.70,0.71,0.71 }; //table 8, 5th column
+  TH1F* hEffHad_TauPtMin = CreateHistogram( "hEffHad_TauPtMin" , "hEffHad_TauPtMin" , 10 , EffPtBins , EffHad_TauPtMin );
 
-  double Eff_El_Pt[] = {  0.27 ,0.68 ,0.75 ,0.80 ,0.83 ,0.86 ,0.87 ,0.89 }; //table 8, 2nd column
-  TH1F* hEff_El_Pt = CreateHistogram( "hEff_El" , "hEff_El" , 8 , EffPtBins , Eff_El_Pt );
+  double Eff_El_Pt[] = {  0.15 ,0.14 ,0.27 ,0.68 ,0.75 ,0.80 ,0.83 ,0.85 ,0.87 ,0.89 }; //table 8, 2nd column
+  TH1F* hEff_El_Pt = CreateHistogram( "hEff_El" , "hEff_El" , 10 , EffPtBins , Eff_El_Pt );
 
 
-  double Eff_Mu_Pt[] = {0.80,0.86,0.87,0.89,0.90,0.90,0.91,0.92 }; //table 8, 3rd column
-  TH1F* hEff_Mu_Pt = CreateHistogram( "hEff_Mu" , "hEff_Mu" , 8 , EffPtBins , Eff_Mu_Pt );
+  double Eff_Mu_Pt[] = { 0.05,0.72,0.80,0.85,0.87,0.88,0.89,0.90,0.91,0.92 }; //table 8, 3rd column
+  TH1F* hEff_Mu_Pt = CreateHistogram( "hEff_Mu" , "hEff_Mu" , 10 , EffPtBins , Eff_Mu_Pt );
 
-  double Eff_lTau_HadTau_Pt[] = {0.16 , 0.29 , 0.34 , 0.38 , 0.40 , 0.41 , 0.41 , 0.41 }; //table 8, 4th column
-  TH1F* hEff_lTau_HadTau_Pt = CreateHistogram( "hEff_lTau_HadTau_Pt" , "hEff_lTau_HadTau_Pt" , 8 , EffPtBins , Eff_lTau_HadTau_Pt );
+  double Eff_lTau_HadTau_Pt[] = {0.001 , 0.004 , 0.11 , 0.22 , 0.24 , 0.25 , 0.27 , 0.28 ,0.28,0.29  }; //table 8, 4th column
+  TH1F* hEff_lTau_HadTau_Pt = CreateHistogram( "hEff_lTau_HadTau_Pt" , "hEff_lTau_HadTau_Pt" , 10 , EffPtBins , Eff_lTau_HadTau_Pt );
   //=====================================end of table 8 ===========================================
   
 
   //=========================================table 9============================================  
-  double EffMETBins[] = {0,10,20,30,40,50,60,70,80,90,100,120,140,160,5000};// table 9, 1st column 
-  double Eff_MET[] = { 0.52, 0.58, 0.68, 0.79, 0.87, 0.93, 0.95, 0.97, 0.98,0.98,0.99, 0.99, 0.99,1.0 }; //table 9, 2nd column
-  TH1F* hEff_MET = CreateHistogram( "hEff_MET" , "hEff_MET" , 14 , EffMETBins , Eff_MET );
+  double EffMETBins[] = {0,10,20,30,40,50,60,70,80,90,100,120,140,160,200,5000};// table 9, 1st column 
+  double Eff_MET[] = { 0.52, 0.57, 0.68, 0.79, 0.87, 0.93, 0.95, 0.97, 0.98,0.98,0.99, 0.99, 0.99,1,1 }; //table 9, 2nd column
+  TH1F* hEff_MET = CreateHistogram( "hEff_MET" , "hEff_MET" , 15 , EffMETBins , Eff_MET );
   //=========================================end of table 9============================================
 
 
   //=========================================table 10============================================
-  double Effhh_MBins[] = {0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,5000}; //first column
-  double EffHad_hEff_M[] = {  0.00,0.00,0.20,0.90,0.94,0.98,1.00,1.00,0.99, 0.95, 0.68, 0.18, 0.06, 0.03, 0.05, 0.15, 0.40, 0.78, 0.92, 0.95, 0.98, 0.99, 1.00 }; // last column
-  TH1F* hEffHad_hEff_M = CreateHistogram( "hEffhh_M" , "hEffhh_M" , 23 , Effhh_MBins , EffHad_hEff_M  );
+  double Effhh_MBins[] = {0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,5000}; //first column
+  double EffHad_hEff_M[] = {  0.00,0.25,0.60,0.90,0.94,0.98,1.00,1.00,0.99, 0.95, 0.68, 0.18, 0.06, 0.03, 0.05, 0.15, 0.41, 0.79, 0.93, 0.96, 0.98, 0.99, 0.99, 1.00 }; // last column
+  TH1F* hEffHad_hEff_M = CreateHistogram( "hEffhh_M" , "hEffhh_M" , 24 , Effhh_MBins , EffHad_hEff_M  );
   
-  double EffHad_l_M[] = { 0.00,0.10,0.23,0.97,0.99,1.00,0.99,0.98,0.84,0.16, 0.04, 0.02, 0.01, 0.04, 0.23, 0.78, 0.91, 0.96, 0.97, 0.98, 1.00, 1.00, 1.00 }; // 2nd column
-  TH1F* hEffHad_l_M = CreateHistogram( "hEffhl_M" , "hEffhl_M" , 23 , Effhh_MBins , EffHad_l_M );
+  double EffHad_l_M[] = { 0.00,0.26,0.65,0.96,0.99,0.99,0.99,0.98,0.83,0.15, 0.03, 0.02, 0.02, 0.04, 0.22, 0.78, 0.92, 0.95, 0.97, 0.99, 1.00, 1.00, 1.00, 1.00 }; // 2nd column
+  TH1F* hEffHad_l_M = CreateHistogram( "hEffhl_M" , "hEffhl_M" , 24 , Effhh_MBins , EffHad_l_M );
   //=========================================end of table 10============================================
 
 
   //=========================================table 11============================================
-  double EffMT2Bins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,5000};//first column
-  double EffHad_h1Eff_Mt2[] = { 0.00,0.01,0.01,0.03,0.07,0.17,0.44,0.73,0.88,0.94,0.97,0.98,0.98,0.99,1.00  }; //3rd column
-  TH1F* hEffHad_h1Eff_Mt2 = CreateHistogram( "hEffhh1_Mt2" , "hEffhh1_Mt2" , 15 , EffMT2Bins , EffHad_h1Eff_Mt2 );
+  double EffMT2Bins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,200,5000};//first column
+  double EffHad_h1Eff_Mt2[] = { 0.00,0.01,0.02,0.04,0.08,0.19,0.45,0.73,0.88,0.94,0.97,0.98,0.99,0.99,1.00,1.00  }; //3rd column
+  TH1F* hEffHad_h1Eff_Mt2 = CreateHistogram( "hEffhh1_Mt2" , "hEffhh1_Mt2" , 16 , EffMT2Bins , EffHad_h1Eff_Mt2 );
   
-  double EffHad_lEff_Mt2[] = { 0.00,0.002,0.01,0.02,0.05,0.13,0.35,0.65,0.82,0.90,0.93,0.95,0.96,0.97,0.97 };//2nd column
-  TH1F* hEffHad_lEff_Mt2 = CreateHistogram( "hEff_hl_Mt2" , "hEff_hl_Mt2" , 15 , EffMT2Bins , EffHad_lEff_Mt2 );
+  double EffHad_lEff_Mt2[] = { 0.00,0.003,0.01,0.02,0.05,0.14,0.35,0.65,0.82,0.89,0.93,0.95,0.96,0.97,0.97,0.97 };//2nd column
+  TH1F* hEffHad_lEff_Mt2 = CreateHistogram( "hEff_hl_Mt2" , "hEff_hl_Mt2" , 16 , EffMT2Bins , EffHad_lEff_Mt2 );
   //=========================================end of table 11============================================  
 
 
   //=========================================table 12============================================
-  double Effhl_MTBins[] = {100,125,150,170,190,200,210,230,250,275,300,5000}; // first column
-  double EffHad_lEffMT[] = { 0.01, 0.03, 0.09, 0.26, 0.51, 0.67, 0.82, 0.91, 0.94, 0.97, 1.00}; // second column
-  TH1F* hEffHad_lEffMT = CreateHistogram( "hEffhl_MT" , "hEffhl_MT" , 11 , Effhl_MTBins , EffHad_lEffMT );
+  double Effhl_MTBins[] = {0,50,100,125,150,170,190,210,230,250,275,300,5000}; // first column
+  double EffHad_lEffMT[] = { 0.35, 0.1, 0.05, 0.07, 0.14, 0.32, 0.55, 0.68, 0.83, 0.91, 0.95, 0.97 , 0.99}; // second column
+  TH1F* hEffHad_lEffMT = CreateHistogram( "hEffhl_MT" , "hEffhl_MT" , 12 , Effhl_MTBins , EffHad_lEffMT );
   //=========================================end of table 12============================================
 
 
   //=========================================table 13============================================
-  double EffMT2_SR2_Bins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,5000};
-  double EffHad_h2Eff_Mt2[] = {  0.08,0.43,0.75,0.82,0.81,0.72,0.49,0.24,0.11,0.05,0.03,0.02,0.01,0.01,0.00 };
+  double EffMT2_SR2_Bins[] = {0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,5000};
+  double EffHad_h2Eff_Mt2[] = {  0.007,0.01,0.26,0.57,0.85,0.93,0.92,0.82,0.56,0.27,0.12,0.06,0.03,0.02,0.01 };
   TH1F* hEffHad_h2Eff_Mt2 = CreateHistogram( "hEff_hh2_Mt2" , "hEff_hh2_Mt2" , 15 , EffMT2_SR2_Bins , EffHad_h2Eff_Mt2 );
   //=========================================end of table 13============================================
 
 
   //=========================================table 14============================================
-  double EffsigmaMTBins[] = {0,80,180,200,210,220,230,240,250,260,270,280,290,300,320,340,360,380,400,5000};//first column
-  double EffsigmaHad_hEffMT[] = {  0.00,0.16,0.19,0.25,0.30,0.36,0.43,0.52,0.55,0.61,0.67,0.68,0.73,0.76,0.77,0.80,0.81,0.81,0.82};
-  TH1F* hEffsigmaHad_hEffMT = CreateHistogram( "hEffhh_sigMT" , "hEffhh_sigMT" , 19 , EffsigmaMTBins , EffsigmaHad_hEffMT );
+  double EffsigmaMTBins[] = {0,60,80,100,120,140,160,180,200,210,220,230,240,250,260,270,280,290,300,320,340,360,380,400,420,440,460,480,500,5000};//first column
+  double EffsigmaHad_hEffMT[] = {  0.00,0.84,0.68,0.45,0.29,0.22,0.18,0.22,0.28,0.34,0.41,0.49,0.59,0.63,0.70,0.76,0.78,0.83,0.87,0.88,0.91,0.92,0.92,0.93,0.93,0.88,0.89,0.93,0.81 };
+  TH1F* hEffsigmaHad_hEffMT = CreateHistogram( "hEffhh_sigMT" , "hEffhh_sigMT" , 29 , EffsigmaMTBins , EffsigmaHad_hEffMT );
   //=========================================end of table 14============================================
 
 
@@ -116,6 +114,12 @@ void LHEF::Loop()
     Long64_t ientry = LoadTree(jentry);
     if (ientry < 0) break;
     nb = fChain->GetEntry(jentry);   nbytes += nb;
+
+    if ( jentry % 1000 == 0 ){  
+	fprintf(stdout, "\rProcessed events: %6d of %6d ", jentry + 1, nentries);
+	fflush(stdout);
+      }
+ 
 
     TauolaHEPEVTEvent * evt = new TauolaHEPEVTEvent();
     //(PDG_id, status, p_x, p_y, p_z, energy, mass, position of first mother, position of second mother,
@@ -153,38 +157,13 @@ void LHEF::Loop()
     evt->addParticle( wpn_d1 );
     evt->addParticle( wpn_d2 );
 
-    // cout << "event BEFORE decays:"<<endl;
-    // evt->print();
+    //cout << "event BEFORE decays:"<<endl;
+    //evt->print();
 
     evt->decayTaus();
 
     // cout << "event AFTER decays:"<<endl;
     // evt->print();
-
-    TLorentzVector nTau_1;
-    TLorentzVector nTau_2;
-
- for(int ti =0 ; ti < wp_p -> getDaughters().size() ; ti++){
-   TauolaParticle* t =  wp_p ->getDaughters()[ti] ;
-  	if(t -> getPdgID() == 16 )
-	  nTau_1.SetXYZT( wpp_d2->getPx() , wpp_d2->getPy() , wpp_d2->getPz() , wpp_d2->getE() );
-      
-	if(t -> getPdgID() == -16 )
-	  nTau_2.SetXYZT( wpn_d2->getPx() , wpn_d2->getPy() , wpn_d2->getPz()  , wpn_d2->getE() );
-      }
-
-for(int ti =0 ; ti < wp_n -> getDaughters().size() ; ti++){
-   TauolaParticle* t =  wp_n ->getDaughters()[ti] ;
-  	if(t -> getPdgID() == 16 )
-	  nTau_1.SetXYZT( wpp_d2->getPx() , wpp_d2->getPy() , wpp_d2->getPz() , wpp_d2->getE() );
-      
-	if(t -> getPdgID() == -16 )
-	  nTau_2.SetXYZT( wpn_d2->getPx() , wpn_d2->getPy() , wpn_d2->getPz()  , wpn_d2->getE() );
-      }
-
-    TLorentzVector MET = -( nTau_1 + nTau_2 );
-
- 
 
 
     int tau1_decaymode = 0 ; //0h , 1e ,2m
@@ -252,7 +231,7 @@ for(int ti =0 ; ti < wp_n -> getDaughters().size() ; ti++){
       continue;
 
 
-    TLorentzVector met = ( -(nTau_1 + nTau_2 ))+(-(vtau_1 + vtau_2) );
+    TLorentzVector met = -( vtau_1 + vtau_2 );
     TLorentzVector tauSystem = vtau_1 + vtau_2 ;
     double systemMass = tauSystem.M();
 
@@ -260,47 +239,44 @@ for(int ti =0 ; ti < wp_n -> getDaughters().size() ; ti++){
 
       double tauptmax = max( vtau_1.Pt() , vtau_2.Pt() );
       double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
-
-     
       w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
-       w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
-       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+      w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
 
-       //   w *= 0.56 ; //from table 15
+      w *= 0.56 ; //from table 15
 
-       w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+      w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
 
-        double pa[3];
-        double pb[3];
-        double pmiss[3];
-        pmiss[0] = 0;
-        pmiss[1] = static_cast<double>  (met.Px());
-        pmiss[2] = static_cast<double> (met.Py());
-        pa[0] = static_cast<double> (0);
-        pa[1] = static_cast<double> (vtau_1.Px());
-        pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
   
-        pb[0] = static_cast<double> (0);
-        pb[1] = static_cast<double> (vtau_2.Px());
-        pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
 
-        mt2->set_momenta(pa, pb, pmiss);
-        mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
       //cout<<" MT2 "<<MT2<<endl;
-        w *= hEffHad_h2Eff_Mt2->GetBinContent( hEffHad_h2Eff_Mt2->FindBin( (MT2)));
+      w *= hEffHad_h2Eff_Mt2->GetBinContent( hEffHad_h2Eff_Mt2->FindBin( (MT2)));
   
-        double tau1m = vtau_1.M();
-        double tau2m = vtau_2.M();
-        double tau1et = sqrt( vtau_1.Pt()*vtau_1.Pt() + tau1m*tau1m );
-        double tau2et = sqrt( vtau_2.Pt()*vtau_2.Pt() + tau2m*tau2m );
-        double tau1Mt = sqrt( tau1m*tau1m + 2*(tau1et*met.Pt() - vtau_1.Px()*met.Px() - vtau_1.Py()*met.Py() ) );
-        double tau2Mt = sqrt( tau2m*tau2m + 2*(tau2et*met.Pt() - vtau_2.Px()*met.Px() - vtau_2.Py()*met.Py() ) );
-        double sumMt = tau1Mt + tau2Mt ;
-        w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
+      double tau1m = vtau_1.M();
+      double tau2m = vtau_2.M();
+      double tau1et = sqrt( vtau_1.Pt()*vtau_1.Pt() + tau1m*tau1m );
+      double tau2et = sqrt( vtau_2.Pt()*vtau_2.Pt() + tau2m*tau2m );
+      double tau1Mt = sqrt( tau1m*tau1m + 2*(tau1et*met.Pt() - vtau_1.Px()*met.Px() - vtau_1.Py()*met.Py() ) );
+      double tau2Mt = sqrt( tau2m*tau2m + 2*(tau2et*met.Pt() - vtau_2.Px()*met.Px() - vtau_2.Py()*met.Py() ) );
+      double sumMt = tau1Mt + tau2Mt ;
+      w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
       
-
       sumWeightsSR2 += w;
     }
 
@@ -314,31 +290,31 @@ for(int ti =0 ; ti < wp_n -> getDaughters().size() ; ti++){
       w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
       w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-       // w *= 0.48;
+      w *= 0.48;
       
-       w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+      w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
 
           
  
-        double pa[3];
-        double pb[3];
-        double pmiss[3];
-        pmiss[0] = 0;
-        pmiss[1] = static_cast<double>  (met.Px());
-        pmiss[2] = static_cast<double> (met.Py());
-        pa[0] = static_cast<double> (0);
-        pa[1] = static_cast<double> (vtau_1.Px());
-        pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
   
-        pb[0] = static_cast<double> (0);
-        pb[1] = static_cast<double> (vtau_2.Px());
-        pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
 
-       mt2->set_momenta(pa, pb, pmiss);
-       mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
-     
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
+      //cout<<" MT2 "<<MT2<<endl;
       w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
 
       sumWeightsSR1 += w;
@@ -352,36 +328,36 @@ for(int ti =0 ; ti < wp_n -> getDaughters().size() ; ti++){
      
       w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin( vele.Pt() ) );
       w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
-       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
 
-       // w *= 0.75 ; 
+      w *= 0.75 ; 
 
-       w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+      w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
 
-       double pa[3];
-       double pb[3];
-       double pmiss[3];
-       pmiss[0] = 0;
-       pmiss[1] = static_cast<double>  (met.Px());
-       pmiss[2] = static_cast<double> (met.Py());
-       pa[0] = static_cast<double> (0);
-       pa[1] = static_cast<double> (vtau_1.Px());
-       pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
   
-       pb[0] = static_cast<double> (0);
-       pb[1] = static_cast<double> (vtau_2.Px());
-       pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
 
-       mt2->set_momenta(pa, pb, pmiss);
-       mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
-       w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin( (MT2)));
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
+      w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin( (MT2)));
 
-       double taum  = vtau.M();
-       double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
-       double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
-       w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));
+      double taum  = vtau.M();
+      double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
+      double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
+      w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));
 
       sumWeightsEleTau += w;
     }
@@ -396,50 +372,46 @@ for(int ti =0 ; ti < wp_n -> getDaughters().size() ; ti++){
       w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(vmuo.Pt() ) );
       w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );      
       
-       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
 
-       // w *= 0.75; 
+      w *= 0.75; 
       
-       w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+      w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
        
-       double pa[3];
-       double pb[3];
-       double pmiss[3];
-       pmiss[0] = 0;
-       pmiss[1] = static_cast<double>  (met.Px());
-       pmiss[2] = static_cast<double> (met.Py());
-       pa[0] = static_cast<double> (0);
-       pa[1] = static_cast<double> (vtau_1.Px());
-       pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
       
-       pb[0] = static_cast<double> (0);
-       pb[1] = static_cast<double> (vtau_2.Px());
-       pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
-       mt2->set_momenta(pa, pb, pmiss);
-       mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
-       w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
+      w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
 
-       double taum = vtau.M();
-       double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
-       double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
+      double taum = vtau.M();
+      double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
+      double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
       
-       w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
+      w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
       sumWeightsMuTau += w;
     }
 
 
   }
-cout << "SumWeights SR1  : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl; 
-cout << "SumWeights SR2  : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
+  cout << "SumWeights SR2  : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
   cout << "SumWeights MuTau: " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
   cout << "SumWeights ElTau: " << sumWeightsEleTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsEleTau/nentries << " %)" << endl;
-  
+  cout << "SumWeights SR1  : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl;
 }
-
-
-
 /** Example of using Tauola to decay taus stored in HEPEVT-like event record */
 int main(){
   
