@@ -173,6 +173,15 @@ void LHEF::Loop()
 	  nTau_2.SetXYZT( wpn_d2->getPx() , wpn_d2->getPy() , wpn_d2->getPz()  , wpn_d2->getE() );
       }
 
+for(int ti =0 ; ti < wp_n -> getDaughters().size() ; ti++){
+   TauolaParticle* t =  wp_n ->getDaughters()[ti] ;
+  	if(t -> getPdgID() == 16 )
+	  nTau_1.SetXYZT( wpp_d2->getPx() , wpp_d2->getPy() , wpp_d2->getPz() , wpp_d2->getE() );
+      
+	if(t -> getPdgID() == -16 )
+	  nTau_2.SetXYZT( wpn_d2->getPx() , wpn_d2->getPy() , wpn_d2->getPz()  , wpn_d2->getE() );
+      }
+
     TLorentzVector MET = -( nTau_1 + nTau_2 );
 
  
