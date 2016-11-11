@@ -251,16 +251,16 @@ void LHEF::Loop()
 
 
      
-       w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
-       w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+      // w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
+      //w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
        hTauPt_hadhad->Fill  (tauptmax) ;
        hTauPt_hadhad->Fill  (tauptmin) ;
 
-       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+       // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
        hMET_hadhad->Fill( met.Pt());
        //   w *= 0.56 ; //from table 15
 
-       w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+       // w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
 
         double pa[3];
         double pb[3];
@@ -282,7 +282,7 @@ void LHEF::Loop()
        Float_t MT2=mt2->get_mt2();
       //cout<<" MT2 "<<MT2<<endl;
 
-        w *= hEffHad_h2Eff_Mt2->GetBinContent( hEffHad_h2Eff_Mt2->FindBin( (MT2)));
+       // w *= hEffHad_h2Eff_Mt2->GetBinContent( hEffHad_h2Eff_Mt2->FindBin( (MT2)));
 	hMT2_hadhad->Fill(MT2);
 
         double tau1m = vtau_1.M();
@@ -292,7 +292,7 @@ void LHEF::Loop()
         double tau1Mt = sqrt( tau1m*tau1m + 2*(tau1et*met.Pt() - vtau_1.Px()*met.Px() - vtau_1.Py()*met.Py() ) );
         double tau2Mt = sqrt( tau2m*tau2m + 2*(tau2et*met.Pt() - vtau_2.Px()*met.Px() - vtau_2.Py()*met.Py() ) );
         double sumMt = tau1Mt + tau2Mt ;
-        w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
+	// w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
       
 
       sumWeightsSR2 += w;
@@ -307,13 +307,13 @@ void LHEF::Loop()
       double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
       
   
-      w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
-      w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+      // w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
+      // w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
      
-      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+      // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
        // w *= 0.48;
       
-       w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+      // w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
 
           
  
@@ -349,16 +349,16 @@ void LHEF::Loop()
 
       
      
-      w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin( vele.Pt() ) );
-      w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
+      // w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin( vele.Pt() ) );
+      // w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
       // hTauPt_lhad->Fill (vtau.Pt());
        hTauPt_lhad->Fill (vele.Pt());
 
-       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+       // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
        hMET_lhad->Fill( met.Pt() );
        // w *= 0.75 ; 
 
-       w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+       // w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
 
        double pa[3];
        double pb[3];
@@ -378,13 +378,13 @@ void LHEF::Loop()
        mt2->set_momenta(pa, pb, pmiss);
        mt2->set_mn(0);
        Float_t MT2=mt2->get_mt2();
-       w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin ((MT2)));
+       // w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin ((MT2)));
        hMT2_lhad->Fill(MT2);
 
        double taum  = vtau.M();
        double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
        double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
-       w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));
+       // w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));
 
       sumWeightsEleTau += w;
     }
@@ -398,16 +398,16 @@ void LHEF::Loop()
       
       
 
-      w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(vmuo.Pt() ) );
-      w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
+      //   w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(vmuo.Pt() ) );
+      //   w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
       // hTauPt_lhad->Fill (vtau.Pt());
        hTauPt_lhad->Fill (vmuo.Pt());      
       
-       w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
+       // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
        hMET_lhad->Fill( met.Pt() );
        // w *= 0.75; 
       
-       w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+       // w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
        
        double pa[3];
        double pb[3];;
@@ -426,18 +426,26 @@ void LHEF::Loop()
        mt2->set_momenta(pa, pb, pmiss);
        mt2->set_mn(0);
        Float_t MT2=mt2->get_mt2();
-       w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
+       // w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
        hMT2_lhad->Fill(MT2);
 
        double taum = vtau.M();
        double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
        double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
       
-       w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
+       //w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
       sumWeightsMuTau += w;
     }
 
- TFile* fout = new TFile("out.root" , "RECREATE");
+    TFile* fout = new TFile("out2.root" , "RECREATE",0,0);
+ hTauPt_hadhad->SetLineColor(kGreen);
+ hTauPt_lhad->SetLineColor(kGreen);
+
+ hMET_hadhad->SetLineColor(kGreen);
+ hMET_lhad->SetLineColor(kGreen);
+
+ hMT2_hadhad->SetLineColor(kGreen);
+ hMT2_lhad->SetLineColor(kGreen);
 
  hTauPt_hadhad->Draw();
  hTauPt_lhad->Draw();
