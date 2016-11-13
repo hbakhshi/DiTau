@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{7}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -26,5 +26,43 @@
 \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Aad}} \bibnamefont{et~al.}
   (\bibinfo{collaboration}{ATLAS}) (\bibinfo{year}{2016}),
   \eprint{ATLAS-CONF-2016-061}.
+
+\bibitem[{\citenamefont{Alwall et~al.}(2014)\citenamefont{Alwall, Frederix,
+  Frixione, Hirschi, Maltoni, Mattelaer, Shao, Stelzer, Torrielli, and
+  Zaro}}]{Alwall:2014hca}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Alwall}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Frederix}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Frixione}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Hirschi}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Maltoni}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Mattelaer}},
+  \bibinfo{author}{\bibfnamefont{H.~S.} \bibnamefont{Shao}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Stelzer}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Torrielli}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zaro}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{07}}, \bibinfo{pages}{079}
+  (\bibinfo{year}{2014}), \eprint{1405.0301}.
+
+\bibitem[{\citenamefont{Alwall et~al.}(2011)\citenamefont{Alwall, Herquet,
+  Maltoni, Mattelaer, and Stelzer}}]{Alwall:2011uj}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Alwall}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Herquet}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Maltoni}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Mattelaer}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Stelzer}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{06}}, \bibinfo{pages}{128}
+  (\bibinfo{year}{2011}), \eprint{1106.0522}.
+
+\bibitem[{\citenamefont{Christensen and Duhr}(2009)}]{Christensen:2008py}
+\bibinfo{author}{\bibfnamefont{N.~D.} \bibnamefont{Christensen}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Duhr}},
+  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{180}},
+  \bibinfo{pages}{1614} (\bibinfo{year}{2009}), \eprint{0806.4194}.
+
+\bibitem[{\citenamefont{Khachatryan et~al.}(2015)}]{Khachatryan:2014tva}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Khachatryan}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{CMS}), \bibinfo{journal}{Phys.
+  Rev.} \textbf{\bibinfo{volume}{D91}}, \bibinfo{pages}{092005}
+  (\bibinfo{year}{2015}), \eprint{1408.2745}.
 
 \end{thebibliography}
