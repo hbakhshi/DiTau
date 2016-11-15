@@ -7,17 +7,17 @@
 % [ ] 3.2.1 how they can be used
 
 
-This study reinterprets the results of the results of the ``Search for electroweak production of charginos in final states with two tau leptons in pp collisions at sqrt(s) = 8 TeV''\ref{Khachatryan:2016trj} for the production of two \wprime s decaying into two $\tau$ leptons. In this section the experimental analysis is reviewed.
+This study reinterprets the results of the ``Search for electroweak production of charginos in final states with two tau leptons in pp collisions at sqrt(s) = 8 TeV''\ref{Khachatryan:2016trj} for the production of two \wprime bosons decaying into two $\tau$ leptons. In this section the experimental analysis is reviewed.
 
-The $\tau$ lepton decays to leptons (either to a $\mu$ or an electron) in $\approx 35\%$ of the cases and to hadrons in the rest of cases. So $\approx 90\%$ of events with two $\tau$ leptons decay to $\ell\tau_h$ or $(\tau_h \tau_h)$. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. For the decay of the $\tau$, the TAUOLA(REF) package has been used. More details are described in section 3(REF).
+The $\tau$ lepton decays to leptons (either to a $\mu$ or an electron) in $\approx 35\%$ of the cases and to hadrons in the rest of cases. So $\approx 90\%$ of events with two $\tau$ leptons decay to $\ell\tau_h$ or $\tau_h \tau_h$. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. For the decay of the $\tau$ lepton, the TAUOLA(REF) package has been used. More details are described in section 3(REF).
 
-Missing transverse energy (MET) is also used for this study. This event propery has been measured as the vectorial sum of the transverse momentums ($p_{T}$) of neutrinos in the event. In addition to the neutrinos that are produced from the direct decay of \wprime, the decay products of the $\tau$ lepton are also considered.
+Missing transverse energy (MET) is also used for this study. This event property has been measured as the vectorial sum of the transverse momenta ($p_{T}$) of neutrinos in the event. In addition to the neutrinos that are produced from the direct decay of \wprime, the decay products of the $\tau$ lepton are also considered. %[check it, https://github.com/hbakhshi/DiTau/blob/master/src/WpWp.cxx#L234]
 
-Having the momentum of the decay products of $\tau$ leptons and the MET, we can calculate all the needed varaiables used in the reference analysis. Stransverse mass ($M_{T2}$)(REF) is the main variable that is used to categorize events. It is a function of momenta of two visible particles and the missing transverse momentum in the event. It is defined as [ref];
+Having the momentum of the decay products of $\tau$ leptons and the MET, we can calculate all the needed varaiables used in the reference analysis. Stransverse mass ($M_{T2}$)(REF) is the main variable that is used to categorize events. It is a function of momentum of two visible particles and the missing transverse momentum in the event. It is defined as [ref];
 \begin{equation}
 m^2_{T2}(m_{N},\alpha,\beta,\not\!P_{T}) = \displaystyle\min_{p_T+q_T=\not\!P_T} [max[m^2_{T}(\alpha,p),m^2_{T}(\beta,q)]]
 \end{equation}
-Where $\alpha$ and $\beta$ are the four momenta of the visible decay products of the $\tau$ lepton decay and  $m_N$ is the mass of the invisible particle (neutrino) which is set to zero for this study. $\not\!P_T$ is missing transverse momenta. The transverse mass ($m_{T}$) is defined as :
+Where $\alpha$ and $\beta$ are the four momenta of the visible decay products of the $\tau$ lepton decay and  $m_N$ is the mass of the invisible particle (neutrino) which is set to zero for this study. $\not\!P_T$ is missing transverse momentum. The transverse mass ($m_{T}$) is defined as :
 \begin{equation}
 m^2_{T}(\alpha,p) =  m^2_{\alpha}+m^2_N+2(E_T(p)E_T(\alpha)-p_T.\alpha_T)
 \end{equation}
@@ -26,7 +26,7 @@ and transverse energy is given by;
 E_T(p)=\sqrt{p^2_T+m^2_N}
 \end{equation}
 
-In the reference analysis, the events are categorized in 4 signal regions (SR). For the e$\tau_h$ and $\mu\tau_h$, it has been found that cutting the events with $M_{T2}<90 GeV$ is useful to discard the standard model background events. But for $(\tau_h \tau_h)$ events, two separate SRs are defined : events with $M_{T2}>90 GeV$ or events with $M_{T2}<90 GeV$ and $\sum m_{T} > 200 GeV$ where $\sum m_{T}$ is the sum of the transverse mass of two $\tau$ leptons.
+In the reference analysis, the events are categorized in 4 signal regions (SR). For the e$\tau_h$ and $\mu\tau_h$, it has been found that cutting the events with $M_{T2}<90 GeV$ is useful to discard the standard model background events. But for $\tau_h \tau_h$ events, two separate SRs are defined as events with $M_{T2}>90 GeV$ and events with $40<M_{T2}<90 GeV$ and $\sum m_{T} > 250 GeV$ where $\sum m_{T}$ is the sum of the transverse mass of two $\tau$ leptons.
 
 In addition to the selection cuts that are applied for the lepton selection and event categorization, some other cuts to veto any extra lepton or b-tagged jet  are also applied. 
 
