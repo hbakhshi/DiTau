@@ -3,12 +3,15 @@ from ROOT import TFile, TH1, TCanvas, gStyle, TLatex, gPad, TLegend
 #gStyle.SetOpt
 
 masses = [100,190,310,400]
-hists = { "hTauPt_hadhad":["#tau p_{T}" , "#tau#tau channel" , True] ,
+hists = { "hTauPt_hadhad-max":["#tau p_{T}max" , "#tau#tau channel" , True] ,
+          "hTauPt_hadhad-min":["#tau p_{T}min" , "#tau#tau channel" , True],
           "hTauPt_lhad":["lepton p_{T}" , "lepton#tau channel", True] ,
+          "hTauPt_ll":["#hadronictau p_{T}" , "lepton#tau channel", True] ,
           "hMET_lhad":["MET (GeV)" , "lepton#tau channel", True] ,
           "hMET_hadhad":["MET (GeV)" , "#tau#tau channel", True] ,
           "hMT2_lhad":["MT2 (GeV)" , "lepton#tau channel", True] ,
           "hMT2_hadhad":["MT2 (GeV)" , "#tau#tau channel", False] }
+
 files = { mass:TFile.Open("out%d.root"%(mass)) for mass in masses }
 canvases = { h:[TCanvas(h)] for h in hists }
 
