@@ -13,3 +13,87 @@
 5.2.2 Mass/(mixing angle) exclusion limit
 
 5.3 quote the limit when the coupling is doubled
+
+In this paper we used TAUOLA package~\cite{Jadach:1990mz,Golonka:2003xt,Jadach:1993hs} for simulation of our signal as well as root-v5.34.23 package[?]. TAUOLA is a library of Monte Carlo programs for leptonic and semileptonic decays of $\tau$-lepton. Fully information about final state consist of neutrinos, distribution of moderator particles and complete spin structure throughout the decay are some of the advantages of using this package. ROOT is a specialized software package that was put out at CERN to answer the purpose of particle physics community, especially for the data processing of the experimental set-ups located at the LHC. It is a $C^{++}$ library that contains a number of useful classes.  
+
+ Calculation of efficiencies (total efficiency is defined by the fraction of events registered at the detector with respect to the number of events emitted by a radiation source) has been done for each channel: SR1, SR2, electron $\tau$ and meun $\tau$. It would be useful to report the amounts of efficiencies for different states of our left-handed generation, table \ref{eff-SM}  which expresses the values for  $ g_R=0 , g_L=0.6483972 $ (standard model) and table \ref{eff-half} , \ref{eff-twice} that express the values in the case that  $ g_R=0 , g_L=0.3241986 $ (half of the standard model) and $ g_R=0 , g_L=1.2967944 $ (twice of the standard model).
+
+  \begin{table}[htb]
+ 	\centering
+  	\begin{tabular}{|ccccc|}
+  		\hline 
+  		Mass Wprime & EfficiencySR1 & EfficiencySR2 & Efficiency $\mu$$\tau$ & Efficiency e $\tau$ \\
+\hline 
+  		100& 0.0458899\%& 0.614535\%& 0.011183\% & 0.00395297\%\\
+ 		130& 0.175685\%& 0.760096\%& 0.0442253\%& 0.0271803\%\\
+  		160& 0.410097\%& 0.846774\%& 0.135277\%& 0.0756016\%\\
+  		190& 0.715545\%& 0.909511\%& 0.228263\%& 0.189238\%\\
+  		220& 1.06748\%& 0.968385\%& 0.43919\%& 0.331424\%\\
+  		250& 1.47652\%& 0.983356\%& 0.632992\%& 0.516825\%\\ 
+  		280& 1.80193\%& 1.02289\%& 0.861038\%& 0.703542\%\\
+ 		310& 2.14124\%& 1.05743\%& 1.12391\%& 0.865479\%\\
+  		340& 2.45444\%& 1.03443\%& 1.46279\%& 1.18334\%\\ 
+  		370& 2.76015\%& 1.00684\%& 1.6293\%& 1.38178\%\\
+  		400& 2.99298\%& 0.97716\%& 1.87191\%& 1.62458\%\\
+
+  		\hline
+  	\end{tabular}
+  	\caption{Efficiencies for $ g_R=0 , g_L=0.6483972 $ (standard model) corresponding to various W' masses. \label{eff-SM} }
+  \end{table}
+
+
+   \begin{table}[htb]
+ 	\centering
+  	\begin{tabular}{|ccccc|}
+  		\hline 
+  		Mass Wprime  & EfficiencySR1  & EfficiencySR2 & Efficiency $\mu$$\tau$ & Efficiency e $\tau$ \\
+                \hline 
+100& 0.0466468\%& 0.614088\%& 0.0121252\%& 0.00439394\%\\
+130& 0.168083\%& 0.787008\%& 0.0358624\%& 0.0263049\%\\
+160& 0.425137\%& 0.866324\%& 0.109585\%& 0.0757335\%\\
+190& 0.733011\%& 0.947878\%& 0.255279\%& 0.189645\%\\
+220& 1.07375\%& 1.0056\%& 0.408889\%& 0.307338\%\\
+250& 1.4634\%& 1.00851\%& 0.610881\%& 0.518507\%\\
+280& 1.78294\%& 1.00314\%& 0.939803\%& 0.643615\%\\
+310& 2.14762\%& 1.02447\%& 1.08377\%& 0.919447\%\\
+340& 2.43738\%& 1.02806\%& 1.31608\%& 1.15041\%\\
+370& 2.72227\%& 0.998014\%& 1.62246\%& 1.35562\%\\
+400& 3.07908\%& 0.946486\%& 1.85765\%& 1.59617\%\\
+  	
+  	\hline
+  	\end{tabular}
+  	\caption{Efficiencies for $ g_R=0 , g_L=0.3241986 $ (half of the standard model) corresponding to various W' masses. \label{eff-half} }
+  \end{table}
+ 
+
+ \begin{table}[htb]
+ 	\centering
+  	\begin{tabular}{|ccccc|}
+  		\hline 
+  		Mass Wprime  & EfficiencySR1  & EfficiencySR2 & Efficiency $\mu$$\tau$ & Efficiency e $\tau$ \\
+ \hline 
+100& 0.063603\%& 0.62375\%& 0.0166494\%& 0.00632205\%\\
+130& 0.198096\%& 0.762918\%& 0.0462929\%& 0.0374592\%\\
+160& 0.459054\%& 0.87826\%& 0.13438\%& 0.0971543\%\\
+190& 0.76574\%& 0.961177\%& 0.275422\%& 0.197196\%\\
+220& 1.09848\%& 0.971835\%& 0.443421\%& 0.363646\%\\
+250& 1.48481\%& 0.976986\%& 0.623507\%& 0.522248\%\\
+280& 1.79262\%& 0.994131\%& 0.870993\%& 0.742251\%\\
+310& 2.16712\%& 0.99002\%& 1.09347\%& 0.892889\%\\
+340& 2.41482\%& 1.0063\%& 1.35593\%& 1.11143\%\\
+370& 2.72269\%&0.969054\%& 1.63439\%& 1.35672\%\\
+400& 2.98607\%& 0.961773\%& 1.86216\%& 1.60924\%\\
+  	
+  	\hline
+  	\end{tabular}
+  	\caption{Efficiencies for $ g_R=0 , g_L=1.2967944 $ (twice of the standard model) corresponding to various W' masses. \label{eff-twice} }
+  \end{table}
+  
+
+   
+
+Almost every Particle Physics analysis uses some technique for separating signal from background. One type of approach that can be made towards claiming a discovery is "Hypothesis Testing". Hypothesis Testing is normally applied at the end-result of the experiment to test the hypothesis by establishing a confidence range for a particular variable at some specifed level. Upper limits based on the CLs method~\ref{0954-3899-28-10-313,Mistlberger:2012rs} were used in numerous publications of experimental results obtained at particle accelerator experiments such as LEP, the Tevatron and the LHC, most notable in the searches for new particles. 
+
+Discovery and exclusion potentials, false exclusion rates, etc that form the frequentist-motivated CLs method are derived from the probability density functions (pdfs) of $−2ln(Q)$, where $Q=L(s+b)/L(b)$ is the ratio of likelihoods for the two hypotheses of interest for the exclusion and discovery tests.
+
+The signal measured by using cross sections and efficiencies obtained from 8 TeV run of LHC and with 18.1 $fb^{-1}$ and 19.6 $fb^{-1}$ of integrated luminosity for purely hadronic channel and $\tau$-lepton channel. We used CLs method, an approximate confidence in the signal+background hypothesis for excluding signal in confidence level with probability of 95\%.
