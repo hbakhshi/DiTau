@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -59,10 +59,25 @@
   \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{180}},
   \bibinfo{pages}{1614} (\bibinfo{year}{2009}), \eprint{0806.4194}.
 
-\bibitem[{\citenamefont{Khachatryan et~al.}(2015)}]{Khachatryan:2014tva}
-\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Khachatryan}}
-  \bibnamefont{et~al.} (\bibinfo{collaboration}{CMS}), \bibinfo{journal}{Phys.
-  Rev.} \textbf{\bibinfo{volume}{D91}}, \bibinfo{pages}{092005}
-  (\bibinfo{year}{2015}), \eprint{1408.2745}.
+\bibitem[{\citenamefont{Davidson et~al.}(2012)\citenamefont{Davidson, Nanava,
+  Przedzinski, Richter-W\c{a}s, and W\c{a}s}}]{Davidson:2010rw}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Davidson}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Nanava}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Przedzinski}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Richter-W\c{a}s}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{W\c{a}s}},
+  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{183}},
+  \bibinfo{pages}{821} (\bibinfo{year}{2012}), \eprint{1002.0543}.
+
+\bibitem[{\citenamefont{Brun and Rademakers}(1997)}]{Brun:1997pa}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Brun}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Rademakers}},
+  \bibinfo{journal}{Nucl. Instrum. Meth.} \textbf{\bibinfo{volume}{A389}},
+  \bibinfo{pages}{81} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Mistlberger and Dulat}(2012)}]{Mistlberger:2012rs}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Mistlberger}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Dulat}}
+  (\bibinfo{year}{2012}), \eprint{1204.3851}.
 
 \end{thebibliography}
