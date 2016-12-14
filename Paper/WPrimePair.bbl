@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{13}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -69,11 +69,45 @@
   \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{183}},
   \bibinfo{pages}{821} (\bibinfo{year}{2012}), \eprint{1002.0543}.
 
+\bibitem[{\citenamefont{Jadach et~al.}(1990)\citenamefont{Jadach, Kuhn, and
+  Was}}]{Jadach:1990mz}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Jadach}},
+  \bibinfo{author}{\bibfnamefont{J.~H.} \bibnamefont{Kuhn}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Was}},
+  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{64}},
+  \bibinfo{pages}{275} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Golonka et~al.}(2006)\citenamefont{Golonka, Kersevan,
+  Pierzchala, Richter-Was, Was, and Worek}}]{Golonka:2003xt}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Golonka}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kersevan}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Pierzchala}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Richter-Was}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Was}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Worek}},
+  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{174}},
+  \bibinfo{pages}{818} (\bibinfo{year}{2006}), \eprint{hep-ph/0312240}.
+
+\bibitem[{\citenamefont{Jadach et~al.}(1993)\citenamefont{Jadach, Was, Decker,
+  and Kuhn}}]{Jadach:1993hs}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Jadach}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Was}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Decker}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~H.} \bibnamefont{Kuhn}},
+  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{76}},
+  \bibinfo{pages}{361} (\bibinfo{year}{1993}).
+
 \bibitem[{\citenamefont{Brun and Rademakers}(1997)}]{Brun:1997pa}
 \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Brun}} \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Rademakers}},
   \bibinfo{journal}{Nucl. Instrum. Meth.} \textbf{\bibinfo{volume}{A389}},
   \bibinfo{pages}{81} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Read}(2002)}]{0954-3899-28-10-313}
+\bibinfo{author}{\bibfnamefont{A.~L.} \bibnamefont{Read}},
+  \bibinfo{journal}{Journal of Physics G: Nuclear and Particle Physics}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{2693} (\bibinfo{year}{2002}),
+  \urlprefix\url{http://stacks.iop.org/0954-3899/28/i=10/a=313}.
 
 \bibitem[{\citenamefont{Mistlberger and Dulat}(2012)}]{Mistlberger:2012rs}
 \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Mistlberger}} \bibnamefont{and}
