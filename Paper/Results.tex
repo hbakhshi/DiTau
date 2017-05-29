@@ -13,11 +13,17 @@
 5.2.2 Mass/(mixing angle) exclusion limit
 
 5.3 quote the limit when the coupling is doubled
+% root-v5.34.23 package 
 
 
-In this paper we used TAUOLA package~\cite{Davidson:2010rw,Jadach:1990mz,Golonka:2003xt,Jadach:1993hs} for simulation of our signal as well as root-v5.34.23 package \cite{Brun:1997pa}. TAUOLA is a library of Monte Carlo programs for leptonic and semileptonic decays of $\tau$-lepton. Fully information about final state consist of neutrinos, distribution of moderator particles and complete spin structure throughout the decay are some of the advantages of using this package. ROOT is a specialized software package that was put out at CERN to answer the purpose of particle physics community, especially for the data processing of the experimental set-ups located at the LHC. It is a $C^{++}$ library that contains a number of useful classes.  
 
- Calculation of efficiencies (total efficiency is defined by the fraction of events registered at the detector with respect to the number of events emitted by a radiation source) has been done for each channel: SR1, SR2, electron $\tau$ and meun $\tau$. It would be useful to report the amounts of efficiencies for different states of our left-handed generation, table \ref{eff-SM}  which expresses the values for  $ g_R=0 , g_L=0.6483972 $ (standard model) and table \ref{eff-half} , \ref{eff-twice} that express the values in the case that  $ g_R=0 , g_L=0.3241986 $ (half of the standard model) and $ g_R=0 , g_L=1.2967944 $ (twice of the standard model).
+In this paper the TAUOLA package~\cite{Davidson:2010rw,Jadach:1990mz,Golonka:2003xt,Jadach:1993hs} is used for simulating the $\tau$ decay. It simulates the hadronic and leptonic decay of the $\tau$ lepton and provides full information about final state particles including neutrinos and mediator particles. It also considers spin information of the decay products in simulating the angular distribution of the decay products.
+
+Using the \wprime samples generated via MadGraph as explained in section \ref{sec:simulation} and decaying $\tau$ leptons using the TAUOLA package, we are ready to measure the efficiency of the selection for different channels for different \wprime masses. For this purpose, the visible momentum of the hadronic decaying $\tau$ is defined as the original $\tau$ momentum before decay subtracted by the momentum of the Neutrinos in the decay chain. The missing energy of the event is also defined as the negative of the sum of the visible $p_{T}$ of the two $\tau$ leptons. Havin these information, one can construct all the needed variables like MT$_2$ or the transverse mass of the leptons. 
+
+For each event, the probabilty of passing the selection cuts for a given signal region can be obtained using the cut efficiency tables of the experimental paper \cite{Khachatryan:2016trj}. In that paper, the efficiency of applying each cut on the reconstructed properties of the event is reported as a function of the generator level value of that property. It makes it very easy and accurate to take into account the detector effects that are always difficult to model. As claimed in that paper, we can consider all the cuts independent and multiply the efficiency of different cuts to obtain the full selection efficiency for different channels and signal regions.
+
+This was done for different \wprime masses and for different coupling strengths. You can see the resulting efficiencies for the standar-model like scenario in table \ref{eff-SM}. The results for the case where coupling is two times or half of the standard-model are reported in tables \ref{eff-twice} and \ref{eff-half} respectively.
 
   \begin{table}[htb]
  	\centering
@@ -89,49 +95,9 @@ In this paper we used TAUOLA package~\cite{Davidson:2010rw,Jadach:1990mz,Golonka
   	\end{tabular}
   	\caption{Efficiencies for $ g_R=0 , g_L=1.297 $ (twice of the standard model) corresponding to various W' masses. \label{eff-twice} }
   \end{table}
-  
-
-   
-
-Almost every Particle Physics analysis uses some technique for separating signal from background. One type of approach that can be made towards claiming a discovery is "Hypothesis Testing". Hypothesis Testing is normally applied at the end-result of the experiment to test the hypothesis by establishing a confidence range for a particular variable at some specifed level. Upper limits based on the CLs method~\cite{0954-3899-28-10-313,Mistlberger:2012rs} were used in numerous publications of experimental results obtained at particle accelerator experiments such as LEP, the Tevatron and the LHC, most notable in the searches for new particles. 
-
-%Discovery and exclusion potentials, false exclusion rates, etc that form the frequentist-motivated CLs method are derived from the probability density functions (pdfs) of $−2ln(Q)$, where $Q=L(s+b)/L(b)$ is the ratio of likelihoods for the two hypotheses of interest for the exclusion and discovery tests.
-
-In this paper, the signal measured by using cross sections and efficiencies obtained from 8 TeV run of LHC and with 18.1 $fb^{-1}$ and 19.6 $fb^{-1}$ of integrated luminosity for purely hadronic channel and $\tau$-lepton channel. We used CLs method, an approximate confidence in the signal+background hypothesis for excluding signal points in confidence level with probability of 95\%. Exclusion at 95\% confidence level or CLs<0.05 Means that the probability to observe more events than seen in the data with the signal+background hypothesis (normalized to the probability in the background hypothesis only) is less than 5\%. Data yields and background preditions with uncertainties in the four signal regions of search obtained from~\cite{Khachatryan:2016trj} and have shown in \ref{tab:yields}. The symetric uncertainties for signal assumed to be 20\% for \lepTau channel and 25\% for \tauTau channel. 
-
-\begin{table}[htb]
-	\centering
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline 
-		\wprime  &e\Tau &  $\mu\Tau$ & \tauTau SR1 & \tauTau SR2 \\
-		\hline 
-	         Background &3.52&8.59&1.58&7.07\\     
-		 Backgrounds Error& 3.39&4.83&0.65&2.25\\
-		 Observed& 3&5&1&2\\
-		
-		\hline
-	\end{tabular}
-	\caption{Data yields and background predictions with errors for \lepTau and \tauTau channels. \label{tab:yields} }
-\end{table}
- 
-In particle physic, sigma is used to represent standard deviation. Standard deviation measures the distribution of data points around a mean, or average, and can be thought of as how "wide" the distribution of points or values is. A sample with a high standard deviation is more spread out—it has more variability, and a sample with a low standard deviation clusters more tightly around the mean. The graph \ref{mixtwice} below shows the the upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production in $\pm\sigma$ when the coupling constant were doubled. As an individual can see in this graph the excluded mass of observed upper limit is $\wprime=320GeV$.
- We have done all this process for the two other situation that are mentioned before, when the coupling constants were halfed and also doubled. For the latter, no point is excluded, but for former the excluded observed mass was 360GeV.
-for the mixture angles, in the case that $g_R=30^\circ,g_L=60^\circ$ and its complement the excluded mass of \wprime were about 310 GeV, however we measured ?? in the case that $g_R=45^\circ,g_L=45^\circ$. the graph {\bf ref} displays the exclution limit of mixture angles at different masses of \wprime.
 
 
-\begin{figure}[!ht]
-\centering
-%\subfigure[{MET-hadronic channel}]{\label{mix30b}
-\includegraphics*[width=.45\textwidth]{figs/mixtwice.pdf}
-\hspace{3mm}
-%\subfigure[{MET-$\tau$ lepton channel}]{\label{met-lh}
-\includegraphics*[width=.45\textwidth]{figs/mixtwiceb.pdf}
-\caption{Upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production for doubled coupling constant}
-\label{fig:mixtwice}
-\end{figure}
-
-
-for the mixture angles,we have considered four mixture angles $0^\circ, 30^\circ, 45^\circ$ and $60^\circ$ for measuring cross section, efficieny and signal. for mixture angle of $90^\circ$ there is not any interaction with quarks, in other words it is compeletly right-handed. The efficiencies have been calculated for  $30^\circ, 45^\circ$ and $60^\circ$ have shown in tables \ref{eff-mix30} , \ref{eff-mix45} and \ref{eff-mix60} respectively.
+Selection efficiencies are also calculated for different mixture angles. For that we have considered four mixture angles : $0^\circ, 30^\circ, 45^\circ$ and $60^\circ$. The mixing angle of $90^\circ$ is not considered, because in that case there is not any interaction with leptons. The mixing angle of $0^\circ$ is the full left-handed scenario, for which efficiencies are reported in table~\label{eff-SM}.  The selection efficiencies for  $30^\circ, 45^\circ$ and $60^\circ$ have been reported in tables \ref{eff-mix30} , \ref{eff-mix45} and \ref{eff-mix60} respectively.
 
  \begin{table}[htb]
  	\centering
@@ -204,25 +170,81 @@ for the mixture angles,we have considered four mixture angles $0^\circ, 30^\circ
   	\caption{Efficiencies for  $ g_R=0.561 , g_L=0.325$  (mixture angle $60^\circ$) corresponding to various W' masses. \label{eff-mix60} }
   \end{table}
 
-notice that the efficiencies of mixture angle $90^\circ$ represented in table \ref{eff-SM}. 
 
-
-  The excluded mass of \wprime have masured for different mixture angles and have shown in table \ref{tab:ex mass} . the graphs \ref{fig:mix0},\ref{fig:mix30},\ref{fig:mix45} and \ref{fig:mix60} display the exclusion limit of mixture angles at different masses of \wprime. 
+ 
+Having the selction efficiency in one channel together with the cross section and branching fraction we can estimate the total number of expected signal events in a given luminosity using the following formula :
+\begin{equation}
+N^{channel}_{exp.}= \mathcal{L} \times \sigma(pp \to \wprime\wprime) \times BR^{2}(\wprime \to \tau \nu) \times \varepsilon^{channel}_{full~selection}
+\end{equation}
+As mentioned in the experimental paper, the luminosity for the \tauTau ~signal regions is 18.1~fb$^{-1}$ and for the $\ell\tau_h$ channels it is 19.6~fb$^{-1}$. A symetric uncertainty of 20\% for \lepTau channel and 25\% for \tauTau channel is assumed. Data yields and background preditions with uncertainties in the four signal regions of search obtained from~\cite{Khachatryan:2016trj} and have shown in \ref{tab:yields}. 
 
 \begin{table}[htb]
 	\centering
-	\begin{tabular}{|c|c|}
+	\begin{tabular}{|c|c|c|c|c|}
 		\hline 
-		\wprime Mixture angle & excluded mass \\
+		\wprime  &e\Tau &  $\mu\Tau$ & \tauTau SR1 & \tauTau SR2 \\
 		\hline 
-		$0^\circ$ & 320\\
-		$30^\circ$ & 225\\
-		$45^\circ$ & 270\\
-		$60^\circ$& ???\\
+	         Background &3.52&8.59&1.58&7.07\\     
+		 Backgrounds Error& 3.39&4.83&0.65&2.25\\
+		 Observed& 3&5&1&2\\
+		
 		\hline
 	\end{tabular}
-	\caption{Excluded masses of \wprime for different \wprime \label{tab:ex mass} }
+	\caption{Data yields and background predictions with errors for \lepTau and \tauTau channels. \label{tab:yields} }
 \end{table}
+
+The 95\% confidence level upper limit on the signal strength can be found by combining all the four channels. A Likelihood ratio semi-bayesian method implemented in ROOT \cite{Brun:1997pa} is used. Signal strength is defined as $r = \frac{ \sigma }{\sigma_{pp \to \wprime\wprime} }$. Results for the standard model like \wprime are shown in \ref{fig:mix0}. It can be seen that \wprime masses up to the $320GeV$ are excluded.  Repeating this procedure for the two other scenarios for the coupling, we observe that when the coupling constants are halfed, the sensitivity is very low and no point is excluded, but for the \wprime with a double coupling masses up to $360GeV$ are excluded (\ref{fig:mixtwice}).
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics*[width=.45\textwidth]{figs/mix0b.pdf}
+\hspace{3mm}
+\includegraphics*[width=.45\textwidth]{figs/mix0.pdf}
+\caption{Upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production for mixangle $0^\circ$ }
+\label{fig:mix0}
+\end{figure}
+ 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics*[width=.45\textwidth]{figs/mixtwice.pdf}
+\hspace{3mm}
+\includegraphics*[width=.45\textwidth]{figs/mixtwiceb.pdf}
+\caption{Upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production for doubled coupling constant}
+\label{fig:mixtwice}
+\end{figure}
+
+
+%The graph\ref{fig:brazil} below shows the the upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production in $\pm\sigma$. 
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics*[width=.45\textwidth]{figs/brazilianFlag.pdf}
+% %\hspace{3mm}
+% %\subfigure[{MET-$\tau$ lepton channel}]{\label{met-lh}
+% %\includegraphics*[width=.45\textwidth]{figs/MET-lh.pdf}
+% \caption{Upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production }
+% \label{fig:brazil}
+% \end{figure}
+
+
+For the mixture angles, in the case of mixing angle $\theta=30^\circ$ and $\theta=60^\circ$ masses up to 225 GeV are excluded, however for the case of $\theta=45^\circ$ the limit on the mass is more sensitive and goes up to 270 GeV. The results are shown separately in figures~\ref{fig:mix30},~\ref{fig:mix60} and ~\ref{fig:mix45}. The graph {\bf ref} displays the exclution limit of mixture angles at different masses of \wprime.
+% The excluded mass of \wprime have masured for different mixture angles and have shown in table \ref{tab:ex mass} . the graphs \ref{fig:mix0},\ref{fig:mix30},\ref{fig:mix45} and \ref{fig:mix60} display the exclusion limit of mixture angles at different masses of \wprime. 
+
+% \begin{table}[htb]
+% 	\centering
+% 	\begin{tabular}{|c|c|}
+% 		\hline 
+% 		\wprime Mixture angle & excluded mass \\
+% 		\hline 
+% 		$0^\circ$ & 320\\
+% 		$30^\circ$ & 225\\
+% 		$45^\circ$ & 270\\
+% 		$60^\circ$& ???\\
+% 		\hline
+% 	\end{tabular}
+% 	\caption{Excluded masses of \wprime for different \wprime \label{tab:ex mass} }
+% \end{table}
 
 %\begin{figure}[!ht]
 %\centering
@@ -234,17 +256,6 @@ notice that the efficiencies of mixture angle $90^\circ$ represented in table \r
 %\label{fig:brazil}
 %\end{figure}
 
- 
-\begin{figure}[!ht]
-\centering
-%\subfigure[{MET-hadronic channel}]{\label{mix30b}
-\includegraphics*[width=.45\textwidth]{figs/mix0b.pdf}
-\hspace{3mm}
-%\subfigure[{MET-$\tau$ lepton channel}]{\label{met-lh}
-\includegraphics*[width=.45\textwidth]{figs/mix0.pdf}
-\caption{Upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production for mixangle $0^\circ$ }
-\label{fig:mix0}
-\end{figure}
  
 \begin{figure}[!ht]
 \centering
@@ -279,17 +290,3 @@ notice that the efficiencies of mixture angle $90^\circ$ represented in table \r
 \label{fig:mix60}
 \end{figure}
  
-In particle physic, sigma is used to represent standard deviation. Standard deviation measures the distribution of data points around a mean, or average, and can be thought of as how "wide" the distribution of points or values is. A sample with a high standard deviation is more spread out—it has more variability, and a sample with a low standard deviation clusters more tightly around the mean. The graph\ref{fig:brazil} below shows the the upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production in $\pm\sigma$. 
-As an individual can see in this graph the excluded mass of observed upper limit is $\wprime=320GeV$.
- We have done all this process for the two other situation that are mentioned before, when the coupling constants were halfed and also doubled. For the latter, no point is excluded, but for former the excluded observed mass was 360GeV.
-for the mixture angles, in the case that $g_R=30^\circ,g_L=60^\circ$ and its complement the excluded mass of \wprime were about 310 GeV, however we measured ?? in the case that $g_R=45^\circ,g_L=45^\circ$. the graph {\bf ref} displays the exclution limit of mixture angles at different masses of \wprime.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics*[width=.45\textwidth]{figs/brazilianFlag.pdf}
-%\hspace{3mm}
-%\subfigure[{MET-$\tau$ lepton channel}]{\label{met-lh}
-%\includegraphics*[width=.45\textwidth]{figs/MET-lh.pdf}
-\caption{Upper limit of $\sigma/\sigma_{pp \rightarrow \wprime \wprime}$ production }
-\label{fig:brazil}
-\end{figure}
