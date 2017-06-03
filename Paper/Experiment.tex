@@ -9,69 +9,28 @@
 
 This study reinterprets the results of the ``Search for electroweak production of charginos in final states with two tau leptons in pp collisions at sqrt(s) = 8 TeV''\cite{Khachatryan:2016trj} for the production of two \wprime bosons decaying into two $\tau$ leptons. In this section the experimental analysis is reviewed.
 
-The $\tau$ lepton decays to leptons (either to a $\mu$ or an electron) in $\approx 35\%$ of the cases and to hadrons in the rest of cases. So $\approx 90\%$ of events with two $\tau$ leptons decay to $\ell\tau_h$ or $\tau_h \tau_h$. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. For the decay of the $\tau$ lepton, the TAUOLA(REF) package has been used. More details are described in section 3(REF).
+The $\tau$ lepton decays to leptons (either to a $\mu$ or an electron) in $\sim 35\%$ of the cases and to hadrons in the rest of cases. So about 90\% of events with two $\tau$ leptons decay to \lepTau or \tauTau. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. 
+%For the decay of the $\tau$ lepton, the TAUOLA~\cite{Jadach:1993hs} package has been used. More details are described in section 3(REF).
 
-Missing transverse energy (MET) is also used for this study. This event property has been measured as the vectorial sum of the transverse momenta ($p_{T}$) of neutrinos in the event. In addition to the neutrinos that are produced from the direct decay of \wprime, the decay products of the $\tau$ lepton are also considered. %[check it, https://github.com/hbakhshi/DiTau/blob/master/src/WpWp.cxx#L234]
+The missing transverse momentum (\MET) which is  defined as the vectorial sum of the transverse momenta (\pt) of neutrinos in the event is one of the event properties used in this analysis. In addition to the neutrinos  produced from the direct decay of \wprime, those produced in the $\tau$ lepton decay are also considered.
 
-Having the momentum of the decay products of $\tau$ leptons and the MET, we can calculate all the needed varaiables used in the reference analysis. Stransverse mass ($M_{T2}$)(REF) is the main variable that is used to categorize events. It is a function of momentum of two visible particles and the missing transverse momentum in the event. It is defined as [ref];
+Having the momentum of the decay products of $\tau$ leptons and \MET, we can calculate all the needed varaiables used in the reference analysis. Stransverse mass ($M_{T2}$)~\cite{Lester:1999tx,Barr:2003rg}  is the main variable that is used to categorize events. It is a function of momentum of two visible particles and \MET ~in the event. It is defined as:
+%\begin{equation}
+%m^2_{T2}(m_{N},\alpha,\beta,\not\!P_{T}) = \displaystyle\min_{p_T+q_T=\not\!P_T} [max[m^2_{T}(\alpha,p),m^2_{T}(\beta,q)]]
+%\end{equation}
 \begin{equation}
-m^2_{T2}(m_{N},\alpha,\beta,\not\!P_{T}) = \displaystyle\min_{p_T+q_T=\not\!P_T} [max[m^2_{T}(\alpha,p),m^2_{T}(\beta,q)]]
+m^2_{T2}(m_{N},\alpha,\beta,\MET) = \displaystyle\min_{p_T+q_T=\MET} [max[m^2_{T}(\alpha,p),m^2_{T}(\beta,q)]]
 \end{equation}
-Where $\alpha$ and $\beta$ are the four momenta of the visible decay products of the $\tau$ lepton decay and  $m_N$ is the mass of the invisible particle (neutrino) which is set to zero for this study. $\not\!P_T$ is missing transverse momentum. The transverse mass ($m_{T}$) is defined as :
+Where $\alpha$ and $\beta$ ($p$ and $q$) are the four momenta of the visible (invisible) decay products in two different legs and  $m_N$ is the mass of the invisible particle (neutrino) which is set to zero for this study. The transverse mass ($m_{T}$) is defined as :
 \begin{equation}
-m^2_{T}(\alpha,p) =  m^2_{\alpha}+m^2_N+2(E_T(p)E_T(\alpha)-p_T.\alpha_T)
+m^2_{T}(\alpha,p) =  m^2_{\alpha}+m^2_N+2(E_T(p)E_T(\alpha)-\vec{\pt}.\vec{\alpha_T})
 \end{equation}
 and transverse energy is given by; 
 \begin{equation}
 E_T(p)=\sqrt{p^2_T+m^2_N}
 \end{equation}
 
-In the reference analysis, the events are categorized in 4 signal regions (SR). For the e$\tau_h$ and $\mu\tau_h$, it has been found that cutting the events with $M_{T2}<90 GeV$ is useful to discard the standard model background events. But for $\tau_h \tau_h$ events, two separate SRs are defined as events with $M_{T2}>90 GeV$ and events with $40<M_{T2}<90 GeV$ and $\sum m_{T} > 250 GeV$ where $\sum m_{T}$ is the sum of the transverse mass of two $\tau$ leptons.
+In the reference analysis, the events are categorized in 4 signal regions (SR). For the e\Tau and $\mu\Tau$, it has been found that cutting the events with $M_{T2}<90 GeV$ is useful to discard the SM background events. But for \tauTau events, two separate SRs are defined as events with $M_{T2}>90 GeV$ and events with $40<M_{T2}<90 GeV$ and $\sum m_{T} > 250 GeV$, where $\sum m_{T}$ is the sum of the transverse mass of two \Tau objects.
 
-In addition to the selection cuts that are applied for the lepton selection and event categorization, some other cuts to veto any extra lepton or b-tagged jet  are also applied. 
+In addition to the selection cuts that are applied for the lepton selection and event categorization, some other cuts to veto any extra lepton or b-tagged jets  are also applied. 
 
-
-
- % We utilized ExRootAnalysis [ref] for making root files after generation. For calculating efficiency we modelled \cite{CMS:2016saj} for using result of applied cuts and seprating signal region to four sections: SR1 and SR2 which are relate to fully hadronic final state and also e$\tau$ and $\mu\tau$ which are relate to single lepton final state. As much as SM background events that mainly produced by W+jets, intended to have $M_{T2}<90GeV$, the distribution of $M_{T2}$ in first signal region SR1 demands $M_{T2}>90GeV$. however, the second signal region SR2 requires sum of two transverse mass of visible particles to take $\sum{m^{\tau(i)}_T}=(m^{\tau_{1h}}_T + m^{\tau_{2h}}_T>250GeV)$ in addition of lower $M_{T2}$ cut $M_{T2}<90GeV$ to distinguish signal and background process in the case that there is a small mass difference ($\Delta m$) between W' and neutrino.The former cut, moreover, can veto b-tagged jets produced in $t{\bar{t}}$ events in law $M_{T2}$. 
- % for rejecting W+jets and b-tagged backgrounds in $\ell\tau$($\mu\tau  or  e\tau$) channels, $M_{T2}>90GeV$ and $m^{\tau_{h}}_T>200 GeV$ have been applied. Despite fully hadronic channel SR2, the cut $M_{T2}<90GeV$ has not been used, because of higher level of background. The other event selections set to suppress backgrounds such as $t{\bar{t}}$+jets,Drell-yan and QCD mutijets and Z+jets and etc which based on data in[ref] list below. we abbrevited selection requirement in different channels. Items in $\ell\tau$ channels:
- 
- % \begin{itemize}
- % 	\item[-] $P_T>20GeV , |\eta|<2.3$ for isolated $\tau_{h}$ as well as $|\eta|<2.1$ for isolated $e or \mu$
- % 	\item[-] $P_T>10GeV$ to supress events with additional lepton in Zboson decays
- % 	\item[-] $15<{MT_{\ell{\tau_h}}}<45GeV$ to reject b-tagged jets 
- % \end{itemize}
- 
- % and items in $\tau_{h}  \tau_{h}$ channels:
- 
- % \begin{itemize}
- % 	\item[-] $P_T>45GeV , |\eta|<2.1$ and have oposite charge for $\tau$ isolation discrimination
- % 	\item[-] $P_T>10GeV , |\eta|<2.4$ to suppress events with extra $e or \mu$ in diboson decays
- % 	\item[-] $15<{MT_{di-{\tau_h}}}<45GeV$ for Z veto
- % 	\item[-] $P^{miss}_T>30GeV, M_{T2}>40GeV$ for Zveto and rejecting QCD multijets 
- % 	\item[-] $MT_{\tau_h \tau_h}>15GeV$ for discarding Drell-yan productions and QCD mutijets
- % 	\item[-] $\Delta\phi>1$ for excluding QCD mutijets and W+jets
- % \end{itemize}
- 
- % The calculation of total efficiencies in different signal regions that introduced above has been performed by using effecienies for each variable which measured due to the requirement cuts in various channels from [ref].The results have been displayed in table II.
- 
- % \begin{table}[htb]
- % 	\centering
- % 	\begin{tabular}{|ccccc|}
- % 		\hline 
- % 		Mass Wprime  & EfficiencySR1  & EfficiencySR2 & Efficiency $\mu$$\tau$ & Efficiency e $\tau$ \\\hline 
- % 		100 & 0.0458899 \% & 0.614535 \% & 0.011183 \% & 0.00395297 \% \\
- % 		130& 0.175685 \%& 0.760096 \%& 0.0442253 \%& 0.0271803 \% \\
- % 		160& 0.410097 \%& 0.846774 \%& 0.135277 \%& 0.0756016 \%\\
- % 		190& 0.715545 \%& 0.909511 \%& 0.228263 \%& 0.189238 \% \\
- % 		220& 1.06748 \%& 0.968385 \%& 0.43919 \%& 0.331424 \% \\
- % 		250& 1.47652 \%& 0.983356 \%& 0.632992 \%& 0.516825 \%\\ 
- % 		280& 1.80193 \%& 1.02289 \%& 0.861038 \%& 0.703542 \% \\
- % 		310& 2.14124 \%& 1.05743 \%& 1.12391 \%& 0.865479 \% \\
- % 		340& 2.45444 \%& 1.03443 \%& 1.46279 \%& 1.18334 \%\\ 
- % 		370& 2.76015 \%& 1.00684 \%& 1.6293 \%& 1.38178 \% \\
- % 		400 &2.99298 \%& 0.97716 \% &1.87191 \%& 1.62458 \% \\
- % 		\hline
- % 	\end{tabular}
- % 	\caption{Cross sections and decay widths corresponding to various W' masses. \label{tab1} }
- % \end{table}
- 

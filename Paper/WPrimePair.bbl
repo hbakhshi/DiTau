@@ -27,6 +27,20 @@
   (\bibinfo{collaboration}{ATLAS}) (\bibinfo{year}{2016}),
   \eprint{ATLAS-CONF-2016-061}.
 
+\bibitem[{\citenamefont{Lester and Summers}(1999)}]{Lester:1999tx}
+\bibinfo{author}{\bibfnamefont{C.~G.} \bibnamefont{Lester}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Summers}},
+  \bibinfo{journal}{Phys. Lett. B} \textbf{\bibinfo{volume}{463}},
+  \bibinfo{pages}{99} (\bibinfo{year}{1999}), \eprint{hep-ph/9906349}.
+
+\bibitem[{\citenamefont{Barr et~al.}(2003)\citenamefont{Barr, Lester, and
+  Stephens}}]{Barr:2003rg}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Barr}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Lester}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Stephens}},
+  \bibinfo{journal}{J. Phys. G} \textbf{\bibinfo{volume}{29}},
+  \bibinfo{pages}{2343} (\bibinfo{year}{2003}), \eprint{hep-ph/0304226}.
+
 \bibitem[{\citenamefont{Alwall et~al.}(2014)\citenamefont{Alwall, Frederix,
   Frixione, Hirschi, Maltoni, Mattelaer, Shao, Stelzer, Torrielli, and
   Zaro}}]{Alwall:2014hca}
@@ -102,16 +116,5 @@
   \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Rademakers}},
   \bibinfo{journal}{Nucl. Instrum. Meth.} \textbf{\bibinfo{volume}{A389}},
   \bibinfo{pages}{81} (\bibinfo{year}{1997}).
-
-\bibitem[{\citenamefont{Read}(2002)}]{0954-3899-28-10-313}
-\bibinfo{author}{\bibfnamefont{A.~L.} \bibnamefont{Read}},
-  \bibinfo{journal}{Journal of Physics G: Nuclear and Particle Physics}
-  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{2693} (\bibinfo{year}{2002}),
-  \urlprefix\url{http://stacks.iop.org/0954-3899/28/i=10/a=313}.
-
-\bibitem[{\citenamefont{Mistlberger and Dulat}(2012)}]{Mistlberger:2012rs}
-\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Mistlberger}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Dulat}}
-  (\bibinfo{year}{2012}), \eprint{1204.3851}.
 
 \end{thebibliography}
