@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -82,34 +82,6 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{W\c{a}s}},
   \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{183}},
   \bibinfo{pages}{821} (\bibinfo{year}{2012}), \eprint{1002.0543}.
-
-\bibitem[{\citenamefont{Jadach et~al.}(1990)\citenamefont{Jadach, Kuhn, and
-  Was}}]{Jadach:1990mz}
-\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Jadach}},
-  \bibinfo{author}{\bibfnamefont{J.~H.} \bibnamefont{Kuhn}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Was}},
-  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{64}},
-  \bibinfo{pages}{275} (\bibinfo{year}{1990}).
-
-\bibitem[{\citenamefont{Golonka et~al.}(2006)\citenamefont{Golonka, Kersevan,
-  Pierzchala, Richter-Was, Was, and Worek}}]{Golonka:2003xt}
-\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Golonka}},
-  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Kersevan}},
-  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Pierzchala}},
-  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Richter-Was}},
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Was}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Worek}},
-  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{174}},
-  \bibinfo{pages}{818} (\bibinfo{year}{2006}), \eprint{hep-ph/0312240}.
-
-\bibitem[{\citenamefont{Jadach et~al.}(1993)\citenamefont{Jadach, Was, Decker,
-  and Kuhn}}]{Jadach:1993hs}
-\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Jadach}},
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Was}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Decker}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{J.~H.} \bibnamefont{Kuhn}},
-  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{76}},
-  \bibinfo{pages}{361} (\bibinfo{year}{1993}).
 
 \bibitem[{\citenamefont{Brun and Rademakers}(1997)}]{Brun:1997pa}
 \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Brun}} \bibnamefont{and}
