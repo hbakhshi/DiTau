@@ -37,8 +37,10 @@ void LHEF::Loop()
   double sumWeightsMuTau = 0.0; 
   Davismt2 *mt2 = new Davismt2();
 
-  TH1* hTauPt_hadhad = new TH1D("hTauPt_hadhad" , "p_{T}^{#tau_hadhad}" , 40 , 0 , 400 );
+  TH1* hTauPt_hadhadmax = new TH1D("hTauPt_hadhad-max" , "p_{T}^{#tau_hadhad-max}" , 40 , 0 , 400 );
+  TH1* hTauPt_hadhadmin = new TH1D("hTauPt_hadhad-min" , "p_{T}^{#tau_hadhad-min}" , 40 , 0 , 400 );
   TH1* hTauPt_lhad = new TH1D("hTauPt_lhad" , "p_{T}^{#tau_lhad}" , 40 , 0 , 400 );
+  TH1* hTauPt_ll = new TH1D("hTauPt_ll" , "p_{T}^{#tau_ll}" , 40 , 0 , 400 );
 
   TH1* hMET_hadhad = new TH1D("hMET_hadhad" , "MET" , 40 , 0 , 400 );
   TH1* hMET_lhad = new TH1D("hMET_lhad" , "MET" , 40 , 0 , 400 );
@@ -253,8 +255,8 @@ void LHEF::Loop()
      
       // w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
       //w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
-       hTauPt_hadhad->Fill  (tauptmax) ;
-       hTauPt_hadhad->Fill  (tauptmin) ;
+       hTauPt_hadhadmax->Fill  (tauptmax) ;
+       hTauPt_hadhadmin->Fill  (tauptmin) ;
 
        // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
        hMET_hadhad->Fill( met.Pt());
@@ -351,8 +353,8 @@ void LHEF::Loop()
      
       // w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin( vele.Pt() ) );
       // w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
-      // hTauPt_lhad->Fill (vtau.Pt());
-       hTauPt_lhad->Fill (vele.Pt());
+       hTauPt_lhad->Fill (vtau.Pt());
+       hTauPt_ll->Fill (vele.Pt());
 
        // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
        hMET_lhad->Fill( met.Pt() );
@@ -400,8 +402,8 @@ void LHEF::Loop()
 
       //   w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(vmuo.Pt() ) );
       //   w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
-      // hTauPt_lhad->Fill (vtau.Pt());
-       hTauPt_lhad->Fill (vmuo.Pt());      
+       hTauPt_lhad->Fill (vtau.Pt());
+       hTauPt_ll->Fill (vmuo.Pt());      
       
        // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
        hMET_lhad->Fill( met.Pt() );
@@ -437,20 +439,26 @@ void LHEF::Loop()
       sumWeightsMuTau += w;
     }
 
-    TFile* fout = new TFile("out2.root" , "RECREATE",0,0);
- hTauPt_hadhad->SetLineColor(kGreen);
- hTauPt_lhad->SetLineColor(kGreen);
+    TFile* fout = new TFile("out100.root" , "RECREATE",0,0);
+ hTauPt_hadhadmax->SetLineColor(kRed);
+ hTauPt_hadhadmin->SetLineColor(kRed);
+ hTauPt_ll->SetLineColor(kRed);
+ hTauPt_lhad->SetLineColor(kRed);
 
- hMET_hadhad->SetLineColor(kGreen);
- hMET_lhad->SetLineColor(kGreen);
+ hMET_hadhad->SetLineColor(kRed);
+ hMET_lhad->SetLineColor(kRed);
 
- hMT2_hadhad->SetLineColor(kGreen);
- hMT2_lhad->SetLineColor(kGreen);
+ hMT2_hadhad->SetLineColor(kRed);
+ hMT2_lhad->SetLineColor(kRed);
 
- hTauPt_hadhad->Draw();
+ hTauPt_hadhadmax->Draw();
+ hTauPt_hadhadmin->Draw();
  hTauPt_lhad->Draw();
- hTauPt_hadhad->Write();
+ hTauPt_ll->Draw();
+ hTauPt_hadhadmax->Write();
+ hTauPt_hadhadmin->Write();
  hTauPt_lhad->Write();
+ hTauPt_ll->Write();
 
  hMET_lhad->Draw();
  hMET_hadhad->Draw();
@@ -464,9 +472,9 @@ void LHEF::Loop()
 
  fout->Close();
   }
-cout << "SumWeights SR1  : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl; 
-cout << "SumWeights SR2  : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
-  cout << "SumWeights MuTau: " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
+  cout << "SumWeights SR1  : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl; 
+  cout << "SumWeights SR2  : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
+   cout << "SumWeights MuTau: " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
   cout << "SumWeights ElTau: " << sumWeightsEleTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsEleTau/nentries << " %)" << endl;
   
 }
