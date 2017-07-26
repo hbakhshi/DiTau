@@ -2,7 +2,7 @@
 //=========Macro generated from canvas: Exclusion2/Exclusion2
 //=========  (Mon Jul 24 21:39:55 2017) by ROOT version5.34/23
    TCanvas *Exclusion2 = new TCanvas("Exclusion2", "Exclusion2",65,52,700,500);
-   Exclusion2->Range(154.5455,-0.55103,481.8182,1.94897);
+   Exclusion2->Range(50.5455,-0.55103,350.8182,1.94897);
    Exclusion2->SetFillColor(0);
    Exclusion2->SetBorderMode(0);
    Exclusion2->SetBorderSize(2);
@@ -35,12 +35,12 @@
    gre->SetPointError(7,0,-3.14);
    gre->SetPoint(8,340,15.98);
    gre->SetPointError(8,0,-4.02);
-   gre->SetPoint(9,370,15);
-   gre->SetPointError(9,0,0);
-   gre->SetPoint(10,400,20);
-   gre->SetPointError(10,0,0);
-   gre->SetPoint(11,420,20);
-   gre->SetPointError(11,0,0);
+   gre->SetPoint(9,370,22);
+   gre->SetPointError(9,0,-5.0);
+   gre->SetPoint(10,400,28);
+   gre->SetPointError(10,0,-6.0);
+   gre->SetPoint(11,420,32);
+   gre->SetPointError(11,0,-7.0);
    
    TH1F *Graph_myHisto1 = new TH1F("Graph_myHisto1","",11,100,420);
    Graph_myHisto1->SetMinimum(0.5);
@@ -52,7 +52,7 @@
    ci = TColor::GetColor("#000099");
    Graph_myHisto1->SetLineColor(ci);
    Graph_myHisto1->GetXaxis()->SetTitle("m_{W'} (GeV)");
-   Graph_myHisto1->GetXaxis()->SetRange(4,12);
+   Graph_myHisto1->GetXaxis()->SetRange(1,9);
    Graph_myHisto1->GetXaxis()->SetLabelFont(42);
    Graph_myHisto1->GetXaxis()->SetLabelSize(0.035);
    Graph_myHisto1->GetXaxis()->SetTitleSize(0.05);
@@ -197,3 +197,4 @@
    Exclusion2->cd();
    Exclusion2->SetSelected(Exclusion2);
 }
+
