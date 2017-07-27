@@ -18,29 +18,29 @@
    gre->SetLineStyle(2);
    gre->SetLineWidth(4);
    gre->SetPoint(0,100,0.46);
-   gre->SetPointError(0,0,-0.15);
+   gre->SetPointError(0,0,0.15);
    gre->SetPoint(1,130,0.905);
-   gre->SetPointError(1,0,-0.295);
+   gre->SetPointError(1,0,0.295);
    gre->SetPoint(2,160,1.5);
-   gre->SetPointError(2,0,-0.48);
+   gre->SetPointError(2,0,0.48);
    gre->SetPoint(3,190,2.32);
-   gre->SetPointError(3,0,-0.74);
+   gre->SetPointError(3,0,0.74);
    gre->SetPoint(4,220,3.665);
-   gre->SetPointError(4,0,-1.145);
+   gre->SetPointError(4,0,1.145);
    gre->SetPoint(5,250,5.79);
-   gre->SetPointError(5,0,-1.81);
+   gre->SetPointError(5,0,1.81);
    gre->SetPoint(6,280,7.925);
-   gre->SetPointError(6,0,-2.075);
+   gre->SetPointError(6,0,2.075);
    gre->SetPoint(7,310,11.86);
-   gre->SetPointError(7,0,-3.14);
+   gre->SetPointError(7,0,3.14);
    gre->SetPoint(8,340,15.98);
-   gre->SetPointError(8,0,-4.02);
+   gre->SetPointError(8,0,4.02);
    gre->SetPoint(9,370,22);
-   gre->SetPointError(9,0,-5.0);
+   gre->SetPointError(9,0,5.0);
    gre->SetPoint(10,400,28);
-   gre->SetPointError(10,0,-6.0);
+   gre->SetPointError(10,0,6.0);
    gre->SetPoint(11,420,32);
-   gre->SetPointError(11,0,-7.0);
+   gre->SetPointError(11,0,1.0);
    
    TH1F *Graph_myHisto1 = new TH1F("Graph_myHisto1","",11,100,420);
    Graph_myHisto1->SetMinimum(0.5);
@@ -70,7 +70,7 @@
    Graph_myHisto1->GetZaxis()->SetTitleFont(42);
    gre->SetHistogram(Graph_myHisto1);
    
-   gre->Draw("ap4");
+   gre->Draw("ap40");
    
    TGraph *graph = new TGraph(11);
    graph->SetName("Graph1");
@@ -192,7 +192,7 @@
    leg->Draw();
    TLine *line = new TLine(205,1,890,1);
    line->SetLineStyle(7);
-   line->Draw();
+   //line->Draw();
    Exclusion2->Modified();
    Exclusion2->cd();
    Exclusion2->SetSelected(Exclusion2);
