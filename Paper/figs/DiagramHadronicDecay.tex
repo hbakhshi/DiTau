@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[force]{feynmp-auto}
+\unitlength=1mm
+
+%install package texlive-metapost
+\usepackage{ifpdf}
+\ifpdf
+  \DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+\makeatletter
+\def\endfmffile{%
+  \fmfcmd{\p@rcent\space the end.^^J%
+          end.^^J%
+          endinput;}%
+  \if@fmfio
+    \immediate\closeout\@outfmf
+  \fi
+  \IfFileExists{\thefmffile.mp}{\immediate\write18{mpost \thefmffile}}{}
+  \let\thefmffile\relax
+}
+\makeatother
+
+\begin{document}
+
+%\begin{Large}
+
+\begin{fmffile}{DiagramHadronicDecays}
+
+  \begin{fmfgraph*}(85,34)
+    \fmfpen{thick}
+    \fmfleft{i1,i2}
+    \fmfright{o2,o3,o4,o5}
+
+    \fmflabel{\large{p1}}{i1}
+    \fmflabel{\large{p2}}{i2}
+    \fmflabel{$\tau^{\mp}$}{o2}    
+    \fmflabel{$\nu_{\tau}$}{o3}    
+    \fmflabel{$\nu_{\tau}$}{o4}    
+    \fmflabel{$\tau^{\pm}$}{o5}
+
+    \fmf{plain,tension=2.0}{i1,b}
+    \fmf{plain,tension=2.0}{b,i2}
+    \fmfblob{.1w}{b}
+
+    \fmf{plain}{o2,v2}
+    \fmf{wiggly,tension=1.8,label=$W^{'\mp}$}{b,v2}
+
+    \fmf{dashes}{o3,v2}
+
+    \fmf{dashes}{o4,v3}
+    \fmf{plain}{o5,v3}
+    \fmf{wiggly,tension=1.8,label=$W^{'\pm}$}{v3,b}
+
+    \fmfdot{v2,v3}
+
+    \fmffreeze
+    \fmfi{plain}{vpath (__i1,__b) shifted (thick*(-0.5,2))}
+    \fmfi{plain}{vpath (__i1,__b) shifted (thick*(0.5,-2))}
+
+    \fmfi{plain}{vpath (__b,__i2) shifted (thick*(0.5,2))}
+    \fmfi{plain}{vpath (__b,__i2) shifted (thick*(-0.5,-2))}
+
+
+  \end{fmfgraph*}
+\end{fmffile}
+
+%\end{Large}
+
+\end{document}
