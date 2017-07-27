@@ -40,7 +40,7 @@
    gre->SetPoint(10,400,28);
    gre->SetPointError(10,0,6.0);
    gre->SetPoint(11,420,32);
-   gre->SetPointError(11,0,1.0);
+   gre->SetPointError(11,0,7.0);
    
    TH1F *Graph_myHisto1 = new TH1F("Graph_myHisto1","",11,100,420);
    Graph_myHisto1->SetMinimum(0.5);
