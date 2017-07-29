@@ -161,7 +161,7 @@
    
    graph->Draw("pc");
    
-   TLegend *leg = new TLegend(0.2,0.85,0.4,0.65,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.14,0.65,0.43,0.85,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.0400641);
    leg->SetLineColor(0);
