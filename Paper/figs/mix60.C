@@ -21,8 +21,10 @@
    gre->SetPointError(0,0,-0.4);
    gre->SetPoint(1,130,2.385);
    gre->SetPointError(1,0,-0.7649999);
-   gre->SetPoint(2,160,0.65);
-   gre->SetPointError(2,0,-0.21);
+   // gre->SetPoint(2,160,0.65);
+   // gre->SetPointError(2,0,-0.21);
+   gre->SetPoint(2,160,3.35);
+   gre->SetPointError(2,0,-0.91);
    gre->SetPoint(3,190,6.105);
    gre->SetPointError(3,0,-1.945);
    gre->SetPoint(4,220,9.86);
@@ -31,12 +33,19 @@
    gre->SetPointError(5,0,-4.67);
    gre->SetPoint(6,280,20.405);
    gre->SetPointError(6,0,-4.595);
+   // gre->SetPoint(7,310,26.97);
+   // gre->SetPointError(7,0,-3.030001);
+   // gre->SetPoint(8,340,36.91);
+   // gre->SetPointError(8,0,-3.09);
+   // gre->SetPoint(9,370,48.595);
+   // gre->SetPointError(9,0,-1.405001);
    gre->SetPoint(7,310,26.97);
-   gre->SetPointError(7,0,-3.030001);
+   gre->SetPointError(7,0,-6.030001);
    gre->SetPoint(8,340,36.91);
-   gre->SetPointError(8,0,-3.09);
+   gre->SetPointError(8,0,-7.09);
    gre->SetPoint(9,370,48.595);
-   gre->SetPointError(9,0,-1.405001);
+   gre->SetPointError(9,0,-8.405001);
+
    gre->SetPoint(10,400,75.5);
    gre->SetPointError(10,0,-4.5);
    gre->SetPoint(11,420,75.5);
@@ -82,7 +91,8 @@
    graph->SetLineWidth(4);
    graph->SetPoint(0,100,0.6200000048);
    graph->SetPoint(1,130,1.179999948);
-   graph->SetPoint(2,160,0.3299999833);
+   // graph->SetPoint(2,160,0.3299999833);
+   graph->SetPoint(2,160,2.0299999833);
    graph->SetPoint(3,190,3.339999914);
    graph->SetPoint(4,220,5.589999676);
    graph->SetPoint(5,250,9.18999958);
@@ -127,7 +137,8 @@
    graph->SetLineWidth(4);
    graph->SetPoint(0,100,1.169999957);
    graph->SetPoint(1,130,2.230000019);
-   graph->SetPoint(2,160,0.6100000143);
+   // graph->SetPoint(2,160,0.6100000143);
+   graph->SetPoint(2,160,3.2100000143);
    graph->SetPoint(3,190,5.690000057);
    graph->SetPoint(4,220,9.210000038);
    graph->SetPoint(5,250,14.40999985);

@@ -134,8 +134,8 @@
    graph->SetPoint(6,280,7.909999847);
    graph->SetPoint(7,310,11.7699995);
    graph->SetPoint(8,340,16.21999931);
-   graph->SetPoint(9,370,15);
-   graph->SetPoint(10,400,20);
+   graph->SetPoint(9,370,22);
+   graph->SetPoint(10,400,28);
    
    TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","Expected",100,70,430);
    Graph_Graph2->SetMinimum(0.387);
@@ -161,7 +161,7 @@
    
    graph->Draw("pc");
    
-   TLegend *leg = new TLegend(0.5,0.2742616,0.8807471,0.4810127,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.2,0.85,0.4,0.65,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.0400641);
    leg->SetLineColor(0);
@@ -190,9 +190,9 @@
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
    leg->Draw();
-   TLine *line = new TLine(205,1,890,1);
+   TLine *line = new TLine(100,1,361,1);
    line->SetLineStyle(7);
-   //line->Draw();
+   line->Draw();
    Exclusion2->Modified();
    Exclusion2->cd();
    Exclusion2->SetSelected(Exclusion2);
