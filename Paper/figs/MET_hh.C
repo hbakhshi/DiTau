@@ -82,7 +82,7 @@
    hMET_hadhad__13->GetZaxis()->SetLabelSize(0.035);
    hMET_hadhad__13->GetZaxis()->SetTitleSize(0.035);
    hMET_hadhad__13->GetZaxis()->SetTitleFont(42);
-   hMET_hadhad__13->Draw("E");
+   hMET_hadhad__13->Draw();
    
    TH1D *hMET_hadhad__14 = new TH1D("hMET_hadhad__14","m_{W'}=190 GeV",40,0,400);
    hMET_hadhad__14->SetBinContent(1,0.0142922);
@@ -187,7 +187,7 @@
    hMET_hadhad__14->GetZaxis()->SetLabelSize(0.035);
    hMET_hadhad__14->GetZaxis()->SetTitleSize(0.035);
    hMET_hadhad__14->GetZaxis()->SetTitleFont(42);
-   hMET_hadhad__14->Draw("SAMES E");
+   hMET_hadhad__14->Draw("SAMES");
    
    TH1D *hMET_hadhad__15 = new TH1D("hMET_hadhad__15","m_{W'}=310 GeV",40,0,400);
    hMET_hadhad__15->SetBinContent(1,0.005403783);
@@ -292,7 +292,7 @@
    hMET_hadhad__15->GetZaxis()->SetLabelSize(0.035);
    hMET_hadhad__15->GetZaxis()->SetTitleSize(0.035);
    hMET_hadhad__15->GetZaxis()->SetTitleFont(42);
-   hMET_hadhad__15->Draw("SAMES E");
+   hMET_hadhad__15->Draw("SAMES");
    
    TH1D *hMET_hadhad__16 = new TH1D("hMET_hadhad__16","m_{W'}=400 GeV",40,0,400);
    hMET_hadhad__16->SetBinContent(1,0.00419972);
@@ -397,14 +397,14 @@
    hMET_hadhad__16->GetZaxis()->SetLabelSize(0.035);
    hMET_hadhad__16->GetZaxis()->SetTitleSize(0.035);
    hMET_hadhad__16->GetZaxis()->SetTitleFont(42);
-   hMET_hadhad__16->Draw("SAMES E");
+   hMET_hadhad__16->Draw("SAMES");
    TLatex *   tex = new TLatex(0.13,0.943,"#tau#tau channel");
 tex->SetNDC();
    tex->SetTextSize(0.03);
    tex->SetLineWidth(2);
    tex->Draw();
    
-   TLegend *leg = new TLegend(-2.353437e-185,-2.353437e-185,-2.353437e-185,-2.353437e-185,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.7,0.1,0.8,0.2,NULL,"brNDC");
    leg->SetBorderSize(0);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);

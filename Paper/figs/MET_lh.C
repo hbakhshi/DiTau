@@ -70,7 +70,7 @@
    hMET_lhad__9->GetZaxis()->SetLabelSize(0.035);
    hMET_lhad__9->GetZaxis()->SetTitleSize(0.035);
    hMET_lhad__9->GetZaxis()->SetTitleFont(42);
-   hMET_lhad__9->Draw("E");
+   hMET_lhad__9->Draw();
    
    TH1D *hMET_lhad__10 = new TH1D("hMET_lhad__10","m_{W'}=190 GeV",40,0,400);
    hMET_lhad__10->SetBinContent(1,0.020463);

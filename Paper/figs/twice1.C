@@ -1,15 +1,15 @@
 {
-//=========Macro generated from canvas: mass wp- rvalue/Mwp_r.value
+//=========Macro generated from canvas: massWpNrvalue/Mwp_r.value
 //=========  (Tue Aug  8 19:43:18 2017) by ROOT version5.34/23
-   TCanvas *mass wp- rvalue = new TCanvas("mass wp- rvalue", "Mwp_r.value",65,52,700,500);
-   mass wp- rvalue->Range(43.75,-0.079375,456.25,0.429375);
-   mass wp- rvalue->SetFillColor(0);
-   mass wp- rvalue->SetBorderMode(0);
-   mass wp- rvalue->SetBorderSize(2);
-   mass wp- rvalue->SetGridx();
-   mass wp- rvalue->SetGridy();
-   mass wp- rvalue->SetFrameBorderMode(0);
-   mass wp- rvalue->SetFrameBorderMode(0);
+   TCanvas *massWpNrvalue = new TCanvas("massWpNrvalue", "Mwp_r.value",65,52,700,500);
+   massWpNrvalue->Range(43.75,-0.079375,456.25,0.429375);
+   massWpNrvalue->SetFillColor(0);
+   massWpNrvalue->SetBorderMode(0);
+   massWpNrvalue->SetBorderSize(2);
+   massWpNrvalue->SetGridx();
+   massWpNrvalue->SetGridy();
+   massWpNrvalue->SetFrameBorderMode(0);
+   massWpNrvalue->SetFrameBorderMode(0);
    
    TMultiGraph *multigraph = new TMultiGraph();
    multigraph->SetName("");
@@ -211,7 +211,7 @@
    pt->SetTextFont(42);
    TText *text = pt->AddText("TGraph m_rvalue");
    pt->Draw();
-   mass wp- rvalue->Modified();
-   mass wp- rvalue->cd();
-   mass wp- rvalue->SetSelected(mass wp- rvalue);
+   massWpNrvalue->Modified();
+   massWpNrvalue->cd();
+   massWpNrvalue->SetSelected(massWpNrvalue);
 }
