@@ -123,9 +123,9 @@ LHEF::LHEF(TTree *tree) : fChain(0)
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/home/zamiri/mg5/wp1/Events/events.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/home/paktinat/MG5_aMC_v2_5_2/EventsWp10010k.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("data/events.root");
+         f = new TFile("/home/paktinat/MG5_aMC_v2_5_2/EventsWp10010k.root");
       }
       f->GetObject("LHEF",tree);
 

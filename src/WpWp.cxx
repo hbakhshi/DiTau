@@ -86,27 +86,27 @@ void LHEF::Loop()
 
   //=========================================table 10============================================
   double Effhh_MBins[] = {0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,5000}; //first column
-  double EffHad_hEff_M[] = {  0.00,0.00,0.20,0.90,0.94,0.98,1.00,1.00,0.99, 0.95, 0.68, 0.18, 0.06, 0.03, 0.05, 0.15, 0.40, 0.78, 0.92, 0.95, 0.98, 0.99, 1.00 }; // last column
+  double EffHad_hEff_M[] = {  0.00,0.00,0.20,0.90,0.94,0.98,1.00,1.00,0.99, 0.95, 0.68, 0.18, 0.06, 0.03, 0.05, 0.15, 0.40, 0.78, 0.92, 0.95, 0.98, 0.99, 1.00 }; //table 10, last column
   TH1F* hEffHad_hEff_M = CreateHistogram( "hEffhh_M" , "hEffhh_M" , 23 , Effhh_MBins , EffHad_hEff_M  );
   
-  double EffHad_l_M[] = { 0.00,0.10,0.23,0.97,0.99,1.00,0.99,0.98,0.84,0.16, 0.04, 0.02, 0.01, 0.04, 0.23, 0.78, 0.91, 0.96, 0.97, 0.98, 1.00, 1.00, 1.00 }; // 2nd column
+  double EffHad_l_M[] = { 0.00,0.10,0.23,0.97,0.99,1.00,0.99,0.98,0.84,0.16, 0.04, 0.02, 0.01, 0.04, 0.23, 0.78, 0.91, 0.96, 0.97, 0.98, 1.00, 1.00, 1.00 }; //table 10, 2nd column
   TH1F* hEffHad_l_M = CreateHistogram( "hEffhl_M" , "hEffhl_M" , 23 , Effhh_MBins , EffHad_l_M );
   //=========================================end of table 10============================================
 
 
   //=========================================table 11============================================
   double EffMT2Bins[] = {0,20,40,50,60,70,80,90,100,110,120,130,140,160,180,5000};//first column
-  double EffHad_h1Eff_Mt2[] = { 0.00,0.01,0.01,0.03,0.07,0.17,0.44,0.73,0.88,0.94,0.97,0.98,0.98,0.99,1.00  }; //3rd column
+  double EffHad_h1Eff_Mt2[] = { 0.00,0.01,0.01,0.03,0.07,0.17,0.44,0.73,0.88,0.94,0.97,0.98,0.98,0.99,1.00  }; //table 11, 3rd column
   TH1F* hEffHad_h1Eff_Mt2 = CreateHistogram( "hEffhh1_Mt2" , "hEffhh1_Mt2" , 15 , EffMT2Bins , EffHad_h1Eff_Mt2 );
   
-  double EffHad_lEff_Mt2[] = { 0.00,0.002,0.01,0.02,0.05,0.13,0.35,0.65,0.82,0.90,0.93,0.95,0.96,0.97,0.97 };//2nd column
+  double EffHad_lEff_Mt2[] = { 0.00,0.002,0.01,0.02,0.05,0.13,0.35,0.65,0.82,0.90,0.93,0.95,0.96,0.97,0.97 };//table 11, 2nd column
   TH1F* hEffHad_lEff_Mt2 = CreateHistogram( "hEff_hl_Mt2" , "hEff_hl_Mt2" , 15 , EffMT2Bins , EffHad_lEff_Mt2 );
   //=========================================end of table 11============================================  
 
 
   //=========================================table 12============================================
   double Effhl_MTBins[] = {100,125,150,170,190,200,210,230,250,275,300,5000}; // first column
-  double EffHad_lEffMT[] = { 0.01, 0.03, 0.09, 0.26, 0.51, 0.67, 0.82, 0.91, 0.94, 0.97, 1.00}; // second column
+  double EffHad_lEffMT[] = { 0.01, 0.03, 0.09, 0.26, 0.51, 0.67, 0.82, 0.91, 0.94, 0.97, 1.00}; //table 12, second column
   TH1F* hEffHad_lEffMT = CreateHistogram( "hEffhl_MT" , "hEffhl_MT" , 11 , Effhl_MTBins , EffHad_lEffMT );
   //=========================================end of table 12============================================
 
@@ -253,48 +253,46 @@ void LHEF::Loop()
 
 
      
-      // w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
-      //w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
-       hTauPt_hadhadmax->Fill  (tauptmax) ;
-       hTauPt_hadhadmin->Fill  (tauptmin) ;
+      w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );//table 8, 4th column
+      w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );//table 8, 5th column
+      hTauPt_hadhadmax->Fill  (tauptmax) ;
+      hTauPt_hadhadmin->Fill  (tauptmin) ;
 
-       // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-       hMET_hadhad->Fill( met.Pt());
-       //   w *= 0.56 ; //from table 15
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );//table 9
+      hMET_hadhad->Fill( met.Pt());
+       
+      w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );//table 10, last column
 
-       // w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
-
-        double pa[3];
-        double pb[3];
-        double pmiss[3];
-        pmiss[0] = 0;
-        pmiss[1] = static_cast<double>  (met.Px());
-        pmiss[2] = static_cast<double> (met.Py());
-        pa[0] = static_cast<double> (0);
-        pa[1] = static_cast<double> (vtau_1.Px());
-        pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
   
-        pb[0] = static_cast<double> (0);
-        pb[1] = static_cast<double> (vtau_2.Px());
-        pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
 
-        mt2->set_momenta(pa, pb, pmiss);
-        mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
-      //cout<<" MT2 "<<MT2<<endl;
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
+       
+      w *= hEffHad_h2Eff_Mt2->GetBinContent( hEffHad_h2Eff_Mt2->FindBin( (MT2)));//table 13
+      hMT2_hadhad->Fill(MT2);
 
-       // w *= hEffHad_h2Eff_Mt2->GetBinContent( hEffHad_h2Eff_Mt2->FindBin( (MT2)));
-	hMT2_hadhad->Fill(MT2);
-
-        double tau1m = vtau_1.M();
-        double tau2m = vtau_2.M();
-        double tau1et = sqrt( vtau_1.Pt()*vtau_1.Pt() + tau1m*tau1m );
-        double tau2et = sqrt( vtau_2.Pt()*vtau_2.Pt() + tau2m*tau2m );
-        double tau1Mt = sqrt( tau1m*tau1m + 2*(tau1et*met.Pt() - vtau_1.Px()*met.Px() - vtau_1.Py()*met.Py() ) );
-        double tau2Mt = sqrt( tau2m*tau2m + 2*(tau2et*met.Pt() - vtau_2.Px()*met.Px() - vtau_2.Py()*met.Py() ) );
-        double sumMt = tau1Mt + tau2Mt ;
-	// w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));
+      double tau1m = vtau_1.M();
+      double tau2m = vtau_2.M();
+      double tau1et = sqrt( vtau_1.Pt()*vtau_1.Pt() + tau1m*tau1m );
+      double tau2et = sqrt( vtau_2.Pt()*vtau_2.Pt() + tau2m*tau2m );
+      double tau1Mt = sqrt( tau1m*tau1m + 2*(tau1et*met.Pt() - vtau_1.Px()*met.Px() - vtau_1.Py()*met.Py() ) );
+      double tau2Mt = sqrt( tau2m*tau2m + 2*(tau2et*met.Pt() - vtau_2.Px()*met.Px() - vtau_2.Py()*met.Py() ) );
+      double sumMt = tau1Mt + tau2Mt ;
+      w *= hEffsigmaHad_hEffMT->GetBinContent( hEffsigmaHad_hEffMT->FindBin( (tau1Mt+tau2Mt)));//table 14
       
 
       sumWeightsSR2 += w;
@@ -309,36 +307,33 @@ void LHEF::Loop()
       double tauptmin = min( vtau_1.Pt() , vtau_2.Pt() );
       
   
-      // w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );
-      // w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );
+      w *= hEffHad_TauPtMax->GetBinContent( hEffHad_TauPtMax->FindBin(tauptmax) );//table 8, 4th column
+      w *= hEffHad_TauPtMin->GetBinContent( hEffHad_TauPtMin->FindBin(tauptmin) );//table 8, 5th column
      
-      // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-       // w *= 0.48;
-      
-      // w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );//table 9
+       
+      w *= hEffHad_hEff_M->GetBinContent( hEffHad_hEff_M->FindBin( tauSystem.M()) );//table 10, last column
 
-          
- 
-        double pa[3];
-        double pb[3];
-        double pmiss[3];
-        pmiss[0] = 0;
-        pmiss[1] = static_cast<double>  (met.Px());
-        pmiss[2] = static_cast<double> (met.Py());
-        pa[0] = static_cast<double> (0);
-        pa[1] = static_cast<double> (vtau_1.Px());
-        pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
   
-        pb[0] = static_cast<double> (0);
-        pb[1] = static_cast<double> (vtau_2.Px());
-        pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
 
-       mt2->set_momenta(pa, pb, pmiss);
-       mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
      
-      w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
+      w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));//table 11, 3rd column
 
       sumWeightsSR1 += w;
     }  
@@ -351,42 +346,42 @@ void LHEF::Loop()
 
       
      
-      // w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin( vele.Pt() ) );
-      // w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
-       hTauPt_lhad->Fill (vtau.Pt());
-       hTauPt_ll->Fill (vele.Pt());
+      w *= hEff_El_Pt->GetBinContent( hEff_El_Pt->FindBin( vele.Pt() ) );//table 8, 2nd column
+      w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );//table 8, 4th column
+      hTauPt_lhad->Fill (vtau.Pt());
+      hTauPt_ll->Fill (vele.Pt());
 
-       // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-       hMET_lhad->Fill( met.Pt() );
-       // w *= 0.75 ; 
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );//table 9
+      hMET_lhad->Fill( met.Pt() );
+    
+      w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );//table 10, 2nd column
 
-       // w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
-
-       double pa[3];
-       double pb[3];
-       double pmiss[3];
-       pmiss[0] = 0;
-       pmiss[1] = static_cast<double>  (met.Px());
-       pmiss[2] = static_cast<double> (met.Py());
-       pa[0] = static_cast<double> (0);
-       pa[1] = static_cast<double> (vtau_1.Px());
-       pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
   
-       pb[0] = static_cast<double> (0);
-       pb[1] = static_cast<double> (vtau_2.Px());
-       pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
 
-       mt2->set_momenta(pa, pb, pmiss);
-       mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
-       // w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin ((MT2)));
-       hMT2_lhad->Fill(MT2);
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
+      w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin ((MT2)));//table 11, 2nd column
 
-       double taum  = vtau.M();
-       double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
-       double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
-       // w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));
+      hMT2_lhad->Fill(MT2);
+
+      double taum  = vtau.M();
+      double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
+      double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
+      w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin( tauMt));//table 12, second column
 
       sumWeightsEleTau += w;
     }
@@ -400,81 +395,82 @@ void LHEF::Loop()
       
       
 
-      //   w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(vmuo.Pt() ) );
-      //   w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );
-       hTauPt_lhad->Fill (vtau.Pt());
-       hTauPt_ll->Fill (vmuo.Pt());      
+      w *= hEff_Mu_Pt->GetBinContent( hEff_Mu_Pt->FindBin(vmuo.Pt() ) );//table 8, 3rd column
+      w *= hEff_lTau_HadTau_Pt->GetBinContent( hEff_lTau_HadTau_Pt->FindBin( vtau.Pt() ) );//table 8, 4th column
+      hTauPt_lhad->Fill (vtau.Pt());
+      hTauPt_ll->Fill (vmuo.Pt());      
       
-       // w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );
-       hMET_lhad->Fill( met.Pt() );
-       // w *= 0.75; 
-      
-       // w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );
+      w *= hEff_MET->GetBinContent( hEff_MET->FindBin( met.Pt() ) );//table 9
+      hMET_lhad->Fill( met.Pt() );
+             
+      w *= hEffHad_l_M->GetBinContent( hEffHad_l_M->FindBin( tauSystem.M()) );//table 10, 2nd column
        
-       double pa[3];
-       double pb[3];;
-       double pmiss[3];
-       pmiss[0] = 0;
-       pmiss[1] = static_cast<double>  (met.Px());
-       pmiss[2] = static_cast<double> (met.Py());
-       pa[0] = static_cast<double> (0);
-       pa[1] = static_cast<double> (vtau_1.Px());
-       pa[2] = static_cast<double> (vtau_1.Py());
+      double pa[3];
+      double pb[3];;
+      double pmiss[3];
+      pmiss[0] = 0;
+      pmiss[1] = static_cast<double>  (met.Px());
+      pmiss[2] = static_cast<double> (met.Py());
+      pa[0] = static_cast<double> (0);
+      pa[1] = static_cast<double> (vtau_1.Px());
+      pa[2] = static_cast<double> (vtau_1.Py());
       
-       pb[0] = static_cast<double> (0);
-       pb[1] = static_cast<double> (vtau_2.Px());
-       pb[2] = static_cast<double> (vtau_2.Py());
+      pb[0] = static_cast<double> (0);
+      pb[1] = static_cast<double> (vtau_2.Px());
+      pb[2] = static_cast<double> (vtau_2.Py());
   
-       mt2->set_momenta(pa, pb, pmiss);
-       mt2->set_mn(0);
-       Float_t MT2=mt2->get_mt2();
-       // w *= hEffHad_h1Eff_Mt2->GetBinContent( hEffHad_h1Eff_Mt2->FindBin( (MT2)));
-       hMT2_lhad->Fill(MT2);
+      mt2->set_momenta(pa, pb, pmiss);
+      mt2->set_mn(0);
+      Float_t MT2=mt2->get_mt2();
 
-       double taum = vtau.M();
-       double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
-       double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
+      w *= hEffHad_lEff_Mt2->GetBinContent( hEffHad_lEff_Mt2->FindBin( (MT2)));//table 11, 2nd column
+
+      hMT2_lhad->Fill(MT2);
+
+      double taum = vtau.M();
+      double tauet = sqrt( vtau.Pt()*vtau.Pt() + taum*taum );
+      double tauMt = sqrt( taum*taum + 2*(tauet*met.Pt() - vtau.Px()*met.Px() - vtau.Py()*met.Py() ) );
       
-       //w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));
+      w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));//table 12, second column
       sumWeightsMuTau += w;
     }
 
-    TFile* fout = new TFile("out100.root" , "RECREATE",0,0);
- hTauPt_hadhadmax->SetLineColor(kRed);
- hTauPt_hadhadmin->SetLineColor(kRed);
- hTauPt_ll->SetLineColor(kRed);
- hTauPt_lhad->SetLineColor(kRed);
+    TFile* fout = new TFile("outEventsWp10010k.root" , "RECREATE",0,0);
+    hTauPt_hadhadmax->SetLineColor(kRed);
+    hTauPt_hadhadmin->SetLineColor(kRed);
+    hTauPt_ll->SetLineColor(kRed);
+    hTauPt_lhad->SetLineColor(kRed);
 
- hMET_hadhad->SetLineColor(kRed);
- hMET_lhad->SetLineColor(kRed);
+    hMET_hadhad->SetLineColor(kRed);
+    hMET_lhad->SetLineColor(kRed);
 
- hMT2_hadhad->SetLineColor(kRed);
- hMT2_lhad->SetLineColor(kRed);
+    hMT2_hadhad->SetLineColor(kRed);
+    hMT2_lhad->SetLineColor(kRed);
 
- hTauPt_hadhadmax->Draw();
- hTauPt_hadhadmin->Draw();
- hTauPt_lhad->Draw();
- hTauPt_ll->Draw();
- hTauPt_hadhadmax->Write();
- hTauPt_hadhadmin->Write();
- hTauPt_lhad->Write();
- hTauPt_ll->Write();
+    hTauPt_hadhadmax->Draw();
+    hTauPt_hadhadmin->Draw();
+    hTauPt_lhad->Draw();
+    hTauPt_ll->Draw();
+    hTauPt_hadhadmax->Write();
+    hTauPt_hadhadmin->Write();
+    hTauPt_lhad->Write();
+    hTauPt_ll->Write();
 
- hMET_lhad->Draw();
- hMET_hadhad->Draw();
- hMET_lhad->Write();
- hMET_hadhad->Write();
+    hMET_lhad->Draw();
+    hMET_hadhad->Draw();
+    hMET_lhad->Write();
+    hMET_hadhad->Write();
 
- hMT2_lhad->Draw();
- hMT2_hadhad->Draw();
- hMT2_lhad->Write();
- hMT2_hadhad->Write();
+    hMT2_lhad->Draw();
+    hMT2_hadhad->Draw();
+    hMT2_lhad->Write();
+    hMT2_hadhad->Write();
 
- fout->Close();
+    fout->Close();
   }
   cout << "SumWeights SR1  : " << sumWeightsSR1 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR1/nentries << " %)" << endl; 
   cout << "SumWeights SR2  : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
-   cout << "SumWeights MuTau: " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
+  cout << "SumWeights MuTau: " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
   cout << "SumWeights ElTau: " << sumWeightsEleTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsEleTau/nentries << " %)" << endl;
   
 }

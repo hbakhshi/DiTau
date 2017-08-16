@@ -36,8 +36,8 @@ for hist in hists:
         legend.AddEntry( files[mass].Get( hist ) , "" , "l")
 
     text = hists[hist][1]
-    canvases[hist].append( latex.DrawLatexNDC(0.13,0.943,text ) )
+    canvases[hist].append( latex.DrawTextNDC(0.13,0.943,text ) )
     legend.Draw()
     if hists[hist][2] :
         canvases[hist][0].SetLogy()
-    canvases[hist][0].SaveAs( "log_%s.pdf" % (hist) )
+    canvases[hist][0].SaveAs( "log_%s.C" % (hist) )
