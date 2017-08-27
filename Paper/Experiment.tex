@@ -1,36 +1,33 @@
 \section{Review of the experimental analysis}
 % {\bf The text should be updated to address the following items discussed in the meeting.}
-% 3 [Bakhshians] Review of experimental results
-% [X] 3.1 4channels
-% [X] 3.1.1 MT2 is used, then explain about MT2
-% [ ] 3.2 Efficiencies are reported
+% 3 [Bakhshians] Review of experimental results 
+% [X] 3.1 4channels {\bf Done}
+% [X] 3.1.1 MT2 is used, then explain about MT2 {\bf Done}
+% [ ] 3.2 Efficiencies are reported 
 % [ ] 3.2.1 how they can be used
 
 
 This study reinterprets the results of the ``Search for electroweak production of charginos in final states with two tau leptons in pp collisions at sqrt(s) = 8 TeV''\cite{Khachatryan:2016trj} for the production of two \wprime bosons decaying into two $\tau$ leptons. In this section the experimental analysis is reviewed.
 
-The $\tau$ lepton decays to leptons (either to a $\mu$ or an electron) in $\sim 35\%$ of the cases and to hadrons in the rest of cases. So about 90\% of events with two $\tau$ leptons decay to \lepTau or \tauTau. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. 
+The $\tau$ lepton decays to leptons (either to a $\mu$ or an electron) in $\sim 35\%$ of the cases and to hadrons (\Tau) in the rest of cases. So about 90\% of events with two $\tau$ leptons decay to \lepTau or \tauTau. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. 
 %For the decay of the $\tau$ lepton, the TAUOLA~\cite{Jadach:1993hs} package has been used. More details are described in section 3(REF).
 
 The missing transverse momentum (\MET) which is  defined as the vectorial sum of the transverse momenta (\pt) of neutrinos in the event is one of the event properties used in this analysis. In addition to the neutrinos  produced from the direct decay of \wprime, those produced in the $\tau$ lepton decay are also considered.
 
-Having the momentum of the decay products of $\tau$ leptons and \MET, we can calculate all the needed varaiables used in the reference analysis. Stransverse mass ($M_{T2}$)~\cite{Lester:1999tx,Barr:2003rg}  is the main variable that is used to categorize events. It is a function of momentum of two visible particles and \MET ~in the event. It is defined as:
-%\begin{equation}
-%m^2_{T2}(m_{N},\alpha,\beta,\not\!P_{T}) = \displaystyle\min_{p_T+q_T=\not\!P_T} [max[m^2_{T}(\alpha,p),m^2_{T}(\beta,q)]]
-%\end{equation}
+Having the momentum of the decay products of $\tau$ leptons and \MET, we can calculate all the needed varaiables used in the reference analysis. Stransverse mass ($M_{T2}$)~\cite{Lester:1999tx,Barr:2003rg}  is the main variable that is used to categorize the events. It is a function of momentum of two visible particles and \MET ~in the event. It is defined as:
 \begin{equation}
-m^2_{T2}(m_{N},\alpha,\beta,\MET) = \displaystyle\min_{p_T+q_T=\MET} [max[m^2_{T}(\alpha,p),m^2_{T}(\beta,q)]]
+M^2_{T2}(m_{N},\alpha,\beta,\MET) = \displaystyle\min_{p_T+q_T=\MET} [\max[M^2_{T}(\alpha,p),M^2_{T}(\beta,q)]]
 \end{equation}
-Where $\alpha$ and $\beta$ ($p$ and $q$) are the four momenta of the visible (invisible) decay products in two different legs and  $m_N$ is the mass of the invisible particle (neutrino) which is set to zero for this study. The transverse mass ($m_{T}$) is defined as :
+Where $\alpha$ and $\beta$ ($p$ and $q$) are the four momenta of the visible (invisible) decay products in two different legs and  $m_N$ is the mass of the invisible particle which is set to zero for this study. The transverse mass ($M_{T}$) is defined as :
 \begin{equation}
-m^2_{T}(\alpha,p) =  m^2_{\alpha}+m^2_N+2(E_T(p)E_T(\alpha)-\vec{\pt}.\vec{\alpha_T})
+M^2_{T}(\alpha,p) =  m^2_{\alpha}+m^2_N+2(E_T(p)E_T(\alpha)-\vec{\pt}.\vec{\alpha_T})
 \end{equation}
 and transverse energy is given by; 
 \begin{equation}
 E_T(p)=\sqrt{p^2_T+m^2_N}
 \end{equation}
 
-In the reference analysis, the events are categorized in 4 signal regions (SR). For the e\Tau and $\mu\Tau$, it has been found that cutting the events with $M_{T2}<90 GeV$ is useful to discard the SM background events. But for \tauTau events, two separate SRs are defined as events with $M_{T2}>90 GeV$ and events with $40<M_{T2}<90 GeV$ and $\sum m_{T} > 250 GeV$, where $\sum m_{T}$ is the sum of the transverse mass of two \Tau objects.
+In the reference analysis, the events are categorized in 4 signal regions (SR). For the e\Tau ~and $\mu\Tau$, it has been found that cutting the events with $\mttwo <$ 90 GeV is useful to discard the SM background events. But for \tauTau ~events, two separate SR's are defined as events with \mttwo $>$ 90 GeV and events with 40 $<\mttwo<$ 90 GeV and \SumMT $>$ 250 GeV, where \SumMT is the sum of the transverse mass of two \Tau ~objects.
 
-In addition to the selection cuts that are applied for the lepton selection and event categorization, some other cuts to veto any extra lepton or b-tagged jets  are also applied. 
+In addition to the selection criteria that are applied for the lepton selection and event categorization, some other requirements to veto any extra lepton or b-tagged jets  are also applied. 
 

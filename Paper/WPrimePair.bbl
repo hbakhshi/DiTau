@@ -17,15 +17,15 @@
   \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D66}},
   \bibinfo{pages}{075011} (\bibinfo{year}{2002}), \eprint{hep-ph/0207290}.
 
-\bibitem[{\citenamefont{Khachatryan et~al.}(2016)}]{Khachatryan:2016trj}
+\bibitem[{\citenamefont{Khachatryan et~al.}(2017)}]{Khachatryan:2016trj}
 \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Khachatryan}}
-  \bibnamefont{et~al.} (\bibinfo{collaboration}{CMS}) (\bibinfo{year}{2016}),
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{CMS}), \bibinfo{journal}{JHEP}
+  \textbf{\bibinfo{volume}{04}}, \bibinfo{pages}{018} (\bibinfo{year}{2017}),
   \eprint{1610.04870}.
 
-\bibitem[{\citenamefont{Aad et~al.}(2016)}]{ATLAS:2016ecs}
-\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Aad}} \bibnamefont{et~al.}
-  (\bibinfo{collaboration}{ATLAS}) (\bibinfo{year}{2016}),
-  \eprint{ATLAS-CONF-2016-061}.
+\bibitem[{\citenamefont{Aaboud et~al.}(2017)}]{Aaboud:2017efa}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Aaboud}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{ATLAS}) (\bibinfo{year}{2017}), \eprint{1706.04786}.
 
 \bibitem[{\citenamefont{Lester and Summers}(1999)}]{Lester:1999tx}
 \bibinfo{author}{\bibfnamefont{C.~G.} \bibnamefont{Lester}} \bibnamefont{and}
