@@ -434,8 +434,11 @@ void LHEF::Loop()
       w *= hEffHad_lEffMT->GetBinContent( hEffHad_lEffMT->FindBin(tauMt));//table 12, second column
       sumWeightsMuTau += w;
     }
-
-    TFile* fout = new TFile("outEventsWp10010k.root" , "RECREATE",0,0);
+    // char file[100];
+    // fprintf(file, "gSMHalf/tree_gSMHalfwp%I.root",MassInd);
+    TFile* fout = new TFile("gSMTheta60/tree_gSMTheta60wp" + TString::Itoa(MassInd,10) + ".root", "RECREATE");
+    //TFile* fout = new TFile("gSMHalf/tree_gSMHalf_wp160.root" , "RECREATE",0,0);
+    //TFile* fout = new TFile(file, "RECREATE",0,0);
     hTauPt_hadhadmax->SetLineColor(kRed);
     hTauPt_hadhadmin->SetLineColor(kRed);
     hTauPt_ll->SetLineColor(kRed);
@@ -472,6 +475,8 @@ void LHEF::Loop()
   cout << "SumWeights SR2  : " << sumWeightsSR2 << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsSR2/nentries << " %)" << endl;
   cout << "SumWeights MuTau: " << sumWeightsMuTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsMuTau/nentries << " %)" << endl;
   cout << "SumWeights ElTau: " << sumWeightsEleTau << " out of " << nentries << " ( efficiecny : " << 100*sumWeightsEleTau/nentries << " %)" << endl;
+
+  cout<<MassInd<<"& "<<100*sumWeightsSR1/nentries<< "\\%& "<<100*sumWeightsSR2/nentries<<"\\%& "<<100*sumWeightsMuTau/nentries <<"\\%& "<<100*sumWeightsEleTau/nentries<<"\\%\\\\ "<<endl;
   
 }
 

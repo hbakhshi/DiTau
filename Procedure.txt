@@ -1,0 +1,30 @@
+1) In MG5_aMC_v2_6_0
+   1.1) edit models/WEff_UFO/parameters.py to set MWP and gL and gR
+   1.2) cd MG5_aMC_v2_6_0
+   1.3) open mg by running ./bin/mg5_aMC 
+   1.4) import model WEff_UFO
+   1.5)	generate p p > wp+ wp- , (wp+ > ta+ vt) , (wp- > ta- vt~)
+   1.6) output MySettings
+   1.7) compute_widths wp+ --output=./MySettings/Cards/param_card.dat 
+   1.8) launch MySettings
+   1.9) width and xsec can be found in    MySettings/Events/run_01/run_01_tag_1_banner.txt
+   
+2) go to MySettings/Events/run_01/ and convert unweighted_events.lhe to MyFile.root by ./ExRootAnalysis/ExRootLHEFConverter MySettings/Events/run_01/unweighted_events.lhe MyFile.root
+
+3) go to DiTau directory where WpWp.cxx and LHEF.hh exist and convert MyFile.root to MyTree.root and find the efficiencies for different channels.
+
+4) go to DiTau/tools directory and use drawKinVariable.py to draw the kinematic variables distributions.
+
+5) Copy the efficiencies and xsec to DiTau/Limit/Limit.C
+
+6) in root session, compile and run Limit.C for different masses (change the root files to reflect their content)
+   root[].L Limit.C+g
+   root[]Limit(0)  
+   root[]Limit(1) ....
+
+7) in the same directory (Limit) run brazilianFlags.C after changing the root files names to the output of the step 6.
+
+Cautions: 
+a) For steps 6 and 7 the mass range should be changed to be consistent with the mass range of th eproduced root files in step 1.
+
+b) r_step in Limit.C is flexible and should be adjusted to gain in speed and also have proper granularity for small values. I use ~0.001 for low W' mass and ~1 for high masses.

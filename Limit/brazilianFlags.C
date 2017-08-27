@@ -1,4 +1,5 @@
-void graph(){
+//A code to make the brazilian flags
+void brazilianFlags(){
 
 
   TCanvas* c1 = new TCanvas("mass wp- rvalue","Mwp_r.value");
@@ -13,10 +14,14 @@ void graph(){
   float WpMassP1M1_x[n+1];
   float WpMassP1M1_xError[n+1] = {0.0};
 
-  Float_t wpMasses[n] = {100,130,160,190,220,250,280,310,340,370,400};
+  //Float_t wpMasses[n] = {100,130,160,190,220,250,280,310,340,370,400};//gSM, 30^\circ
+
+  //Float_t wpMasses[n] = {10,40,70,100,130,160,190,220,250,280,310};//gSM/2, 45^\circ and 60^\circ
+  Float_t wpMasses[n] = {190,220,250,280,310,340,370,400,430,460,490};//1.5gSM
+
   for(int i = 0 ; i< n ; i++){
     int theMass = int(wpMasses[i]);
-    TFile* f = TFile::Open("wp_" + TString::Itoa(theMass,10) + ".root" );
+    TFile* f = TFile::Open("clsgSM3Over2wp" + TString::Itoa(theMass,10) + ".root" );
 
     TH1 *cls = (TH1*)(f->Get("cls"));
     observed[i] = cls->GetBinCenter( cls->FindLastBinAbove(0.05) );
@@ -85,8 +90,8 @@ void graph(){
   gExpectedP1M1->SetLineStyle(2);
   TH1F *myHisto = new TH1F("myHisto", "",11,WpMassP1M1_x[0],WpMassP1M1_x[n]);
   myHisto->SetStats(0);
-  // myHisto->GetXaxis()->SetRange(WpMassP1M1_x[0], WpMassP1M1_x[n-1]);
-  myHisto->GetXaxis()->SetRangeUser(105,390);
+  myHisto->GetXaxis()->SetRange(int(WpMassP1M1_x[0])+5, int(WpMassP1M1_x[n])-10);
+  //myHisto->GetXaxis()->SetRangeUser(105,390);
   myHisto->GetYaxis()->SetRangeUser(0.05,50.0);
   myHisto->GetYaxis()->SetTitle("95% CL upper limit on  #sigma / #sigma_{pp #rightarrow W'W'}");
   myHisto->GetYaxis()->SetTitleOffset(0.8);
@@ -97,12 +102,12 @@ void graph(){
  
   gExpectedP1M1->SetHistogram(myHisto);
 
-  gExpectedP1M1->Draw("ap4");
+  gExpectedP1M1->Draw("ap40");
 
   gr_observed->Draw("PC");
    
   gr_expM->Draw("PC");
-   TLegend *leg = new TLegend(0.3291024,0.6515152,0.7107888,0.8572568,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.15,0.6515152,0.4,0.8572568,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.0400641);
    leg->SetLineColor(0);
@@ -110,7 +115,15 @@ void graph(){
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry(gr_observed,"Observed","l");
+   TLegendEntry *entry=leg->AddEntry(gr_observed,"#frac{3}{2} g_{SM}","c");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(4);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry(gr_observed,"Observed","l");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(4);
@@ -130,8 +143,8 @@ void graph(){
    entry->SetTextFont(42);
    leg->Draw();
 
-   // TLine *line = new TLine(WpMassP1M1_x[0], 1, WpMassP1M1_x[n-1],1);
-   TLine *line = new TLine(105, 1, 390,1);
+   TLine *line = new TLine(WpMassP1M1_x[0], 1, WpMassP1M1_x[n-1],1);
+   //TLine *line = new TLine(105, 1, 390,1);
    line->SetLineStyle(7);
    line->Draw();
 }

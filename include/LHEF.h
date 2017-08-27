@@ -104,6 +104,7 @@ public :
    TBranch        *b_Particle_Spin;   //!
    TBranch        *b_Particle_size;   //!
 
+   Int_t MassInd;
    LHEF(TTree *tree=0);
    virtual ~LHEF();
    virtual Int_t    Cut(Long64_t entry);
@@ -120,12 +121,18 @@ public :
 #ifdef LHEF_cxx
 LHEF::LHEF(TTree *tree) : fChain(0) 
 {
+  cout<<"Enter the Mass of W':: ";
+  cin>>MassInd;
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("/home/paktinat/MG5_aMC_v2_5_2/EventsWp10010k.root");
+     char file[100];
+     //     fprintf(file, "/home/paktinat/MG5_aMC_v2_6_0/gSMHalfwp%I.root",MassInd);
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject(TFile::Open("/cmsdata2/paktinat/MG5_aMC_v2_6_0/gSMTheta60wp" + TString::Itoa(MassInd,10) + ".root" ));
       if (!f || !f->IsOpen()) {
-         f = new TFile("/home/paktinat/MG5_aMC_v2_5_2/EventsWp10010k.root");
+	//         f = new TFile(file);
+	f = TFile::Open("/cmsdata2/paktinat/MG5_aMC_v2_6_0/gSMTheta60wp" + TString::Itoa(MassInd,10) + ".root" );
+
       }
       f->GetObject("LHEF",tree);
 

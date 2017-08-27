@@ -1,8 +1,8 @@
 {
 //=========Macro generated from canvas: Exclusion2/Exclusion2
-//=========  (Mon Jul 24 21:39:55 2017) by ROOT version5.34/23
-   TCanvas *Exclusion2 = new TCanvas("Exclusion2", "Exclusion2",65,52,700,500);
-   Exclusion2->Range(50.5455,-0.55103,350.8182,1.94897);
+//=========  (Sun Aug 27 10:25:57 2017) by ROOT version5.34/07
+   TCanvas *Exclusion2 = new TCanvas("Exclusion2", "Exclusion2",13,36,700,500);
+   Exclusion2->Range(-26.36364,-1.67603,337.2727,2.07397);
    Exclusion2->SetFillColor(0);
    Exclusion2->SetBorderMode(0);
    Exclusion2->SetBorderSize(2);
@@ -11,48 +11,47 @@
    Exclusion2->SetFrameBorderMode(0);
    
    TGraphErrors *gre = new TGraphErrors(12);
-   gre->SetName("Graph0");
+   gre->SetName("Graph");
    gre->SetTitle("Graph");
    gre->SetFillColor(3);
    gre->SetLineColor(2);
    gre->SetLineStyle(2);
    gre->SetLineWidth(4);
-   gre->SetPoint(0,100,0.46);
-   gre->SetPointError(0,0,0.15);
-   gre->SetPoint(1,130,0.905);
-   gre->SetPointError(1,0,0.295);
-   gre->SetPoint(2,160,1.5);
-   gre->SetPointError(2,0,0.48);
-   gre->SetPoint(3,190,2.32);
-   gre->SetPointError(3,0,0.74);
-   gre->SetPoint(4,220,3.665);
-   gre->SetPointError(4,0,1.145);
-   gre->SetPoint(5,250,5.79);
-   gre->SetPointError(5,0,1.81);
-   gre->SetPoint(6,280,7.925);
-   gre->SetPointError(6,0,2.075);
-   gre->SetPoint(7,310,11.86);
-   gre->SetPointError(7,0,3.14);
-   gre->SetPoint(8,340,15.98);
-   gre->SetPointError(8,0,4.02);
-   gre->SetPoint(9,370,22);
-   gre->SetPointError(9,0,5.0);
-   gre->SetPoint(10,400,28);
-   gre->SetPointError(10,0,6.0);
-   gre->SetPoint(11,420,32);
-   gre->SetPointError(11,0,7.0);
+   gre->SetPoint(0,10,0.000465);
+   gre->SetPointError(0,0,-0.000165);
+   gre->SetPoint(1,40,0.052);
+   gre->SetPointError(1,0,-0.017);
+   gre->SetPoint(2,70,0.2075);
+   gre->SetPointError(2,0,-0.06650001);
+   gre->SetPoint(3,100,0.51);
+   gre->SetPointError(3,0,-0.163);
+   gre->SetPoint(4,130,0.95);
+   gre->SetPointError(4,0,-0.31);
+   gre->SetPoint(5,160,1.57);
+   gre->SetPointError(5,0,-0.5);
+   gre->SetPoint(6,190,2.375);
+   gre->SetPointError(6,0,-0.7549999);
+   gre->SetPoint(7,220,3.9);
+   gre->SetPointError(7,0,-1.22);
+   gre->SetPoint(8,250,5.7);
+   gre->SetPointError(8,0,-1.8);
+   gre->SetPoint(9,280,8.650001);
+   gre->SetPointError(9,0,-2.75);
+   gre->SetPoint(10,310,12.65);
+   gre->SetPointError(10,0,-3.95);
+   gre->SetPoint(11,330,12.65);
+   gre->SetPointError(11,0,-3.95);
    
-   TH1F *Graph_myHisto1 = new TH1F("Graph_myHisto1","",11,100,420);
-   Graph_myHisto1->SetMinimum(0.5);
+   TH1F *Graph_myHisto1 = new TH1F("Graph_myHisto1","",11,10,330);
+   Graph_myHisto1->SetMinimum(0.05);
    Graph_myHisto1->SetMaximum(50);
    Graph_myHisto1->SetStats(0);
 
-   Int_t ci;      // for color index setting
-   TColor *color; // for color definition with alpha
+   Int_t ci;   // for color index setting
    ci = TColor::GetColor("#000099");
    Graph_myHisto1->SetLineColor(ci);
    Graph_myHisto1->GetXaxis()->SetTitle("m_{W'} (GeV)");
-   Graph_myHisto1->GetXaxis()->SetRange(1,9);
+   Graph_myHisto1->GetXaxis()->SetRange(1,10);
    Graph_myHisto1->GetXaxis()->SetLabelFont(42);
    Graph_myHisto1->GetXaxis()->SetLabelSize(0.035);
    Graph_myHisto1->GetXaxis()->SetTitleSize(0.05);
@@ -73,28 +72,28 @@
    gre->Draw("ap40");
    
    TGraph *graph = new TGraph(11);
-   graph->SetName("Graph1");
+   graph->SetName("Graph");
    graph->SetTitle("Observed");
    graph->SetFillColor(1);
 
    ci = TColor::GetColor("#0000ff");
    graph->SetLineColor(ci);
    graph->SetLineWidth(4);
-   graph->SetPoint(0,100,0.2299999893);
-   graph->SetPoint(1,130,0.4399999976);
-   graph->SetPoint(2,160,0.7799999714);
-   graph->SetPoint(3,190,1.25999999);
-   graph->SetPoint(4,220,2.079999924);
-   graph->SetPoint(5,250,3.379999876);
-   graph->SetPoint(6,280,5.079999924);
-   graph->SetPoint(7,310,7.659999847);
-   graph->SetPoint(8,340,10.72999954);
-   graph->SetPoint(9,370,15);
-   graph->SetPoint(10,400,20);
+   graph->SetPoint(0,10,0.0003399999987);
+   graph->SetPoint(1,40,0.02600000054);
+   graph->SetPoint(2,70,0.1050000042);
+   graph->SetPoint(3,100,0.253000021);
+   graph->SetPoint(4,130,0.4699999988);
+   graph->SetPoint(5,160,0.8199999928);
+   graph->SetPoint(6,190,1.289999962);
+   graph->SetPoint(7,220,2.190000057);
+   graph->SetPoint(8,250,3.299999952);
+   graph->SetPoint(9,280,5.200000286);
+   graph->SetPoint(10,310,7.700000286);
    
-   TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","Observed",100,70,430);
-   Graph_Graph1->SetMinimum(0.207);
-   Graph_Graph1->SetMaximum(21.977);
+   TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","Observed",100,0,340);
+   Graph_Graph1->SetMinimum(0.000306);
+   Graph_Graph1->SetMaximum(8.469966);
    Graph_Graph1->SetDirectory(0);
    Graph_Graph1->SetStats(0);
 
@@ -117,7 +116,7 @@
    graph->Draw("pc");
    
    graph = new TGraph(11);
-   graph->SetName("Graph2");
+   graph->SetName("Graph");
    graph->SetTitle("Expected");
    graph->SetFillColor(1);
 
@@ -125,21 +124,21 @@
    graph->SetLineColor(ci);
    graph->SetLineStyle(2);
    graph->SetLineWidth(4);
-   graph->SetPoint(0,100,0.4299999774);
-   graph->SetPoint(1,130,0.8399999738);
-   graph->SetPoint(2,160,1.399999976);
-   graph->SetPoint(3,190,2.159999847);
-   graph->SetPoint(4,220,3.399999857);
-   graph->SetPoint(5,250,5.409999847);
-   graph->SetPoint(6,280,7.909999847);
-   graph->SetPoint(7,310,11.7699995);
-   graph->SetPoint(8,340,16.21999931);
-   graph->SetPoint(9,370,22);
-   graph->SetPoint(10,400,28);
+   graph->SetPoint(0,10,0.0004399999743);
+   graph->SetPoint(1,40,0.04900000244);
+   graph->SetPoint(2,70,0.1950000077);
+   graph->SetPoint(3,100,0.476000011);
+   graph->SetPoint(4,130,0.8799999952);
+   graph->SetPoint(5,160,1.469999909);
+   graph->SetPoint(6,190,2.210000038);
+   graph->SetPoint(7,220,3.639999866);
+   graph->SetPoint(8,250,5.300000191);
+   graph->SetPoint(9,280,8);
+   graph->SetPoint(10,310,11.80000019);
    
-   TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","Expected",100,70,430);
-   Graph_Graph2->SetMinimum(0.387);
-   Graph_Graph2->SetMaximum(21.957);
+   TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","Expected",100,0,340);
+   Graph_Graph2->SetMinimum(0.000396);
+   Graph_Graph2->SetMaximum(12.97996);
    Graph_Graph2->SetDirectory(0);
    Graph_Graph2->SetStats(0);
 
@@ -161,7 +160,7 @@
    
    graph->Draw("pc");
    
-   TLegend *leg = new TLegend(0.14,0.65,0.43,0.85,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.15,0.6515152,0.4,0.8572568,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.0400641);
    leg->SetLineColor(0);
@@ -169,7 +168,15 @@
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph1","Observed","l");
+   TLegendEntry *entry=leg->AddEntry("Graph","#theta = 45^{#circ}","c");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(4);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("Graph","Observed","l");
 
    ci = TColor::GetColor("#0000ff");
    entry->SetLineColor(ci);
@@ -179,7 +186,7 @@
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph0","Expected #pm1 #sigma","fl");
+   entry=leg->AddEntry("Graph","Expected #pm1 #sigma","fl");
    entry->SetFillColor(3);
    entry->SetFillStyle(1001);
    entry->SetLineColor(2);
@@ -190,11 +197,10 @@
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
    leg->Draw();
-   TLine *line = new TLine(100,1,361,1);
+   TLine *line = new TLine(10,1,300,1);
    line->SetLineStyle(7);
    line->Draw();
    Exclusion2->Modified();
    Exclusion2->cd();
    Exclusion2->SetSelected(Exclusion2);
 }
-
