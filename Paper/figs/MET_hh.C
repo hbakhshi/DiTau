@@ -58,10 +58,10 @@
    hMET_hadhad__13->SetStats(0);
    hMET_hadhad__13->SetLineWidth(2);
    hMET_hadhad__13->SetMinimum(0.0005);
-   hMET_hadhad__13->GetXaxis()->SetTitle("MET (GeV)");
+   hMET_hadhad__13->GetXaxis()->SetTitle("p_{T}^{miss} (GeV)");
    hMET_hadhad__13->GetXaxis()->SetLabelFont(42);
    hMET_hadhad__13->GetXaxis()->SetLabelSize(0.035);
-   hMET_hadhad__13->GetXaxis()->SetTitleSize(0.035);
+   hMET_hadhad__13->GetXaxis()->SetTitleSize(0.043);
    hMET_hadhad__13->GetXaxis()->SetTitleFont(42);
    hMET_hadhad__13->GetYaxis()->SetLabelFont(42);
    hMET_hadhad__13->GetYaxis()->SetLabelSize(0.035);
@@ -121,10 +121,10 @@
    hMET_hadhad__14->SetLineColor(2);
    hMET_hadhad__14->SetLineStyle(2);
    hMET_hadhad__14->SetLineWidth(2);
-   hMET_hadhad__14->GetXaxis()->SetTitle("MET (GeV)");
+   hMET_hadhad__14->GetXaxis()->SetTitle("p_{T}^{miss} (GeV)");
    hMET_hadhad__14->GetXaxis()->SetLabelFont(42);
    hMET_hadhad__14->GetXaxis()->SetLabelSize(0.035);
-   hMET_hadhad__14->GetXaxis()->SetTitleSize(0.035);
+   hMET_hadhad__14->GetXaxis()->SetTitleSize(0.043);
    hMET_hadhad__14->GetXaxis()->SetTitleFont(42);
    hMET_hadhad__14->GetYaxis()->SetLabelFont(42);
    hMET_hadhad__14->GetYaxis()->SetLabelSize(0.035);
@@ -184,10 +184,10 @@
    hMET_hadhad__15->SetLineColor(3);
    hMET_hadhad__15->SetLineStyle(3);
    hMET_hadhad__15->SetLineWidth(2);
-   hMET_hadhad__15->GetXaxis()->SetTitle("MET (GeV)");
+   hMET_hadhad__15->GetXaxis()->SetTitle("p_{T}^{miss} (GeV)");
    hMET_hadhad__15->GetXaxis()->SetLabelFont(42);
    hMET_hadhad__15->GetXaxis()->SetLabelSize(0.035);
-   hMET_hadhad__15->GetXaxis()->SetTitleSize(0.035);
+   hMET_hadhad__15->GetXaxis()->SetTitleSize(0.043);
    hMET_hadhad__15->GetXaxis()->SetTitleFont(42);
    hMET_hadhad__15->GetYaxis()->SetLabelFont(42);
    hMET_hadhad__15->GetYaxis()->SetLabelSize(0.035);
@@ -195,7 +195,7 @@
    hMET_hadhad__15->GetYaxis()->SetTitleFont(42);
    hMET_hadhad__15->GetZaxis()->SetLabelFont(42);
    hMET_hadhad__15->GetZaxis()->SetLabelSize(0.035);
-   hMET_hadhad__15->GetZaxis()->SetTitleSize(0.035);
+   hMET_hadhad__15->GetZaxis()->SetTitleSize(0.05);
    hMET_hadhad__15->GetZaxis()->SetTitleFont(42);
    hMET_hadhad__15->Draw("sames");
    
@@ -247,10 +247,10 @@
    hMET_hadhad__16->SetLineColor(4);
    hMET_hadhad__16->SetLineStyle(4);
    hMET_hadhad__16->SetLineWidth(2);
-   hMET_hadhad__16->GetXaxis()->SetTitle("MET (GeV)");
+   hMET_hadhad__16->GetXaxis()->SetTitle("p_{T}^{miss} (GeV)");
    hMET_hadhad__16->GetXaxis()->SetLabelFont(42);
    hMET_hadhad__16->GetXaxis()->SetLabelSize(0.035);
-   hMET_hadhad__16->GetXaxis()->SetTitleSize(0.035);
+   hMET_hadhad__16->GetXaxis()->SetTitleSize(0.043); 
    hMET_hadhad__16->GetXaxis()->SetTitleFont(42);
    hMET_hadhad__16->GetYaxis()->SetLabelFont(42);
    hMET_hadhad__16->GetYaxis()->SetLabelSize(0.035);
@@ -258,7 +258,7 @@
    hMET_hadhad__16->GetYaxis()->SetTitleFont(42);
    hMET_hadhad__16->GetZaxis()->SetLabelFont(42);
    hMET_hadhad__16->GetZaxis()->SetLabelSize(0.035);
-   hMET_hadhad__16->GetZaxis()->SetTitleSize(0.035);
+   hMET_hadhad__16->GetZaxis()->SetTitleSize(0.05);
    hMET_hadhad__16->GetZaxis()->SetTitleFont(42);
    hMET_hadhad__16->Draw("sames");
    
