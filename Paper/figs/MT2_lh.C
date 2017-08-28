@@ -27,7 +27,7 @@
    hMT2_lhad__1->SetStats(0);
    hMT2_lhad__1->SetLineWidth(2);
    hMT2_lhad__1->SetMinimum(0.0005);
-   hMT2_lhad__1->GetXaxis()->SetTitle("MT2 (GeV)");
+   hMT2_lhad__1->GetXaxis()->SetTitle("M_{T2} (GeV)");
    hMT2_lhad__1->GetXaxis()->SetLabelFont(42);
    hMT2_lhad__1->GetXaxis()->SetLabelSize(0.035);
    hMT2_lhad__1->GetXaxis()->SetTitleSize(0.035);
@@ -68,7 +68,7 @@
    hMT2_lhad__2->SetLineColor(2);
    hMT2_lhad__2->SetLineStyle(2);
    hMT2_lhad__2->SetLineWidth(2);
-   hMT2_lhad__2->GetXaxis()->SetTitle("MT2 (GeV)");
+   hMT2_lhad__2->GetXaxis()->SetTitle("M_{T2} (GeV)");
    hMT2_lhad__2->GetXaxis()->SetLabelFont(42);
    hMT2_lhad__2->GetXaxis()->SetLabelSize(0.035);
    hMT2_lhad__2->GetXaxis()->SetTitleSize(0.035);
@@ -119,7 +119,7 @@
    hMT2_lhad__3->SetLineColor(3);
    hMT2_lhad__3->SetLineStyle(3);
    hMT2_lhad__3->SetLineWidth(2);
-   hMT2_lhad__3->GetXaxis()->SetTitle("MT2 (GeV)");
+   hMT2_lhad__3->GetXaxis()->SetTitle("M_{T2} (GeV)");
    hMT2_lhad__3->GetXaxis()->SetLabelFont(42);
    hMT2_lhad__3->GetXaxis()->SetLabelSize(0.035);
    hMT2_lhad__3->GetXaxis()->SetTitleSize(0.035);
@@ -179,7 +179,7 @@
    hMT2_lhad__4->SetLineColor(4);
    hMT2_lhad__4->SetLineStyle(4);
    hMT2_lhad__4->SetLineWidth(2);
-   hMT2_lhad__4->GetXaxis()->SetTitle("MT2 (GeV)");
+   hMT2_lhad__4->GetXaxis()->SetTitle("M_{T2} (GeV)");
    hMT2_lhad__4->GetXaxis()->SetLabelFont(42);
    hMT2_lhad__4->GetXaxis()->SetLabelSize(0.035);
    hMT2_lhad__4->GetXaxis()->SetTitleSize(0.035);
