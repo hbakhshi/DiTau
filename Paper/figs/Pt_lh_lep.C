@@ -58,7 +58,7 @@
    hTauPt_ll__25->SetStats(0);
    hTauPt_ll__25->SetLineWidth(2);
    hTauPt_ll__25->SetMinimum(0.0002);
-   hTauPt_ll__25->GetXaxis()->SetTitle("#tau p_{T} (GeV)");
+   hTauPt_ll__25->GetXaxis()->SetTitle("lepton p_{T} (GeV)");
    hTauPt_ll__25->GetXaxis()->SetLabelFont(42);
    hTauPt_ll__25->GetXaxis()->SetLabelSize(0.035);
    hTauPt_ll__25->GetXaxis()->SetTitleSize(0.035);
@@ -121,7 +121,7 @@
    hTauPt_ll__26->SetLineColor(2);
    hTauPt_ll__26->SetLineStyle(2);
    hTauPt_ll__26->SetLineWidth(2);
-   hTauPt_ll__26->GetXaxis()->SetTitle("#tau p_{T} (GeV)");
+   hTauPt_ll__26->GetXaxis()->SetTitle("lepton p_{T} (GeV)");
    hTauPt_ll__26->GetXaxis()->SetLabelFont(42);
    hTauPt_ll__26->GetXaxis()->SetLabelSize(0.035);
    hTauPt_ll__26->GetXaxis()->SetTitleSize(0.035);
@@ -184,7 +184,7 @@
    hTauPt_ll__27->SetLineColor(3);
    hTauPt_ll__27->SetLineStyle(3);
    hTauPt_ll__27->SetLineWidth(2);
-   hTauPt_ll__27->GetXaxis()->SetTitle("#tau p_{T} (GeV)");
+   hTauPt_ll__27->GetXaxis()->SetTitle("lepton p_{T} (GeV)");
    hTauPt_ll__27->GetXaxis()->SetLabelFont(42);
    hTauPt_ll__27->GetXaxis()->SetLabelSize(0.035);
    hTauPt_ll__27->GetXaxis()->SetTitleSize(0.035);
@@ -247,7 +247,7 @@
    hTauPt_ll__28->SetLineColor(4);
    hTauPt_ll__28->SetLineStyle(4);
    hTauPt_ll__28->SetLineWidth(2);
-   hTauPt_ll__28->GetXaxis()->SetTitle("#tau p_{T} (GeV)");
+   hTauPt_ll__28->GetXaxis()->SetTitle("lepton p_{T} (GeV)");
    hTauPt_ll__28->GetXaxis()->SetLabelFont(42);
    hTauPt_ll__28->GetXaxis()->SetLabelSize(0.035);
    hTauPt_ll__28->GetXaxis()->SetTitleSize(0.035);
