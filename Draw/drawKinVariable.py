@@ -5,8 +5,8 @@ from ROOT import TFile, TH1, TCanvas, gStyle, TLatex, gPad, TLegend
 masses = [100,190,310,400]
 hists = { "hTauPt_hadhad-max":["#tau p_{T}^{max} (GeV)" , "#tau #tau" , True] ,
           "hTauPt_hadhad-min":["#tau p_{T}^{min} (GeV)" , "#tau #tau" , True],
-          "hTauPt_lhad":["lepton p_{T} (GeV)" , "lepton #tau", True] ,
-          "hTauPt_ll":["#tau p_{T} (GeV)" , "lepton #tau", True] ,
+          "hTauPt_lhad":["#tau p_{T} (GeV)" , "lepton #tau", True] ,
+          "hTauPt_ll":["lepton p_{T} (GeV)" , "lepton #tau", True] ,
           "hMET_lhad":["MET (GeV)" , "lepton #tau", True] ,
           "hMET_hadhad":["MET (GeV)" , "#tau #tau", True] ,
           "hMT2_lhad":["MT2 (GeV)" , "lepton #tau", True] ,
