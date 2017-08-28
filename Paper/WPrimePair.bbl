@@ -67,11 +67,19 @@
   \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{06}}, \bibinfo{pages}{128}
   (\bibinfo{year}{2011}), \eprint{1106.0522}.
 
-\bibitem[{\citenamefont{Christensen and Duhr}(2009)}]{Christensen:2008py}
-\bibinfo{author}{\bibfnamefont{N.~D.} \bibnamefont{Christensen}}
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Duhr}},
-  \bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{180}},
-  \bibinfo{pages}{1614} (\bibinfo{year}{2009}), \eprint{0806.4194}.
+\bibitem[{\citenamefont{Ball et~al.}(2013)\citenamefont{Ball, Bertone,
+  Carrazza, Del~Debbio, Forte, Guffanti, Hartland, and Rojo}}]{Ball:2013hta}
+\bibinfo{author}{\bibfnamefont{R.~D.} \bibnamefont{Ball}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Bertone}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Carrazza}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Del~Debbio}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Forte}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Guffanti}},
+  \bibinfo{author}{\bibfnamefont{N.~P.} \bibnamefont{Hartland}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Rojo}}
+  (\bibinfo{collaboration}{NNPDF}), \bibinfo{journal}{Nucl. Phys.}
+  \textbf{\bibinfo{volume}{B877}}, \bibinfo{pages}{290} (\bibinfo{year}{2013}),
+  \eprint{1308.0598}.
 
 \bibitem[{\citenamefont{Davidson et~al.}(2012)\citenamefont{Davidson, Nanava,
   Przedzinski, Richter-W\c{a}s, and W\c{a}s}}]{Davidson:2010rw}
