@@ -1,7 +1,7 @@
 from ROOT import TGraph, TMultiGraph, TCanvas, kRed, kBlue, kOrange, kGreen, TLegend, kWhite
 
-graphs = {1:[1 , kRed , "Signal Region I" , 20 , "SR1"],
-          2:[2 , kBlue , "Signal Region II" , 21 , "SR2"],
+graphs = {1:[1 , kRed , "SR1" , 20 , "SR1"],
+          2:[2 , kBlue , "SR2" , 21 , "SR2"],
           3:[3 , kGreen , "#mu#tau" , 22 , "MuTau"],
           4:[4 , kOrange , "e#tau" , 23 , "EleTau"]}
 mgraph = TMultiGraph()
