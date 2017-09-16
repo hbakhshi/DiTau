@@ -1,15 +1,15 @@
 \section{Event generation}\label{sec:simulation}
 To generate the signal events version 2.6.0 of   MadGraph5\_aMC@NLO~\cite{Alwall:2014hca} package is used which is the extension of MadGraph5~\cite{Alwall:2011uj} matrix-element generator. In continue, we refer to this event generator  as MadGraph.
 The model used for signal generation is \wprime effective model (WEff-UFO)~\cite{Sullivan:2002jt}, which  is an extension of SM by adding the \wprime boson interactions with the SM fermions.
-For each set of parameters, at least 20000 events are generated in proton-proton (pp) collisions at a center-of-mass energy ($\sqrt{s}$) of 8 TeV. The signal of our interest is $ pp\rightarrow \wprimep \wprimem$. The momentum distribution of the partons in the proton is provided by the NN23LO1 \cite{Ball:2013hta} parton distribution function (PDF). The TAUOLA package~\cite{Davidson:2010rw} is used to simulate the $\tau$ lepton decays. It simulates the hadronic and leptonic decays of the $\tau$ lepton and provides full information about final state particles including neutrinos and mediator particles. It also considers spin information of the decay products in simulating the angular distribution of the decay products.
+For each set of parameters, at least 20000 events are generated in pp collisions at $\sqrt{s}$ = 8 TeV. The signal of our interest is $ pp\rightarrow \wprimep \wprimem$. The momentum distribution of the partons in the proton is provided by the NN23LO1 \cite{Ball:2013hta} parton distribution function (PDF). The TAUOLA package~\cite{Davidson:2010rw} is used to simulate the $\tau$ lepton decays. It simulates the hadronic and leptonic decays of the $\tau$ lepton and provides full information about final state particles including neutrinos and mediator particles. It also considers spin information of the decay products in simulating the angular distribution of the decay products.
 
 In the first study, we considered purely left-handed  \wprime (\gL = \gSM ~and \gR  = 0). 
 This means interactions with quarks and leptons are both allowed. Different masses of  \wprime boson in the range of 100 through 400 GeV are used in this analysis.  
-Decay width or life time of \wprime boson depends on decay modes, coupling strength of the decay process, and kinematic constraints. Decay widths corresponding to each mass of \wprime boson are estimated  by MadGraph. The results agree with the values reported in Ref.\cite{Sullivan:2002jt} where the total width of \wprime and partial width of $\wprime \rightarrow t \bar{b},\bar{t}b $ are calculated in the leading order and the next to leading order precision.
+Decay width or life time of \wprime boson depends on decay modes, coupling strength of the decay process, and kinematic constraints. Decay widths corresponding to each mass of \wprime boson are estimated  by MadGraph. The results agree with the values reported in Ref.\cite{Sullivan:2002jt}, where the total width of \wprime and partial width of $\wprime \rightarrow t \bar{b},\bar{t}b $ are calculated in the leading order and the next to leading order precision.
 The production cross section and total width for the decay of \wprime  to both quarks and leptons in different masses are listed in table \ref{tab:Xsec,L-h}. 
 \begin{table}[htb]
  \centering
- \caption{Cross sections and decay widths when \gR = 0, \gL = \gSM = 0.64  for various \wprime masses for pp collisions at $\sqrt{s}$ = 8 TeV. The relative uncertainties on the cross sections are 2-8\% from the scale variation and 3-5\% from PDF variation for different masses. \label{tab:Xsec,L-h} }
+ \caption{Cross sections and decay widths when \gR = 0, \gL = \gSM = 0.64  for various \wprime masses for pp collisions at $\sqrt{s}$ = 8 TeV. \label{tab:Xsec,L-h} }
   \begin{tabular}{|c|c|c|}
     \hline 
     \wprime mass (GeV)  &  Decay width (GeV)  &  Cross section (fb)\\
@@ -28,12 +28,13 @@ The production cross section and total width for the decay of \wprime  to both q
 \hline
 \end{tabular}
 \end{table}
+The relative uncertainties on the cross sections reported in this table and the following tables are typically, 2-8\% from the scale variation and 3-5\% from PDF variation for different masses.
 
 As a cross check the branching ratio (BR) which is defined as the partial decay width to a special channel divided by the total decay width is compared for both signs of the \wprime boson. 
 It can be observed in table \ref{tab:W'BR} that the values are consistent for \wprimep ~and \wprimem ~bosons. 
 \begin{table}[htb]
 	\centering
-	\caption{Branching ratios of \wprime  when \gR = 0, \gL = \gSM = 0.65 for various signs and masses of \wprime boson. \label{tab:W'BR} }
+	\caption{Branching ratios of \wprime  when \gR = 0, \gL = \gSM = 0.64 for various signs and masses of \wprime boson. \label{tab:W'BR} }
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline 
 		                   & \multicolumn{4}{c|}{Branching ratio}\\\cline{2-5}
@@ -87,7 +88,7 @@ The transverse momentum of the leading and next-to-leading \Tau ~leptons in \tau
 The couplings of the \wprime boson are not fixed by the model, so to investigate the effect of the couplings, we calculate the production cross section and decay width when the couplings are multiplied by 1.5 or 0.5. As can be seen in table \ref{tab:XsecgLVar}, 
 \begin{table}[htb]
 	\centering
-	\caption{Cross sections and decay widths when \gL is decreased or increased by 50\% for various \wprime masses. \label{tab:XsecgLVar} }
+	\caption{Cross sections and decay widths when \gL ~is decreased or increased by 50\% for various \wprime masses. \label{tab:XsecgLVar} }
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline 
 	    & \multicolumn{2}{c|}{\gR = 0, \gL = $\frac{1}{2}$\gSM = 0.32}
@@ -117,7 +118,7 @@ The couplings of the \wprime boson are not fixed by the model, so to investigate
 the cross section is scaled by 5.06 and 1/16 when the coupling is increased and decreased by 50\%, respectively. It is noticeable that the values of decay widths are proportional to  factors of 2.25 and  0.25 for the increased  and decreased left-handed coupling values. The behaviors of the cross sections, $(\gL)^4$, and decay widths, $(\gL)^2$, are consistent with our expectations.
 
 
-In an alternative approach, the left-handed and right-handed couplings are changed in a way that their squared sum is constant and equal to $g_{SM}^2$.
+In an alternative approach, the left-handed and right-handed couplings are changed in a way that their squared sum is constant and equal to $\gSM^2$.
 \begin{equation}
   \gSM^2 = (\gL)^2 +  (\gR)^2 
 \end{equation}
@@ -126,7 +127,7 @@ It is easier, to define a mixing angle and rewrite the couplings as:
 \gL  = \gSM \cos\theta \\
 \gR  = \gSM \sin\theta
 \end{eqnarray}
-By varying $\theta$ from 0 to $ 90^\circ $, the \wprime goes from a purely left-handed to a purely right-handed vector boson. The latter \wprime does not have any interaction with the leptons. 
+By varying $\theta$ from 0 to $ 90^\circ $, the \wprime goes from a purely left-handed to a purely right-handed vector boson. The latter \wprime boson does not have any interaction with the leptons. 
 The variation of the cross sections and decay widths due to various mixing angles, when \wprime mass is 250 GeV, is shown in table \ref{tab:mixingAngle}.
 \begin{table}[htb]
   \centering
@@ -143,5 +144,5 @@ The variation of the cross sections and decay widths due to various mixing angle
   \end{tabular}
 \end{table}
 
-In the next section the generated events in this section are used to set the lower limit on the \wprime mass.
+In the next section the generated events in this section are used to set a lower limit on the \wprime mass.
 
