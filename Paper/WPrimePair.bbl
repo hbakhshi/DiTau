@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -26,6 +26,12 @@
 \bibitem[{\citenamefont{Aaboud et~al.}(2017)}]{Aaboud:2017efa}
 \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Aaboud}} \bibnamefont{et~al.}
   (\bibinfo{collaboration}{ATLAS}) (\bibinfo{year}{2017}), \eprint{1706.04786}.
+
+\bibitem[{\citenamefont{Yaser~Ayazi and
+  Paktinat~Mehdiabadi}(2017)}]{YaserAyazi:2017xyj}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Yaser~Ayazi}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Paktinat~Mehdiabadi}}
+  (\bibinfo{year}{2017}), \eprint{1707.07155}.
 
 \bibitem[{\citenamefont{Lester and Summers}(1999)}]{Lester:1999tx}
 \bibinfo{author}{\bibfnamefont{C.~G.} \bibnamefont{Lester}} \bibnamefont{and}
