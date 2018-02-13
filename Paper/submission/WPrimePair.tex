@@ -37,7 +37,7 @@
 \usepackage{grffile}
 \usepackage{color}
 \usepackage{colordvi}
-\usepackage{amsmath,amssymb}
+\usepackage{amssymb}
 \usepackage{rotating}
 \usepackage{lscape}
 \usepackage{float}
@@ -71,7 +71,7 @@ Faculty of Physics, Yazd University, P.O. Box 89195-741, Yazd, Iran}
 \date{\today}
 
 \begin{abstract}
-For the first time, the pair production of the heavy charged gauge bosons, known as $W'$ bosons is considered, when both decay to $\tau$ leptons. The reported detailed efficiency of object/event selection by the CMS experiment is used to find the lower limit on the mass of $W'$ boson. Various assumptions for the coupling of the new gauge boson are examined and the results are reported. In the case of a SM-like $W'$ boson, masses below 290 GeV are excluded at 95\% confidence level. The method can be used to constrain the new models with the similar final state.
+For the first time, the pair production of the heavy charged gauge bosons, known as $W'$ bosons is considered, when both decay to $\tau$ leptons. The reported detailed efficiency of object/event selection by the CMS experiment is used to find the lower limit on the mass of $W'$ boson. Various assumptions for the coupling of the new gauge boson are examined and the results are reported. In the case of a SM-like $W'$ boson, masses below 290 GeV are excluded at 95\% confidence level. The method can be used to constrain other new models with  similar final state.
  \keywords{heavy gauge boson, collider phenomenology, exclusion limits}
 \end{abstract}
 
@@ -102,7 +102,8 @@ The CMS analysis uses LHC data from proton-proton (pp) collisions at a center-of
 	\label{fig:wprimefeyndiagram}
 \end{figure}
 
-In different experiments, many searches are done to see the signatures of \wprime boson, but up to now all of them have failed. The most stringent limit is set by the ATLAS experiment in an analysis which looks at the tail of the lepton transverse mass distribution \cite{Aaboud:2017efa}. The lepton is assumed to be produced in the decay of a \wprime boson associated with missing transverse energy coming from a neutrino. It has excluded the \wprime boson with masses smaller than 5.1 TeV at a 95\% confidence level (CL), assuming a pure left-handed \wprime boson with \gL ~equal to the coupling of the SM $W$ boson (\gSM = 0.64).  The results of different direct searches from the colliders are also used to constrain the \wprime boson. For example, the results of the search for single top quark production are used to constrain the \wprime boson in Ref. \cite{YaserAyazi:2017xyj}.
+In different experiments, many searches are done to see the signatures of \wprime boson, but up to now none of them have obtained a positive signal.
+The most stringent limit is set by the ATLAS experiment in an analysis which looks at the tail of the transverse mass distribution of the lepton plus missing transverse momentum system \cite{Aaboud:2017efa}. The lepton is assumed to be produced in the decay of a \wprime boson associated with missing transverse momentum coming from a neutrino. It has excluded the \wprime boson with masses smaller than 5.1 TeV at a 95\% confidence level (CL), assuming a pure left-handed \wprime boson with \gL ~equal to the coupling of the SM $W$ boson (\gSM = 0.64).  The results of different direct searches from the colliders are also used to constrain the \wprime boson. For example, the results of the search for single top quark production are used to constrain the \wprime boson in Ref. \cite{YaserAyazi:2017xyj}.
 
 
 
@@ -111,7 +112,7 @@ In next section, the reference experimental analysis is reviewed and the used va
 \section{Review of the experimental analysis}
 This study reinterprets the results of the ``Search for electroweak production of charginos in final states with two tau leptons in pp collisions at sqrt(s) = 8 TeV''\cite{Khachatryan:2016trj} for the production of two \wprime bosons decaying into two $\tau$ leptons. In this section the experimental analysis is reviewed.
 
-The $\tau$ lepton decays  to a $\mu$ lepton or an electron in $\sim 35\%$ of the cases and to hadrons (\Tau) in the rest of cases. So about 90\% of events with two $\tau$ leptons decay to \lepTau ~or \tauTau. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. 
+The $\tau$ lepton decays  to a muon or an electron in $\sim 35\%$ of the cases and to hadrons (\Tau) in the rest of cases. So about 90\% of events with two $\tau$ leptons decay to \lepTau ~or \tauTau. In this analysis, only these two decay channels are considered and the fully leptonic decay modes are ignored. 
 
 The missing transverse momentum (\MET) which is  defined as the vectorial sum of the transverse momenta (\pt) of neutrinos in the event is one of the event properties used in this analysis. In addition to the neutrinos  produced from the direct decay of \wprime boson, those produced in the $\tau$ lepton decay are also considered.
 
@@ -133,7 +134,7 @@ In the reference analysis, the events are categorized in 4 signal regions (SR). 
 In addition to the selection criteria that are applied for the lepton selection and event categorization, some other requirements to veto any extra lepton or b-tagged jets  are also applied. 
 
 \section{Event generation}\label{sec:simulation}
-To generate the signal events version 2.6.0 of   MadGraph5\_aMC@NLO~\cite{Alwall:2014hca} package is used which is the extension of MadGraph5~\cite{Alwall:2011uj} matrix-element generator. In continue, we refer to this event generator  as MadGraph.
+To generate the signal events version 2.6.0 of   MadGraph5\_aMC@NLO~\cite{Alwall:2014hca} package is used which is the extension of MadGraph5~\cite{Alwall:2011uj} matrix-element generator. In the following, we refer to this event generator  as MadGraph.
 The model used for signal generation is \wprime effective model (WEff-UFO)~\cite{Sullivan:2002jt}, which  is an extension of SM by adding the \wprime boson interactions with the SM fermions (Eq. \ref{eq:lagrangian}). The signal of our interest is $ pp\rightarrow \wprimep \wprimem$. 
 To avoid the violation of unitarity at high energy, one needs to add interaction of \wprime boson with the SM gauge bosons to Eq. \ref{eq:lagrangian} and consider also the process $pp\rightarrow Z/\gamma^{\star} \rightarrow \wprimep \wprimem$. In this analysis, this part is ignored, because the goal is to study the leptonic interactions of \wprime boson, without adding the complexities introduced from the gauge interactions. It is checked and found that the ignored terms can increase the cross section of the favorite process by about 50\%, so the reported limits are conservative.
 
@@ -187,7 +188,7 @@ It can be observed in table \ref{tab:W'BR} that the values are consistent for \w
 
 As another cross check, the kinematic  and search  variables of the generated events are produced. 
 For this purpose, the visible momentum of the hadronic decaying $\tau$ is defined as the original $\tau$ momentum before decay subtracted by the momentum of the neutrinos in the decay chain of the $\tau$ lepton. The negative of the vectorial sum of the visible $\vec{p}_T$ ~of the two $\tau$ leptons defines \MET. Having these information, one can construct all the needed variables like the transverse mass of the leptons or \mttwo. 
-As it is discussed earlier, the final state of our signal includes pure hadronic channel (\tauTau) and also a mixture of hadronic-leptonic channel (\lepTau ).  In figures \ref{fig:met} and \ref{fig:mt2}, the distributions of \mttwo ~and \MET ~for both channels in different \wprime masses are shown.
+As it is discussed earlier, the final state of our signal includes pure hadronic channel (\tauTau) and also a mixture of hadronic-leptonic channel (\lepTau ).  In figures \ref{fig:met} and \ref{fig:mt2}, the distributions of \MET ~and \mttwo ~for both channels in different \wprime masses are shown.
 \begin{figure}[htb]
 	\centering
 	\includegraphics*[width=.45\textwidth]{MET_hh.pdf}
@@ -265,20 +266,30 @@ It is easier, to define a mixing angle and rewrite the couplings as:
 \gR  = \gSM \sin\theta
 \end{eqnarray}
 By varying $\theta$ from 0 to $ 90^\circ $, the \wprime goes from a purely left-handed to a purely right-handed vector boson. The latter \wprime boson does not have any interaction with the leptons. 
-The variation of the cross sections and decay widths due to various mixing angles, when \wprime mass is 250 GeV, is shown in table \ref{tab:mixingAngle}.
+The variation of the cross sections and decay widths due to various mixing angles, when \wprime mass is 310 GeV, is shown in table \ref{tab:mixingAngle}.
 \begin{table}[htb]
 	\centering
-	\caption{Cross sections and decay widths of different mixing angles for a 250 GeV \wprime boson. \label{tab:mixingAngle} }
+	\caption{Cross sections and decay widths of different mixing angles for a 310 GeV \wprime boson. \label{tab:mixingAngle} }
+%	\begin{tabular}{|c|c|c|c|c|}
+%		\hline 
+%		Mixing angle $\theta$  & Coupling constants & Decay width (GeV)  &  Cross section (fb) & BR(\wprime $\rightarrow \tau \nu_\tau$) \\
+%		\hline 
+%		0$^\circ$  & \gR=0.0, \gL=0.64  & 6.98  & 14.1 & 0.0998 \\
+%		30$^\circ$ & \gR=0.32, \gL=0.56 & 6.49  & 5.71 & 0.0804\\
+%		45$^\circ$ & \gR=0.46, \gL=0.46 & 5.98  & 2.42 & 0.0583\\
+%		60$^\circ$ & \gR=0.56, \gL=0.32 & 5.44  & 0.908 & 0.0320\\
+%		\hline
+%	\end{tabular}
 	\begin{tabular}{|c|c|c|c|c|}
-		\hline 
-		Mixing angle $\theta$  & Coupling constants & Decay width (GeV)  &  Cross section (fb) & BR(\wprime $\rightarrow \tau \nu_\tau$) \\
-		\hline 
-		0$^\circ$  & \gR=0.0, \gL=0.64  & 6.98  & 14.1 & 0.0998 \\
-		30$^\circ$ & \gR=0.32, \gL=0.56 & 6.49  & 5.71 & 0.0804\\
-		45$^\circ$ & \gR=0.46, \gL=0.46 & 5.98  & 2.42 & 0.0583\\
-		60$^\circ$ & \gR=0.56, \gL=0.32 & 5.44  & 0.908 & 0.0320\\
-		\hline
-	\end{tabular}
+	\hline 
+	Mixing angle $\theta$  & \gR,  \gL & Decay width (GeV)  &  Cross section (fb) & BR(\wprime $\rightarrow \tau \nu_\tau$) \\
+	\hline 
+	0$^\circ$  & 0.0, 0.64  & 9.20  & 4.43 & 0.0939 \\
+	30$^\circ$ & 0.32, 0.56 & 8.51  & 1.78 & 0.0757\\
+	45$^\circ$ & 0.46, 0.46 & 8.00  & 0.752 & 0.0543\\
+	60$^\circ$ & 0.56, 0.32 & 7.21  & 0.263 & 0.0292\\
+	\hline
+\end{tabular}
 \end{table}
 
 In the next section the generated events in this section are used to set a lower limit on the \wprime mass.
@@ -362,7 +373,7 @@ scenarios for the coupling of \wprime bosons to leptons is examined and the corr
 \section{Acknowledgments}
 The analysis has benefited significantly from ideas and comments by Hamed Bakhshiansohi. We have to thank him for all of his helps and supports. 
 The authors would like to thank Seyed Yaser Ayazi, for the useful discussions and 
-his comments on the manuscript.
+his comments on the manuscript. The authors are grateful to CMS collaboration for their fantastic results. 
 
 \begin{thebibliography}{10}
 	\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
@@ -387,17 +398,24 @@ his comments on the manuscript.
 	\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Khachatryan}}
 	\bibnamefont{et~al.} (\bibinfo{collaboration}{CMS}), \bibinfo{journal}{JHEP}
 	\textbf{\bibinfo{volume}{04}}, \bibinfo{pages}{018} (\bibinfo{year}{2017}),
-	\eprint{1610.04870}.
+	\eprint{arXiv:1610.04870}.
 	
 	\bibitem[{\citenamefont{Aaboud et~al.}(2017)}]{Aaboud:2017efa}
 	\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Aaboud}} \bibnamefont{et~al.}
-	(\bibinfo{collaboration}{ATLAS}) (\bibinfo{year}{2017}), \eprint{1706.04786}.
+	(\bibinfo{collaboration}{ATLAS}) (\bibinfo{year}{2017}),
+	\bibinfo{title}{Search for a new heavy gauge boson resonance decaying
+		into a lepton and missing transverse momentum in 36
+		fb$^{-1}$ of $pp$ collisions at $\sqrt{s} =$ 13 TeV with
+		the ATLAS experiment}, 
+	 \eprint{arXiv:1706.04786}, (\bibinfo{journal}{Submitted to Eur. Phys. J. C}).
 	
 	\bibitem[{\citenamefont{Yaser~Ayazi and
 			Paktinat~Mehdiabadi}(2017)}]{YaserAyazi:2017xyj}
 	\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Yaser~Ayazi}} \bibnamefont{and}
 	\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Paktinat~Mehdiabadi}}
-	(\bibinfo{year}{2017}), \eprint{1707.07155}.
+	(\bibinfo{year}{2017}),
+	\bibinfo{title}{The s-Channel Single Top Quark Production as a Constraint for W' Boson Contribution}, 	
+	 \eprint{arXiv:1707.07155}.
 	
 	\bibitem[{\citenamefont{Lester and Summers}(1999)}]{Lester:1999tx}
 	\bibinfo{author}{\bibfnamefont{C.~G.} \bibnamefont{Lester}} \bibnamefont{and}
@@ -427,7 +445,7 @@ his comments on the manuscript.
 	\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Torrielli}},
 	\bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Zaro}},
 	\bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{07}}, \bibinfo{pages}{079}
-	(\bibinfo{year}{2014}), \eprint{1405.0301}.
+	(\bibinfo{year}{2014}), \eprint{arXiv:1405.0301}.
 	
 	\bibitem[{\citenamefont{Alwall et~al.}(2011)\citenamefont{Alwall, Herquet,
 			Maltoni, Mattelaer, and Stelzer}}]{Alwall:2011uj}
@@ -437,7 +455,7 @@ his comments on the manuscript.
 	\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Mattelaer}},
 	\bibnamefont{and} \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Stelzer}},
 	\bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{06}}, \bibinfo{pages}{128}
-	(\bibinfo{year}{2011}), \eprint{1106.0522}.
+	(\bibinfo{year}{2011}), \eprint{arXiv:1106.0522}.
 	
 	\bibitem[{\citenamefont{Ball et~al.}(2013)\citenamefont{Ball, Bertone,
 			Carrazza, Del~Debbio, Forte, Guffanti, Hartland, and Rojo}}]{Ball:2013hta}
@@ -451,7 +469,7 @@ his comments on the manuscript.
 	\bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Rojo}}
 	(\bibinfo{collaboration}{NNPDF}), \bibinfo{journal}{Nucl. Phys.}
 	\textbf{\bibinfo{volume}{B877}}, \bibinfo{pages}{290} (\bibinfo{year}{2013}),
-	\eprint{1308.0598}.
+	\eprint{arXiv:1308.0598}.
 	
 	\bibitem[{\citenamefont{Davidson et~al.}(2012)\citenamefont{Davidson, Nanava,
 			Przedzinski, Richter-W\c{a}s, and W\c{a}s}}]{Davidson:2010rw}
@@ -461,7 +479,7 @@ his comments on the manuscript.
 	\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Richter-W\c{a}s}},
 	\bibnamefont{and} \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{W\c{a}s}},
 	\bibinfo{journal}{Comput. Phys. Commun.} \textbf{\bibinfo{volume}{183}},
-	\bibinfo{pages}{821} (\bibinfo{year}{2012}), \eprint{1002.0543}.
+	\bibinfo{pages}{821} (\bibinfo{year}{2012}), \eprint{arXiv:1002.0543}.
 	
 	\bibitem[{\citenamefont{Brun and Rademakers}(1997)}]{Brun:1997pa}
 	\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Brun}} \bibnamefont{and}

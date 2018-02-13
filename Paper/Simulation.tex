@@ -1,5 +1,5 @@
 \section{Event generation}\label{sec:simulation}
-To generate the signal events version 2.6.0 of   MadGraph5\_aMC@NLO~\cite{Alwall:2014hca} package is used which is the extension of MadGraph5~\cite{Alwall:2011uj} matrix-element generator. In continue, we refer to this event generator  as MadGraph.
+To generate the signal events version 2.6.0 of   MadGraph5\_aMC@NLO~\cite{Alwall:2014hca} package is used which is the extension of MadGraph5~\cite{Alwall:2011uj} matrix-element generator. In the following, we refer to this event generator  as MadGraph.
 The model used for signal generation is \wprime effective model (WEff-UFO)~\cite{Sullivan:2002jt}, which  is an extension of SM by adding the \wprime boson interactions with the SM fermions (Eq. \ref{eq:lagrangian}). The signal of our interest is $ pp\rightarrow \wprimep \wprimem$. 
 To avoid the violation of unitarity at high energy, one needs to add interaction of \wprime boson with the SM gauge bosons to Eq. \ref{eq:lagrangian} and consider also the process $pp\rightarrow Z/\gamma^{\star} \rightarrow \wprimep \wprimem$. In this analysis, this part is ignored, because the goal is to study the leptonic interactions of \wprime boson, without adding the complexities introduced from the gauge interactions. It is checked and found that the ignored terms can increase the cross section of the favorite process by about 50\%, so the reported limits are conservative.
 
@@ -53,7 +53,7 @@ It can be observed in table \ref{tab:W'BR} that the values are consistent for \w
 
 As another cross check, the kinematic  and search  variables of the generated events are produced. 
 For this purpose, the visible momentum of the hadronic decaying $\tau$ is defined as the original $\tau$ momentum before decay subtracted by the momentum of the neutrinos in the decay chain of the $\tau$ lepton. The negative of the vectorial sum of the visible $\vec{p}_T$ ~of the two $\tau$ leptons defines \MET. Having these information, one can construct all the needed variables like the transverse mass of the leptons or \mttwo. 
-As it is discussed earlier, the final state of our signal includes pure hadronic channel (\tauTau) and also a mixture of hadronic-leptonic channel (\lepTau ).  In figures \ref{fig:met} and \ref{fig:mt2}, the distributions of \mttwo ~and \MET ~for both channels in different \wprime masses are shown.
+As it is discussed earlier, the final state of our signal includes pure hadronic channel (\tauTau) and also a mixture of hadronic-leptonic channel (\lepTau ).  In figures \ref{fig:met} and \ref{fig:mt2}, the distributions of \MET ~and \mttwo ~for both channels in different \wprime masses are shown.
 \begin{figure}[htb]
 	\centering
 	\includegraphics*[width=.45\textwidth]{figs/MET_hh.pdf}
@@ -135,14 +135,24 @@ The variation of the cross sections and decay widths due to various mixing angle
 \begin{table}[htb]
   \centering
    \caption{Cross sections and decay widths of different mixing angles for a 250 GeV \wprime boson. \label{tab:mixingAngle} }
-    \begin{tabular}{|c|c|c|c|c|}
-    \hline 
-    Mixing angle $\theta$  & Coupling constants & Decay width (GeV)  &  Cross section (fb) & BR(\wprime $\rightarrow \tau \nu_\tau$) \\
-    \hline 
-    0$^\circ$  & \gR=0.0, \gL=0.64  & 6.98  & 14.1 & 0.0998 \\
-    30$^\circ$ & \gR=0.32, \gL=0.56 & 6.49  & 5.71 & 0.0804\\
-    45$^\circ$ & \gR=0.46, \gL=0.46 & 5.98  & 2.42 & 0.0583\\
-    60$^\circ$ & \gR=0.56, \gL=0.32 & 5.44  & 0.908 & 0.0320\\
+%    \begin{tabular}{|c|c|c|c|c|}
+%    \hline 
+%    Mixing angle $\theta$  & Coupling constants & Decay width (GeV)  &  Cross section (fb) & BR(\wprime $\rightarrow \tau \nu_\tau$) \\
+%    \hline 
+%    0$^\circ$  & \gR=0.0, \gL=0.64  & 6.98  & 14.1 & 0.0998 \\
+%    30$^\circ$ & \gR=0.32, \gL=0.56 & 6.49  & 5.71 & 0.0804\\
+%    45$^\circ$ & \gR=0.46, \gL=0.46 & 5.98  & 2.42 & 0.0583\\
+%    60$^\circ$ & \gR=0.56, \gL=0.32 & 5.44  & 0.908 & 0.0320\\
+	\begin{tabular}{|c|c|c|c|c|}
+	\hline 
+	Mixing angle $\theta$  & \gR,  \gL & Decay width (GeV)  &  Cross section (fb) & BR(\wprime $\rightarrow \tau \nu_\tau$) \\
+	\hline 
+	0$^\circ$  & 0.0, 0.64  & 9.20  & 4.43  & 0.0939 \\
+	30$^\circ$ & 0.32, 0.56 & 8.51  & 1.78  & 0.0757\\
+	45$^\circ$ & 0.46, 0.46 & 8.00  & 0.752 & 0.0543\\
+	60$^\circ$ & 0.56, 0.32 & 7.21  & 0.263 & 0.0292\\
+	\hline
+\end{tabular}
     \hline
   \end{tabular}
 \end{table}
