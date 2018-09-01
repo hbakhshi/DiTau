@@ -1,0 +1,739 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.28)  13 FEB 2018 13:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**WPrimePair.tex
+(./WPrimePair.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count79
+\output=\toks14
+\linenoprevgraf=\count80
+\linenumbersep=\dimen102
+\linenumberwidth=\dimen103
+\c@linenumber=\count81
+\c@pagewiselinenumber=\count82
+\c@LN@truepage=\count83
+\c@internallinenumber=\count84
+\c@internallinenumbers=\count85
+\quotelinenumbersep=\dimen104
+\bframerule=\dimen105
+\bframesep=\dimen106
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count86
+\@tbpen=\count87
+\@arstrutbox@hline=\box27
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count88
+\output=\toks15
+\@protection@box=\box28
+\@topmark@saved=\toks16
+\footins@saved=\box29
+\pagesofar=\box30
+\footbox=\box31
+\pagegrid@col=\count89
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@affil=\count90
+\absbox=\box32
+\c@part=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count97
+\c@table=\count98
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count99
+)
+\widetext@top=\box33
+\widetext@bot=\box34
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+
+Class revtex4 Warning: No Society specified, using generic APS style.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/revtex4/12pt.rtx
+File: 12pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen109
+\extrarowheight=\dimen110
+\NC@list=\toks18
+\extratabsurround=\skip45
+\backup@length=\skip46
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen111
+\epsfysize=\dimen112
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/dvips/colordvi.sty)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Info: Redefining \Bbb on input line 113.
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count101
+\rotFPtop=\skip47
+\rotFPbot=\skip48
+\rot@float@box=\box35
+\rot@mess@toks=\toks20
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks21
+\float@box=\box36
+\@float@everytoks=\toks22
+\@floatcapt=\box37
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box38
+\fn@width=\dimen113
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen114
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count105
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count106
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen115
+\Fld@menulength=\count107
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(./WPrimePair.aux)
+\openout1 = `WPrimePair.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+Class revtex4 Info: Unrecognized array package. Please update this document cla
+ss! (Proceeding with fingers crossed.) on input line 56.
+Class revtex4 Info: cite was not loaded (OK!) on input line 56.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 56.
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen118
+\scratchbox=\box39
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen119
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks24
+)
+\AtBeginShipoutBox=\box40
+
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+Package hyperref Info: Link coloring OFF on input line 56.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
+
+(./WPrimePair.out) (./WPrimePair.out)
+\@outlinefile=\write3
+\openout3 = `WPrimePair.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 89.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+
+Class revtex4 Warning: If you want your keywords to appear in your output, use 
+document class option showkeys.
+
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./Introduction.tex <figs/WpWpTauTau.pdf, id=58, 253.94875pt x 162.6075pt>
+File: figs/WpWpTauTau.pdf Graphic file (type pdf)
+
+<use figs/WpWpTauTau.pdf>
+Package pdftex.def Info: figs/WpWpTauTau.pdf used on input line 20.
+(pdftex.def)             Requested size: 210.59857pt x 134.85501pt.
+ [2]) (./Experiment.tex [3 <./figs/WpWpTauTau.pdf>])
+(./Simulation.tex [4] [5] <figs/MET_hh.pdf, id=146, 569.12625pt x 385.44pt>
+File: figs/MET_hh.pdf Graphic file (type pdf)
+
+<use figs/MET_hh.pdf>
+Package pdftex.def Info: figs/MET_hh.pdf used on input line 59.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <figs/MET_lh.pdf, id=148, 569.12625pt x 385.44pt>
+File: figs/MET_lh.pdf Graphic file (type pdf)
+
+<use figs/MET_lh.pdf>
+Package pdftex.def Info: figs/MET_lh.pdf used on input line 61.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <figs/MT2_hh.pdf, id=150, 569.12625pt x 385.44pt>
+File: figs/MT2_hh.pdf Graphic file (type pdf)
+
+<use figs/MT2_hh.pdf>
+Package pdftex.def Info: figs/MT2_hh.pdf used on input line 67.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <figs/MT2_lh.pdf, id=152, 569.12625pt x 385.44pt>
+File: figs/MT2_lh.pdf Graphic file (type pdf)
+
+<use figs/MT2_lh.pdf>
+Package pdftex.def Info: figs/MT2_lh.pdf used on input line 69.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <figs/Pt_hh_max.pdf, id=156, 569.12625pt x 385.44pt>
+File: figs/Pt_hh_max.pdf Graphic file (type pdf)
+
+<use figs/Pt_hh_max.pdf>
+Package pdftex.def Info: figs/Pt_hh_max.pdf used on input line 76.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <figs/Pt_hh_min.pdf, id=158, 569.12625pt x 385.44pt>
+File: figs/Pt_hh_min.pdf Graphic file (type pdf)
+
+<use figs/Pt_hh_min.pdf>
+Package pdftex.def Info: figs/Pt_hh_min.pdf used on input line 78.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <figs/Pt_lh_tau.pdf, id=160, 569.12625pt x 385.44pt>
+File: figs/Pt_lh_tau.pdf Graphic file (type pdf)
+
+<use figs/Pt_lh_tau.pdf>
+Package pdftex.def Info: figs/Pt_lh_tau.pdf used on input line 84.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <figs/Pt_lh_lep.pdf, id=162, 569.12625pt x 385.44pt>
+File: figs/Pt_lh_lep.pdf Graphic file (type pdf)
+
+<use figs/Pt_lh_lep.pdf>
+Package pdftex.def Info: figs/Pt_lh_lep.pdf used on input line 86.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ [6] [7 <./figs/MET_hh.pdf, page is rotated 90 degrees> <./figs/MET_lh.pdf, pag
+e is rotated 90 degrees> <./figs/MT2_hh.pdf, page is rotated 90 degrees> <./fig
+s/MT2_lh.pdf, page is rotated 90 degrees>]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.156     \hline
+                
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \crcr.
+\endarray ->\endarray@hook \crcr 
+                                 \array@row@pst \egroup \egroup \@arrayright...
+l.157   \end{tabular}
+                     
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Extra }, or forgotten \endgroup.
+\endarray ...\crcr \array@row@pst \egroup \egroup 
+                                                  \@arrayright \global \let ...
+l.157   \end{tabular}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{table} on input line 135 ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157   \end{tabular}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[8 <./figs/Pt_hh_max.pdf, page is rotated 90 degrees> <./figs/Pt_hh_min.pdf, pa
+ge is rotated 90 degrees> <./figs/Pt_lh_tau.pdf, page is rotated 90 degrees> <.
+/figs/Pt_lh_lep.pdf, page is rotated 90 degrees>]
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.158 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+<argument> \count \@currbox 
+                            >\z@ 
+l.158 \end{table}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   >
+l.158 \end{table}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \count@ \count \@currbox 
+                                    \divide \count@ \sixt@@n \multiply \coun...
+l.158 \end{table}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \divide 
+l.158 \end{table}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> ...sixt@@n \@tempcnta \count \@currbox 
+                                                  \advance \@tempcnta -\coun...
+l.158 \end{table}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \advance 
+l.158 \end{table}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.158 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+) (./Results.tex [9]
+<figs/EfficiencyGraphs.pdf, id=550, 569.12625pt x 396.48125pt>
+File: figs/EfficiencyGraphs.pdf Graphic file (type pdf)
+
+<use figs/EfficiencyGraphs.pdf>
+Package pdftex.def Info: figs/EfficiencyGraphs.pdf used on input line 9.
+(pdftex.def)             Requested size: 210.59857pt x 146.71391pt.
+
+<figs/mix0b.pdf, id=557, 569.12625pt x 385.44pt>
+File: figs/mix0b.pdf Graphic file (type pdf)
+ <use figs/mix0b.pdf>
+Package pdftex.def Info: figs/mix0b.pdf used on input line 36.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<figs/mix30b.pdf, id=559, 569.12625pt x 385.44pt>
+File: figs/mix30b.pdf Graphic file (type pdf)
+ <use figs/mix30b.pdf>
+Package pdftex.def Info: figs/mix30b.pdf used on input line 38.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<figs/mix45b.pdf, id=561, 569.12625pt x 385.44pt>
+File: figs/mix45b.pdf Graphic file (type pdf)
+ <use figs/mix45b.pdf>
+Package pdftex.def Info: figs/mix45b.pdf used on input line 40.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<figs/mix60b.pdf, id=563, 569.12625pt x 385.44pt>
+File: figs/mix60b.pdf Graphic file (type pdf)
+ <use figs/mix60b.pdf>
+Package pdftex.def Info: figs/mix60b.pdf used on input line 42.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<figs/mixHalvedb.pdf, id=565, 569.12625pt x 385.44pt>
+File: figs/mixHalvedb.pdf Graphic file (type pdf)
+
+<use figs/mixHalvedb.pdf>
+Package pdftex.def Info: figs/mixHalvedb.pdf used on input line 44.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<figs/mix3Over2b.pdf, id=567, 569.12625pt x 385.44pt>
+File: figs/mix3Over2b.pdf Graphic file (type pdf)
+
+<use figs/mix3Over2b.pdf>
+Package pdftex.def Info: figs/mix3Over2b.pdf used on input line 46.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ [10 <./figs/EfficiencyGraphs.pdf, page is rotated 90 degrees>] [11 <./figs/mix
+0b.pdf, page is rotated 90 degrees> <./figs/mix30b.pdf, page is rotated 90 degr
+ees> <./figs/mix45b.pdf, page is rotated 90 degrees> <./figs/mix60b.pdf, page i
+s rotated 90 degrees> <./figs/mixHalvedb.pdf, page is rotated 90 degrees> <./fi
+gs/mix3Over2b.pdf, page is rotated 90 degrees>])
+(./Conclusion.tex) [12] (./WPrimePair.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+ (./WPrimePair.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package rerunfilecheck Info: File `WPrimePair.out' has not changed.
+(rerunfilecheck)             Checksum: 8F575509F14231F525F0095583E9A1BC;358.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8163 strings out of 492995
+ 116750 string characters out of 6132688
+ 220377 words of memory out of 5000000
+ 11502 multiletter control sequences out of 15000+600000
+ 28820 words of font info for 87 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,11n,30p,864b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/cm-super/sfti1200.pfb>
+Output written on WPrimePair.pdf (13 pages, 541592 bytes).
+PDF statistics:
+ 986 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+

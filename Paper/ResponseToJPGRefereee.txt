@@ -1,0 +1,118 @@
+﻿Report on W’ pair production in the light of CMS searches” by S. Paktinat & L. Zamiri.
+General comments:
+This article presents the reinterpretation of one of CMS Collaboration searches, in terms of the
+production of a pair of W’ bosons, where these new particles are hypothetical new bosons
+appearing in extensions of the Standard Model (SM). In lack of significant deviations from the
+SM prediction, the study is used to constraint the mass/couplings to SM fermions of the new
+particles. The final state studied by CMS consists of events with two τ leptons + missing
+transverse momentum, which in the CMS paper is interpreted in terms of the electroweak
+production of a pair of charginos or tau sleptons.
+It is an interesting paper, as it considers for the first time, the production of a pair of W’
+bosons from pp collisions, decaying into leptons of the third family, which play an important
+role in some new physics models. Experimental searches for new heavy bosons in ATLAS or
+CMS have focused on the production of a single particle, decaying into a variety of final states
+(leptons, quarks, bosons). None in terms of production of a pair of heavy bosons, Since the
+assumed coupling of the W’ to the quarks in the proton would be the same for producing 1
+boson (s-channel) or 2 bosons (t-channel) the immediate searches consider the possibility of
+having enough energy to produce 1 boson, not 2.
+In summary, I consider the article is worth being published.
+There are some comments/questions in the following, before proceeding for publication.
+Particular/Specific comments:
+
+Page 3 L26:”the tail of the lepton transverse mass distribution”.
+It is the transverse mass distribution of the lepton + neutrino system, or, experimentally
+talking, the lepton + missing transverse momentum system.
+
+Yes, it is the transverse mass distribution of the lepton + missing transverse momentum system. The text is updated to be clearer.
+
+the tail of the transverse mass distribution of the lepton + missing transverse momentum system 
+
+Page 3 L30: Related to the comment above: “associated with missing transverse energy
+coming from a neutrino”. Since you talk later about missing transverse momentum (not
+energy), it would be better to be consistent here and say “associated with missing transverse
+momentum coming from a neutrino”.
+In case of wanting/needing to use “missing transverse energy” one should defined first the
+missing transverse momentum as the (negative) vectorial sum of particles’ momenta, being
+the missing transverse energy its modulus.
+
+Thank you for pointing to this. The text is updated according to your proposal.
+
+associated with missing transverse momentum coming from a neutrino.
+
+Page 3 L52: “μ lepton or an electron”: why not calling simply “muon or an electron”?
+
+Thank you for pointing to this. The text is updated according to your proposal.
+
+muon or an electron
+
+
+Page 5 L3-5: Signal modelling:
+Does the model used for W’ signal generation include interference effects between the SM W
+and the W’ bosons?
+Have you compared differences in W’ cross sections values and/or shape of distributions
+predicted by the NLO generator used and a LO one, such as Pythia, which is the one used by
+CMS and ATLAS collaborations in W’ searches?Which calculations support the statement “the ignored terms can increase the cross section by
+about 50%”, regarding the ignored pp Z/gamma* W’+ W+- process? Could you comment
+about the pp H W’+ W+- terms?
+
+The model used for W’ signal generation does not take into account the interference effects. To our knowledge, there is not any study about the W' pair production and its interference with the SM W boson. Our guess is that the effect of interference should not be higher than pp Z/gamma* W’+ W'- process. 
+
+Although, the MadGraph is an NLO generator, but for W' production, only LO processes are supported and we do expect major difference between our MadGraph samples and pythia samples used by CMS and ATLAS.
+
+We have studied the pp Z/gamma* W’+ W'- process in our framework (Madgraph) and found its cross section at most 50% of the t-channel W' pair production cross section.
+
+Coupling of the W' to Higgs boson is a separate topic which is beyond the scope of this paper. One important problem is how to set the coupling, if it is same as SM W boson, but increased by the ratio of the masses (W'/W), the yukawa coupling can be too high and violate the perturbative regime.
+
+Page 6 L53: “In figures 2 and 3, the distributions of MT2 and pTmiss...” “In figures 2 and 3,
+the distributions of pTmiss and MT2...”
+Swap naming of the 2 variables, to respect the order of appearance: Fig 2 for pTmiss and fig 3
+for MT2.
+
+You are right, the order is now corrected.
+
+In figures 2 and 3, the distributions of pTmiss and MT2 for both channels in different W' masses are shown.
+
+Page 8 L54: Variation of coupling values:
+You use the W’ mass of 250 GeV to show how the W’ cross sections and widths vary with the different coupling constants. Would not have it been better to use any of the previous masses of 100, 190, 310 or 400 GeV, for comparison purposes?
+
+Following your suggestion, the table is updated with the values for the mass of 310 GeV.
+
+
+
+Table IV: Suggestion for presentation. In the second column (Coupling constants) you could write on the heading “Coupling constants” and in the line below, still in the heading, “g’R, g’L”,
+in such a way that in the rows with the values you write are:
+0.0, 0.64
+0.32, 0.56
+0.46, 0.46
+0.56, 0.32
+
+Thank you for pointing this. We preferred to use the same notation as Table VI and remove  “Coupling constants” and keep only “g’R, g’L” in the heading. 
+
+Fig 6: In order to compute the Selection Efficiencies, have samples of W’ bosons been produced with masses values up to 500 GeV? If the answer is yes, why is the first study (mass variation with g’L = gSM and g’R=0) done up to 400 GeV?
+
+
+
+References: It is a good practice, if not among the journal rules, to add the Digital Object
+Identifier (doi) for each publication. In addition, please add the complete arXiv reference:
+1610.04870 arXiv: 1610.04870.
+[3]: Please check the journal rules concerning articles not yet published in a definitive form,
+but Submitted. If not allowed, the most stringent published limits are Phys. Lett. B762 (2016)
+334 (ATLAS) and Phys. Lett. B770 (2017) 278 (CMS).
+Editorial comments:
+Abstract: Last line: “The method can be used to constraint the new models with the similar
+final state”.
+Perhaps it is meant to say “other new models with similar final state”?Page 3 
+
+L25: “... but up to now all of them have failed”. 
+Proposal: “... but up to now none of them have obtained a positive signal.” Or similar. The use of “failed” has some negative connotation, as if W’ bosons were known to exist and the experiments failed to find signatures of them. But the reality up to now is it may well be that W’ bosons do not exist (or are not at reach in current experiments) and thus not having signatures of them is the correct thing.
+
+Good point. The suggested sentence is used.
+
+In different experiments, many searches are done to see the signatures of W' boson, but up to now none of them have obtained a positive signal.
+
+Page 4 L56: “In continue, we refer...”
+“In the following, we refer....”
+
+Thanks, We update the text according to your proposal.
+
+In the following, we refer to this event generator  as MadGraph.

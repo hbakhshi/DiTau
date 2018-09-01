@@ -1,0 +1,585 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.2.6)  21 FEB 2018 16:03
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**WPrimePair.tex
+(./WPrimePair.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count79
+\output=\toks14
+\linenoprevgraf=\count80
+\linenumbersep=\dimen102
+\linenumberwidth=\dimen103
+\c@linenumber=\count81
+\c@pagewiselinenumber=\count82
+\c@LN@truepage=\count83
+\c@internallinenumber=\count84
+\c@internallinenumbers=\count85
+\quotelinenumbersep=\dimen104
+\bframerule=\dimen105
+\bframesep=\dimen106
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count86
+\@tbpen=\count87
+\@arstrutbox@hline=\box27
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count88
+\output=\toks15
+\@protection@box=\box28
+\@topmark@saved=\toks16
+\footins@saved=\box29
+\pagesofar=\box30
+\footbox=\box31
+\pagegrid@col=\count89
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@affil=\count90
+\absbox=\box32
+\c@part=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\c@figure=\count97
+\c@table=\count98
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count99
+)
+\widetext@top=\box33
+\widetext@bot=\box34
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+
+Class revtex4 Warning: No Society specified, using generic APS style.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/revtex4/12pt.rtx
+File: 12pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen109
+\extrarowheight=\dimen110
+\NC@list=\toks18
+\extratabsurround=\skip45
+\backup@length=\skip46
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2016/02/27 v1.2a Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 142.
+LaTeX Info: Redefining \bm on input line 208.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen111
+\epsfysize=\dimen112
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grffile.sty
+Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 144.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/dvips/colordvi.sty)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Info: Redefining \Bbb on input line 113.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count101
+\rotFPtop=\skip47
+\rotFPbot=\skip48
+\rot@float@box=\box35
+\rot@mess@toks=\toks20
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count102
+\float@exts=\toks21
+\float@box=\box36
+\@float@everytoks=\toks22
+\@floatcapt=\box37
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box38
+\fn@width=\dimen113
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen114
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count105
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing OFF on input line 4466.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4691.
+\c@Hy@tempcnt=\count106
+LaTeX Info: Redefining \url on input line 5044.
+\XeTeXLinkMargin=\dimen115
+\Fld@menulength=\count107
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing OFF on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(./WPrimePair.aux)
+\openout1 = `WPrimePair.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+Class revtex4 Info: Patching array package. on input line 56.
+Class revtex4 Info: cite was not loaded (OK!) on input line 56.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 56.
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count113
+\scratchdimen=\dimen118
+\scratchbox=\box39
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen119
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks24
+)
+\AtBeginShipoutBox=\box40
+
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+Package hyperref Info: Link coloring OFF on input line 56.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
+
+(./WPrimePair.out) (./WPrimePair.out)
+\@outlinefile=\write3
+\openout3 = `WPrimePair.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Class revtex4 Warning: If you want your keywords to appear in your output, use 
+document class option showkeys.
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<WpWpTauTau.pdf, id=57, 253.94875pt x 162.6075pt>
+File: WpWpTauTau.pdf Graphic file (type pdf)
+ <use WpWpTauTau.pdf>
+Package pdftex.def Info: WpWpTauTau.pdf used on input line 100.
+(pdftex.def)             Requested size: 210.59857pt x 134.85501pt.
+ [2]
+[3 <./WpWpTauTau.pdf>] [4] [5] <MET_hh.pdf, id=145, 569.12625pt x 385.44pt>
+File: MET_hh.pdf Graphic file (type pdf)
+
+<use MET_hh.pdf>
+Package pdftex.def Info: MET_hh.pdf used on input line 194.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ <MET_lh.pdf, id=147, 569.12625pt x 385.44pt>
+File: MET_lh.pdf Graphic file (type pdf)
+ <use MET_lh.pdf>
+Package pdftex.def Info: MET_lh.pdf used on input line 196.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<MT2_hh.pdf, id=149, 569.12625pt x 385.44pt>
+File: MT2_hh.pdf Graphic file (type pdf)
+ <use MT2_hh.pdf>
+Package pdftex.def Info: MT2_hh.pdf used on input line 202.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<MT2_lh.pdf, id=151, 569.12625pt x 385.44pt>
+File: MT2_lh.pdf Graphic file (type pdf)
+ <use MT2_lh.pdf>
+Package pdftex.def Info: MT2_lh.pdf used on input line 204.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<Pt_hh_max.pdf, id=155, 569.12625pt x 385.44pt>
+File: Pt_hh_max.pdf Graphic file (type pdf)
+ <use Pt_hh_max.pdf>
+Package pdftex.def Info: Pt_hh_max.pdf used on input line 211.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<Pt_hh_min.pdf, id=157, 569.12625pt x 385.44pt>
+File: Pt_hh_min.pdf Graphic file (type pdf)
+ <use Pt_hh_min.pdf>
+Package pdftex.def Info: Pt_hh_min.pdf used on input line 213.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<Pt_lh_tau.pdf, id=159, 569.12625pt x 385.44pt>
+File: Pt_lh_tau.pdf Graphic file (type pdf)
+ <use Pt_lh_tau.pdf>
+Package pdftex.def Info: Pt_lh_tau.pdf used on input line 219.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<Pt_lh_lep.pdf, id=161, 569.12625pt x 385.44pt>
+File: Pt_lh_lep.pdf Graphic file (type pdf)
+ <use Pt_lh_lep.pdf>
+Package pdftex.def Info: Pt_lh_lep.pdf used on input line 221.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ [6]
+[7 <./MET_hh.pdf, page is rotated 90 degrees> <./MET_lh.pdf, page is rotated 90
+ degrees> <./MT2_hh.pdf, page is rotated 90 degrees> <./MT2_lh.pdf, page is rot
+ated 90 degrees>] [8 <./Pt_hh_max.pdf, page is rotated 90 degrees> <./Pt_hh_min
+.pdf, page is rotated 90 degrees> <./Pt_lh_tau.pdf, page is rotated 90 degrees>
+ <./Pt_lh_lep.pdf, page is rotated 90 degrees>] [9]
+<EfficiencyGraphs.pdf, id=549, 569.12625pt x 396.48125pt>
+File: EfficiencyGraphs.pdf Graphic file (type pdf)
+
+<use EfficiencyGraphs.pdf>
+Package pdftex.def Info: EfficiencyGraphs.pdf used on input line 306.
+(pdftex.def)             Requested size: 210.59857pt x 146.71391pt.
+ [10 <./EfficiencyGraphs.pdf, page is rotated 90 degrees>] <mix0b.pdf, id=606, 
+569.12625pt x 385.44pt>
+File: mix0b.pdf Graphic file (type pdf)
+ <use mix0b.pdf>
+Package pdftex.def Info: mix0b.pdf used on input line 333.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<mix30b.pdf, id=608, 569.12625pt x 385.44pt>
+File: mix30b.pdf Graphic file (type pdf)
+ <use mix30b.pdf>
+Package pdftex.def Info: mix30b.pdf used on input line 335.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<mix45b.pdf, id=610, 569.12625pt x 385.44pt>
+File: mix45b.pdf Graphic file (type pdf)
+ <use mix45b.pdf>
+Package pdftex.def Info: mix45b.pdf used on input line 337.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<mix60b.pdf, id=612, 569.12625pt x 385.44pt>
+File: mix60b.pdf Graphic file (type pdf)
+ <use mix60b.pdf>
+Package pdftex.def Info: mix60b.pdf used on input line 339.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<mixHalvedb.pdf, id=614, 569.12625pt x 385.44pt>
+File: mixHalvedb.pdf Graphic file (type pdf)
+ <use mixHalvedb.pdf>
+Package pdftex.def Info: mixHalvedb.pdf used on input line 341.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+
+<mix3Over2b.pdf, id=616, 569.12625pt x 385.44pt>
+File: mix3Over2b.pdf Graphic file (type pdf)
+ <use mix3Over2b.pdf>
+Package pdftex.def Info: mix3Over2b.pdf used on input line 343.
+(pdftex.def)             Requested size: 210.59857pt x 142.6282pt.
+ [11]
+[12 <./mix0b.pdf, page is rotated 90 degrees> <./mix30b.pdf, page is rotated 90
+ degrees> <./mix45b.pdf, page is rotated 90 degrees> <./mix60b.pdf, page is rot
+ated 90 degrees> <./mixHalvedb.pdf, page is rotated 90 degrees> <./mix3Over2b.p
+df, page is rotated 90 degrees>] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
+ (./WPrimePair.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
+Package rerunfilecheck Info: File `WPrimePair.out' has not changed.
+(rerunfilecheck)             Checksum: 8F575509F14231F525F0095583E9A1BC;358.
+ ) 
+Here is how much of TeX's memory you used:
+ 8109 strings out of 493014
+ 115344 string characters out of 6133337
+ 215653 words of memory out of 5000000
+ 11459 multiletter control sequences out of 15000+600000
+ 27282 words of font info for 85 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,11n,30p,844b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on WPrimePair.pdf (14 pages, 534362 bytes).
+PDF statistics:
+ 987 PDF objects out of 1000 (max. 8388607)
+ 531 compressed objects within 6 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+

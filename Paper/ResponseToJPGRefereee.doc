@@ -1,0 +1,37 @@
+Report on W’ pair production in the light of CMS searches” by S. Paktinat & L. Zamiri.
+General comments:
+This article presents the reinterpretation of one of CMS Collaboration searches, in terms of the
+production of a pair of W’ bosons, where these new particles are hypothetical new bosons
+appearing in extensions of the Standard Model (SM). In lack of significant deviations from the
+SM prediction, the study is used to constraint the mass/couplings to SM fermions of the new
+particles. The final state studied by CMS consists of events with two τ leptons + missing
+transverse momentum, which in the CMS paper is interpreted in terms of the electroweak
+production of a pair of charginos or tau sleptons.
+It is an interesting paper, as it considers for the first time, the production of a pair of W’
+bosons from pp collisions, decaying into leptons of the third family, which play an important
+role in some new physics models. Experimental searches for new heavy bosons in ATLAS or
+CMS have focused on the production of a single particle, decaying into a variety of final states
+(leptons, quarks, bosons). None in terms of production of a pair of heavy bosons, Since the
+assumed coupling of the W’ to the quarks in the proton would be the same for producing 1
+boson (s-channel) or 2 bosons (t-channel) the immediate searches consider the possibility of
+having enough energy to produce 1 boson, not 2.
+In summary, I consider the article is worth being published.
+There are some comments/questions in the following, before proceeding for publication.
+Particular/Specific comments:
+Page 3 L26:”the tail of the lepton transverse mass distribution”.
+It is the transverse mass distribution of the lepton + neutrino system, or, experimentally
+talking, the lepton + missing transverse momentum system.
+Page 3 L30: Related to the comment above: “associated with missing transverse energy
+coming from a neutrino”. Since you talk later about missing transverse momentum (not
+energy), it would be better to be consistent here and say “associated with missing transverse
+momentum coming from a neutrino”.
+In case of wanting/needing to use “missing transverse energy” one should defined first the
+missing transverse momentum as the (negative) vectorial sum of particles’ momenta, being
+the missing transverse energy its modulus.
+Page 3 L52: “μ lepton or an electron”: why not calling simply “muon or an electron”?
+Page 5 L3-5: Signal modelling:
+Does the model used for W’ signal generation include interference effects between the SM W
+and the W’ bosons?
+Have you compared differences in W’ cross sections values and/or shape of distributions
+predicted by the NLO generator used and a LO one, such as Pythia, which is the one used by
+CMS and ATLAS collaborations in W’ searches?
