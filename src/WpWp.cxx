@@ -436,7 +436,7 @@ void LHEF::Loop()
     }
     // char file[100];
     // fprintf(file, "gSMHalf/tree_gSMHalfwp%I.root",MassInd);
-    TFile* fout = new TFile("gSMTheta60/tree_gSMTheta60wp" + TString::Itoa(MassInd,10) + ".root", "RECREATE");
+    TFile* fout = new TFile("gSMTheta60/tree_gta60" + TString::Itoa(MassInd,10) + ".root", "RECREATE");
     //TFile* fout = new TFile("gSMHalf/tree_gSMHalf_wp160.root" , "RECREATE",0,0);
     //TFile* fout = new TFile(file, "RECREATE",0,0);
     hTauPt_hadhadmax->SetLineColor(kRed);
